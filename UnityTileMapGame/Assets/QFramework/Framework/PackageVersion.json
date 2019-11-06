@@ -1,0 +1,19 @@
+{
+  "Version": "v0.1.19",
+  "Type": 0,
+  "AccessRight": 0,
+  "DownloadUrl": null,
+  "InstallPath": "Assets/QFramework/Framework",
+  "DocUrl": "http://qfdoc.liangxiegame.com/",
+  "Readme": {
+    "version": "v0.1.19",
+    "content": "更新 package kit",
+    "author": "liangxie",
+    "date": "2019 年 11 月 05 日 11:40",
+    "VersionNumber": 119
+  },
+  "Id": null,
+  "Name": "Framework",
+  "VersionNumber": 119,
+  "FileName": "Framework_v0.1.19.unitypackage"
+}
