@@ -1,7 +1,10 @@
 fileFormatVersion: 2
 guid: 96c4c0c8ac5ad824cbd9e6f3fca56ae6
 TextureImporter:
-  fileIDToRecycleName: {}
+  fileIDToRecycleName:
+    21300000: BackgroundClouds_SpriteSheet_0
+    21300002: BackgroundClouds_SpriteSheet_1
+    21300004: BackgroundClouds_SpriteSheet_2
   externalObjects: {}
   serializedVersion: 9
   mipmaps:
@@ -82,7 +85,67 @@ TextureImporter:
     androidETC2FallbackOverride: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: BackgroundClouds_SpriteSheet_0
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 176
+        width: 352
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a5992ff06ac98b4a93bea607f49fa2b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BackgroundClouds_SpriteSheet_1
+      rect:
+        serializedVersion: 2
+        x: 361
+        y: 175
+        width: 145
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 639377ce3ed32fa428f8c405a86798a0
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BackgroundClouds_SpriteSheet_2
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 124
+        width: 168
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 291e0baaacac69d479180526afcb72fc
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
