@@ -34,6 +34,14 @@ MonoBehaviour:
     m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Size: {x: 1, y: 1, z: 1}
   m_Pivot: {x: 0, y: 0, z: 0}
-  m_Prefabs: []
+  m_Prefabs:
+  - {fileID: 500881651130080607, guid: c8e89a8339bb9d74db09923160df018b, type: 3}
+  - {fileID: 500881651130080607, guid: 20149a4b4ed19c342a0aee637593a539, type: 3}
+  - {fileID: 500881651130080607, guid: b30197b5c9920b04db55e8f6367d61dc, type: 3}
+  - {fileID: 500881651130080607, guid: 312302253e6e01b468227283fad5b03d, type: 3}
+  - {fileID: 500881651130080607, guid: acfca4ea89197af4e9c475aa83c08ad3, type: 3}
+  - {fileID: 500881651130080607, guid: 9e5598c03fb06244189c722235f356b1, type: 3}
+  - {fileID: 500881651130080607, guid: 047c2f581b95aab44b81d32d42ac51c6, type: 3}
+  - {fileID: 500881651130080607, guid: c752cbf8b930e4a49b040b6d9d6f3b39, type: 3}
   m_PerlinScale: 0.5
   m_Z: 0

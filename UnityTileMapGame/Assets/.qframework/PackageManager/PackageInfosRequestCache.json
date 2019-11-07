@@ -3729,6 +3729,13 @@
       "readme": {
         "items": [
           {
+            "version": "v0.1.0",
+            "content": "添加了buff系统",
+            "author": "m_ShiHuai",
+            "date": "2019 年 11 月 07 日 19:55",
+            "VersionNumber": 100
+          },
+          {
             "version": "v0.0.9",
             "content": "MyTween重构了逻辑与mod代码，整理文件夹。",
             "author": "m_ShiHuai",
@@ -3766,6 +3773,25 @@
         ]
       },
       "PackageVersions": [
+        {
+          "Version": "v0.1.0",
+          "Type": 0,
+          "AccessRight": 0,
+          "DownloadUrl": "http://file.liangxiegame.com/MyFrameworkv0_1_0_958ed851_318d_48d0_98c4_9116a278c6b1.unitypackage",
+          "InstallPath": "Assets/test/MyFramework/",
+          "DocUrl": null,
+          "Readme": {
+            "version": "v0.1.0",
+            "content": "添加了buff系统",
+            "author": "m_ShiHuai",
+            "date": "2019 年 11 月 07 日 19:55",
+            "VersionNumber": 100
+          },
+          "Id": "ffd5e38f-d9ca-49bd-bc3b-5a0859ee5bd5",
+          "Name": "MyFramework",
+          "VersionNumber": 100,
+          "FileName": "MyFramework_v0.1.0.unitypackage"
+        },
         {
           "Version": "v0.0.9",
           "Type": 0,
@@ -3900,13 +3926,13 @@
           "FileName": "MyFramework_v0.0.5.unitypackage"
         }
       ],
-      "Version": "v0.0.9",
-      "DownloadUrl": "http://file.liangxiegame.com/MyFrameworkv0_0_9_d997cd05_713d_4f1c_80ce_570a4d3f7875.unitypackage",
+      "Version": "v0.1.0",
+      "DownloadUrl": "http://file.liangxiegame.com/MyFrameworkv0_1_0_958ed851_318d_48d0_98c4_9116a278c6b1.unitypackage",
       "InstallPath": "Assets/test/MyFramework/",
       "DocUrl": null,
       "Type": 0,
       "AccessRight": 0,
-      "VersionNumber": 9,
+      "VersionNumber": 100,
       "Installed": false
     },
     {
