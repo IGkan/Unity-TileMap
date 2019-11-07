@@ -24,7 +24,13 @@ namespace Tower
         public const string NAME = "UIHomePanel";
         
         [SerializeField()]
-        public UnityEngine.UI.Button Button;
+        public UnityEngine.UI.Button BtnStart;
+        
+        [SerializeField()]
+        public UnityEngine.UI.Button BtnLoad;
+        
+        [SerializeField()]
+        public UnityEngine.UI.Button BtnQuit;
         
         private UIHomePanelData mPrivateData = null;
         
@@ -43,7 +49,9 @@ namespace Tower
         
         protected override void ClearUIComponents()
         {
-            Button = null;
+            BtnStart = null;
+            BtnLoad = null;
+            BtnQuit = null;
             mData = null;
         }
     }

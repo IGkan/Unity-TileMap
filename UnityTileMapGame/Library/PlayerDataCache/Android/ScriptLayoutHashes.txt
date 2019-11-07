@@ -1,8 +1,8 @@
 Android
 PlayerPath?
-F:/GitHubDesktop/QFramework/TileMap/Unity-TileMap/UnityTileMapGame/Build/逃出遗迹.apk
+E:/LSF/GithubDesktop/UnityTileMapGame/Unity-TileMap/UnityTileMapGame/Build/逃出遗迹.apk
 SceneListBegin?
-Assets/Scenes/TileMap.unity
+Assets/Scenes/SampleScene.unity
 SceneListEnd?
 71bb6a6b6c8f052f948db64c7dd3ca4f Assembly-CSharp.dll:Unidux.Example.SceneTransition.PageStackRenderer
 2c4a64a2064bbbaafe6894ab5cc7a04a Assembly-CSharp.dll:Cinemachine.CinemachineStateDrivenCamera
