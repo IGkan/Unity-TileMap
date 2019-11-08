@@ -2,7 +2,7 @@ Win
 PlayerPath?
 E:/LSF/GithubDesktop/UnityTileMapGame/Unity-TileMap/UnityTileMapGame/Build/逃出遗迹.exe
 SceneListBegin?
-Assets/Scenes/逃出遗迹.unity
+Assets/Scenes/App.unity
 SceneListEnd?
 71bb6a6b6c8f052f948db64c7dd3ca4f Assembly-CSharp.dll:Unidux.Example.SceneTransition.PageStackRenderer
 2c4a64a2064bbbaafe6894ab5cc7a04a Assembly-CSharp.dll:Cinemachine.CinemachineStateDrivenCamera
@@ -26,7 +26,6 @@ e1bbf0ab858085e38fae6b12ebbdcd35 UnityEngine.Timeline.dll:UnityEngine.Timeline.P
 201e3fde670b00545944bb3db215c80a UnityEngine.Timeline.dll:UnityEngine.Timeline.TimelineAsset
 71bb6a6b6c8f052f948db64c7dd3ca4f UniRx.dll:UniRx.Triggers.ObservableMoveTrigger
 a2113831d3323f931007e1b3812dc814 Assembly-CSharp.dll:Cinemachine.CinemachineFollowZoom
-0029a932233262c5560bddd9bf777715 Assembly-CSharp.dll:.Rotate
 71bb6a6b6c8f052f948db64c7dd3ca4f UniRx.dll:UniRx.Triggers.ObservableUpdateTrigger
 e7a73f5f78ba6445195ec23b74a1ce2d Unity.TextMeshPro.dll:TMPro.TMP_ScrollbarEventHandler
 71bb6a6b6c8f052f948db64c7dd3ca4f UniRx.dll:UniRx.Triggers.ObservableVisibleTrigger
@@ -65,6 +64,7 @@ abf1930d8126d0b2e00e9449129a0190 UnityEngine.UI.dll:UnityEngine.EventSystems.Tou
 71bb6a6b6c8f052f948db64c7dd3ca4f Assembly-CSharp.dll:Unidux.Example.SceneTransition.PageWatcher
 98ad81e9f689a492509f07e75b810aaa Unity.TextMeshPro.dll:TMPro.TMP_InputField
 1e90d7d6a6263a531c8bfd67056e48ef Assembly-CSharp.dll:QFramework.UIManager
+374721929ed4be16a63f8cb5c9f230f2 Assembly-CSharp.dll:Tower.Monster
 cf9f5cf2c3145a37ac07f00e50e460f9 UnityEngine.UI.dll:UnityEngine.UI.AspectRatioFitter
 71bb6a6b6c8f052f948db64c7dd3ca4f UnityEngine.UI.dll:UnityEngine.EventSystems.BaseInput
 5fc094978ce3e3591a7500ed380d854a UnityEngine.UI.dll:UnityEngine.UI.Button
@@ -146,6 +146,7 @@ d251bf88db6c95a6b1aa0b69298da9ef UnityEngine.SpatialTracking.dll:UnityEngine.Spa
 71bb6a6b6c8f052f948db64c7dd3ca4f UniRx.dll:UniRx.Triggers.ObservableLateUpdateTrigger
 71bb6a6b6c8f052f948db64c7dd3ca4f Assembly-CSharp.dll:Unidux.Example.SceneTransition.SceneWatcher
 ab36ced446fbfea4462afaf79c72454e Assembly-CSharp.dll:Cinemachine.NoiseSettings
+71bb6a6b6c8f052f948db64c7dd3ca4f Assembly-CSharp.dll:Tower.App
 303ad70ce203ad874efe2965d0fbcff9 Unity.Analytics.Tracker.dll:UnityEngine.Analytics.AnalyticsEventTracker
 7fb9de8dcf73854b6b328eca1f7a6e6d Unity.Analytics.Tracker.dll:UnityEngine.Analytics.AnalyticsTracker
 984dcc0ba3707b7691fbdca8ff508d28 Assembly-CSharp.dll:QFramework.Empty4Raycast
@@ -164,6 +165,7 @@ a93b2012e0dadb91ac8ccb87e0ef3875 Assembly-CSharp.dll:Cinemachine.CinemachinePOV
 71bb6a6b6c8f052f948db64c7dd3ca4f UniRx.dll:UniRx.Triggers.ObservableDropTrigger
 71bb6a6b6c8f052f948db64c7dd3ca4f Assembly-CSharp.dll:QFramework.UIPointerDownEventListener
 71bb6a6b6c8f052f948db64c7dd3ca4f UniRx.dll:UniRx.Triggers.ObservableEventTrigger
+c3ea83b4793a4bbc8853bd89f7f207cd Assembly-CSharp.dll:Tower.UIEndPanel
 b3ab2106268377ffe25dd18ac23dca28 Unity.TextMeshPro.dll:TMPro.TMP_Asset
 0ba5e49f32f0d0e4ea81741aba009aa6 Assembly-CSharp.dll:Cinemachine.CinemachineOrbitalTransposer
 71bb6a6b6c8f052f948db64c7dd3ca4f UniRx.dll:UniRx.Triggers.ObservableBeginDragTrigger
@@ -182,7 +184,6 @@ c6e64c599e154c1f8f0ac07d045991f5 Assembly-CSharp.dll:QFramework.ViewController
 71bb6a6b6c8f052f948db64c7dd3ca4f Unity.TextMeshPro.dll:TMPro.TMP_SpriteAnimator
 405a90fef9c756e65119f9652ef050da Assembly-CSharp.dll:QFramework.Bind
 c0176761ddd2c0e85cab0f5fae95c053 Assembly-CSharp.dll:Unidux.Example.Todo.TodoFilterButtonDispatcher
-b3b88a83977f0095ee5fd9765e4de1e8 Assembly-CSharp.dll:.AnimationScript
 204ea02909ea3f738dafe3ff633d2a93 Assembly-CSharp.dll:Cinemachine.CinemachineTrackedDolly
 71bb6a6b6c8f052f948db64c7dd3ca4f Assembly-CSharp.dll:Cinemachine.CinemachinePipeline
 704dcd31abc789439bc3f3cd10b58c2b DOTween.dll:DG.Tweening.Core.DOTweenComponent
@@ -193,10 +194,10 @@ b3b88a83977f0095ee5fd9765e4de1e8 Assembly-CSharp.dll:.AnimationScript
 434f4aecc2be18cf18252249fe58143a Assembly-CSharp.dll:QFramework.UIPanelTester
 06a5dac2a6349a47bb654cce0be35abf Unity.2D.Tilemap.Extras.dll:UnityEngine.RuleOverrideTile
 71bb6a6b6c8f052f948db64c7dd3ca4f UniRx.dll:UniRx.Triggers.ObservableMouseTrigger
-a9b065d9aa0be98d2c27b883a5af23e0 Assembly-CSharp.dll:.GemBehaviour
 3d38a4eabfe8309a3e6b26c25648a26d Assembly-CSharp.dll:QFramework.UIEventListener
 4fd8bf02e3089425d3502e26c44ba31a Unity.TextMeshPro.dll:TMPro.TextContainer
 71bb6a6b6c8f052f948db64c7dd3ca4f UniRx.dll:UniRx.Triggers.ObservableTriggerTrigger
+60f35d2fdc56426c29870f12e44c41cd Assembly-CSharp.dll:Tower.UIGamePanel
 56df1fa7cea034df9863fe5a24200a32 Assembly-CSharp.dll:Cinemachine.CinemachineTargetGroup
 25d6a61a60f20a3fbc57140f20663630 Unity.2D.Tilemap.Extras.dll:UnityEngine.HexagonalRuleTile
 16ebcf52073172673c26b31fa4ea1397 Assembly-CSharp.dll:.PlayerPlatformerController
@@ -227,10 +228,10 @@ ff88ee9a3f9291bdaaf1cebc9d2c430b Assembly-CSharp.dll:Cinemachine.CinemachineGrou
 aff505990b3b2335b9af16f2524559b7 Assembly-CSharp.dll:Unidux.Example.List.Unidux
 ea413867059a29f7672d63a412acd0e8 Assembly-CSharp.dll:Unidux.Example.Middlewares.MiddlewaresBehaviour
 e3ca9c4491580eb6551b0ae794d34210 Assembly-CSharp.dll:Cinemachine.CinemachineBlendListCamera
+71bb6a6b6c8f052f948db64c7dd3ca4f Assembly-CSharp.dll:Tower.Test
 510fefd6a544e16a3ffefa557ddcba39 Unity.TextMeshPro.dll:TMPro.PackageResourceImporterWindow
 69a34aab7dbcedb95fb02a1b91d10788 Assembly-CSharp.dll:Cinemachine.CinemachineMixingCamera
 71bb6a6b6c8f052f948db64c7dd3ca4f HTTP.dll:CI.HttpClient.Core.Dispatcher
-490d22d131b22b2ab6dcc64adad2bd95 Assembly-CSharp.dll:.GemCollectedAudioModifier
 aa82b3ce4c0c9b227036c0337315c5d3 Unity.TextMeshPro.dll:TMPro.TMP_FontAsset
 71bb6a6b6c8f052f948db64c7dd3ca4f UniRx.dll:UniRx.Triggers.ObservableTransformChangedTrigger
 c4117cf32d2e7797e9e05272a419cd6e Assembly-CSharp.dll:Cinemachine.Timeline.CinemachineShot
@@ -250,6 +251,7 @@ fb6a1ea36b4f6ef5948d283d93760765 UnityEngine.GoogleAudioSpatializer.dll:UnityEng
 5b0391b7e3d9ea9db6c0a8fbd0ca23f6 UnityEngine.GoogleAudioSpatializer.dll:UnityEngine.Experimental.Audio.Google.GvrAudioSoundfieldExtension
 5b0391b7e3d9ea9db6c0a8fbd0ca23f6 UnityEngine.GoogleAudioSpatializer.dll:UnityEngine.Experimental.Audio.Google.GvrAudioSourceExtension
 71bb6a6b6c8f052f948db64c7dd3ca4f UniRx.dll:UniRx.Triggers.ObservablePointerUpTrigger
+c6bf90c1c67c7b79a9c14729b00d6df8 Assembly-CSharp.dll:.Prop
 931f489e44eadf809e9310429c99dde5 UnityEngine.GoogleAudioSpatializer.dll:UnityEngine.Experimental.Audio.Google.GvrAudioListenerExtension
 fb6a1ea36b4f6ef5948d283d93760765 UnityEngine.GoogleAudioSpatializer.dll:UnityEngine.Experimental.Audio.Google.GvrAudioRoom
 5b0391b7e3d9ea9db6c0a8fbd0ca23f6 UnityEngine.GoogleAudioSpatializer.dll:UnityEngine.Experimental.Audio.Google.GvrAudioSoundfieldExtension
@@ -275,6 +277,7 @@ aff505990b3b2335b9af16f2524559b7 Assembly-CSharp.dll:Unidux.Example.MultipleStat
 11bdd61587db747672b66c52442395d8 Assembly-CSharp.dll:Unidux.Example.MultipleState.MultipleStateRenderer
 aff505990b3b2335b9af16f2524559b7 Assembly-CSharp.dll:Unidux.Example.SimpleHttp.Unidux
 d791aa6007fa3640be1164ea75bb087d Unity.TextMeshPro.dll:TMPro.TMP_StyleSheet
+f77bb8e18741200df2eefb2658881037 Assembly-CSharp.dll:Tower.Player
 98643c3dbc51de049f9e72715f36fccf Assembly-CSharp.dll:QFramework.UITransitionPanel
 aff505990b3b2335b9af16f2524559b7 Assembly-CSharp.dll:Unidux.Example.Todo.Unidux
 71bb6a6b6c8f052f948db64c7dd3ca4f UniRx.dll:UniRx.Triggers.ObservableRectTransformTrigger
@@ -289,6 +292,7 @@ c6666661329916e218bee7f5e79e60f5 Unity.TextMeshPro.dll:TMPro.TextMeshPro
 1499a48ac3d0845156558fd3f330ac71 Assembly-CSharp.dll:QFramework.UISpriteAnimation
 812878f67863098ec49e0afb21b2eb18 Assembly-CSharp.dll:Unidux.Example.Todo.TodoCellRenderer
 71bb6a6b6c8f052f948db64c7dd3ca4f UniRx.dll:UniRx.Triggers.ObservableStateMachineTrigger
+71bb6a6b6c8f052f948db64c7dd3ca4f Assembly-CSharp.dll:Tower.MonsterBase
 71bb6a6b6c8f052f948db64c7dd3ca4f UniRx.dll:UniRx.Triggers.ObservableSubmitTrigger
 8649814970b42d345b89944b862453cc Unity.TextMeshPro.dll:TMPro.TMP_SubMesh
 6bb60dd44c68969ca5843807e98ac75f Assembly-CSharp.dll:QFramework.UIScrollPageMark
@@ -298,6 +302,5 @@ cb17b1c858582ef5dfd9fd4047d7a225 Assembly-CSharp.dll:Unidux.Example.List.ListRen
 2c38da0504d94a36e68bd2308d606900 Assembly-CSharp.dll:Cinemachine.CinemachineBasicMultiChannelPerlin
 1615d3bb1db164c1672020cea49440ce Assembly-CSharp.dll:Cinemachine.CinemachineClearShot
 aff505990b3b2335b9af16f2524559b7 Assembly-CSharp.dll:Unidux.Example.SceneTransition.Unidux
-f3747362caa711b3139a861ad37718c6 Assembly-CSharp.dll:Tower.UIHomePanel
+adb7d43264610b02a01ba84cf9708231 Assembly-CSharp.dll:Tower.UIHomePanel
 71bb6a6b6c8f052f948db64c7dd3ca4f Assembly-CSharp.dll:QFramework.Timer
-71bb6a6b6c8f052f948db64c7dd3ca4f Assembly-CSharp.dll:.PlayerTempCtr

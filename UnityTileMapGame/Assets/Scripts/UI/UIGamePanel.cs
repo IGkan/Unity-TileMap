@@ -14,6 +14,7 @@ namespace Tower
     using UnityEngine.UI;
     using UniRx;
     using QF.Extensions;
+    using QF.Res;
 
     public class UIGamePanelData : QFramework.UIPanelData
     {
@@ -29,6 +30,7 @@ namespace Tower
         protected override void OnInit(QFramework.IUIData uiData)
         {
             mData = uiData as UIGamePanelData ?? new UIGamePanelData();
+            this.SendMsg(new AudioMusicMsg("bg", true));
 
         }
 
@@ -37,6 +39,9 @@ namespace Tower
             PlayerData.Instance.Life.Select(life => "生命: " + life).SubscribeToText(LifeText);
             PlayerData.Instance.Attack.Select(life => "攻击: " + life).SubscribeToText(AttackText);
             PlayerData.Instance.Defend.Select(life => "防御: " + life).SubscribeToText(DefendText);
+            PlayerData.Instance.Level.Select(life => "等级: " + life).SubscribeToText(LevelText);
+            PlayerData.Instance.Experience.Select(life => "经验: " + life).SubscribeToText(ExperienceText);
+            PlayerData.Instance.Gold.Select(life => "金币: " + life).SubscribeToText(GoldText);
         }
 
         protected override void OnOpen(QFramework.IUIData uiData)

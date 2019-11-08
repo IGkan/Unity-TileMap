@@ -33,6 +33,15 @@ namespace Tower
         public UnityEngine.UI.Text DefendText;
         
         [SerializeField()]
+        public UnityEngine.UI.Text LevelText;
+        
+        [SerializeField()]
+        public UnityEngine.UI.Text ExperienceText;
+        
+        [SerializeField()]
+        public UnityEngine.UI.Text GoldText;
+        
+        [SerializeField()]
         public UnityEngine.UI.Text tipText;
         
         private UIGamePanelData mPrivateData = null;
@@ -55,6 +64,9 @@ namespace Tower
             LifeText = null;
             AttackText = null;
             DefendText = null;
+            LevelText = null;
+            ExperienceText = null;
+            GoldText = null;
             tipText = null;
             mData = null;
         }

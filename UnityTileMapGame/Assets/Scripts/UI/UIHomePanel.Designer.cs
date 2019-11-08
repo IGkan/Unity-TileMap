@@ -27,7 +27,10 @@ namespace Tower
         public UnityEngine.UI.Button BtnStart;
         
         [SerializeField()]
-        public UnityEngine.UI.Button BtnLoad;
+        public UnityEngine.UI.Button BtnReload;
+        
+        [SerializeField()]
+        public UnityEngine.UI.Button BtnGameInfo;
         
         [SerializeField()]
         public UnityEngine.UI.Button BtnQuit;
@@ -50,7 +53,8 @@ namespace Tower
         protected override void ClearUIComponents()
         {
             BtnStart = null;
-            BtnLoad = null;
+            BtnReload = null;
+            BtnGameInfo = null;
             BtnQuit = null;
             mData = null;
         }

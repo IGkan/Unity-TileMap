@@ -11,15 +11,9 @@
 namespace Tower
 {
     using QFramework;
-    using System;
-    using System.Collections;
-    using System.Collections.Generic;
-    using System.Linq;
     using UnityEngine;
-    using UnityEngine.SceneManagement;
-    using UnityEngine.UI;
-    
-    
+    using QF.Res;
+
     public class UIHomePanelData : QFramework.UIPanelData
     {
     }
@@ -35,23 +29,29 @@ namespace Tower
         protected override void OnInit(QFramework.IUIData uiData)
         {
             mData = uiData as UIHomePanelData ?? new UIHomePanelData();
-            // please add init code here
+
+            this.SendMsg(new AudioMusicMsg("start", true));
         }
 
         protected override void RegisterUIEvent()
         {
             BtnStart.onClick.AddListener(() =>
             {
-                UIMgr.ClosePanel<UIHomePanel>();
-                SceneManager.LoadScene(1);
+                CloseSelf();
+                PlayerData.Instance.InitPlayerData();
                 UIMgr.OpenPanel<UIGamePanel>();
             });
-            BtnLoad.onClick.AddListener(()=>
+            BtnReload.onClick.AddListener(()=>
             {
-
+              //PlayerData.Instance.LoadPlayerData();
             });
-            BtnLoad.onClick.AddListener(() =>
+            BtnGameInfo.onClick.AddListener(() =>
             {
+              
+            });
+            BtnQuit.onClick.AddListener(() =>
+            {
+                //PlayerData.Instance.SavePlayerData();
                 Application.Quit();
             });
         }

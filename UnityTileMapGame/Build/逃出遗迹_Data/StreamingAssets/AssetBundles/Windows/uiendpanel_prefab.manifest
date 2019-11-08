@@ -1,0 +1,38 @@
+ManifestFileVersion: 0
+CRC: 3761497280
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 82196e438986a6e4d91692369b420caa
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 5fa176eb2db4ca13bd6faec163739fe5
+HashAppended: 0
+ClassTypes:
+- Class: 1
+  Script: {instanceID: 0}
+- Class: 21
+  Script: {instanceID: 0}
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 48
+  Script: {instanceID: 0}
+- Class: 114
+  Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+- Class: 114
+  Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 28bd7936c4b1bd042ad5b2ba59ad1a02, type: 3}
+- Class: 115
+  Script: {instanceID: 0}
+- Class: 128
+  Script: {instanceID: 0}
+- Class: 213
+  Script: {instanceID: 0}
+- Class: 222
+  Script: {instanceID: 0}
+- Class: 224
+  Script: {instanceID: 0}
+Assets:
+- Assets/Art/UIPrefab/UIEndPanel.prefab
+Dependencies: []

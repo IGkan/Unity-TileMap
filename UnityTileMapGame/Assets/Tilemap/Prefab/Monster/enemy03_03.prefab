@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 1948441841805152290}
   - component: {fileID: 4308285729570594120}
   - component: {fileID: 4819637195688922508}
+  - component: {fileID: 707757140735126242}
   m_Layer: 0
   m_Name: enemy03_03
   m_TagString: Untagged
@@ -113,3 +114,22 @@ PolygonCollider2D:
       - {x: 0.34375, y: -0.25}
       - {x: 0.34375, y: 0.15625}
       - {x: 0.28125, y: 0.3125}
+--- !u!114 &707757140735126242
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 500881651130080607}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4b3bb5529716c904dabe567301fa0765, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: enemy03_03
+  Level: 3
+  Life: 24
+  Attack: 4
+  Defend: 2
+  Experience: 3
+  Gold: 3
