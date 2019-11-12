@@ -321,9 +321,6 @@
     <Reference Include="SyntaxTree.VisualStudio.Unity.Bridge">
       <HintPath>C:/Program Files (x86)/Microsoft Visual Studio Tools for Unity/16.0/Editor/SyntaxTree.VisualStudio.Unity.Bridge.dll</HintPath>
     </Reference>
-    <Reference Include="JetBrains.Rider.Unity.Editor.Plugin.Repacked">
-      <HintPath>E:/LSF/GithubDesktop/UnityTileMapGame/Unity-TileMap/UnityTileMapGame/Assets/Plugins/Editor/JetBrains/JetBrains.Rider.Unity.Editor.Plugin.Repacked.dll</HintPath>
-    </Reference>
     <Reference Include="QF.Log">
       <HintPath>E:/LSF/GithubDesktop/UnityTileMapGame/Unity-TileMap/UnityTileMapGame/Assets/QFramework/Framework/0.PackageKit/Plugins/QF.Log.dll</HintPath>
     </Reference>
