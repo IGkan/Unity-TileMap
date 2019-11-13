@@ -1,0 +1,51 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2d5751a2c961df945a34295ccf5e576d, type: 3}
+  m_Name: Monster2 Prefab brush
+  m_EditorClassIdentifier: 
+  m_Cells:
+  - m_Tile: {fileID: 0}
+    m_Matrix:
+      e00: 1
+      e01: 0
+      e02: 0
+      e03: 0
+      e10: 0
+      e11: 1
+      e12: 0
+      e13: 0
+      e20: 0
+      e21: 0
+      e22: 1
+      e23: 0
+      e30: 0
+      e31: 0
+      e32: 0
+      e33: 1
+    m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Pivot: {x: 0, y: 0, z: 0}
+  m_Prefabs:
+  - {fileID: 500881651130080607, guid: c8e89a8339bb9d74db09923160df018b, type: 3}
+  - {fileID: 500881651130080607, guid: 20149a4b4ed19c342a0aee637593a539, type: 3}
+  - {fileID: 500881651130080607, guid: b30197b5c9920b04db55e8f6367d61dc, type: 3}
+  - {fileID: 500881651130080607, guid: 312302253e6e01b468227283fad5b03d, type: 3}
+  - {fileID: 2053555120407950319, guid: 2e79e1fbe6d86e546a461ac8e12603b6, type: 3}
+  - {fileID: 7555821452583339982, guid: a2d7268eeb999fb4aba8012c0634cfef, type: 3}
+  - {fileID: 5102045853889465271, guid: 108ba09f6bc8bb84d876412bea22bc5b, type: 3}
+  - {fileID: 9153049231436810158, guid: b0db8c6f356013a46934f47598d19af4, type: 3}
+  - {fileID: 3525526902285701807, guid: 0a973e7349d1a094c94f1e8a382592ab, type: 3}
+  - {fileID: 8669371268829372652, guid: b38f3a18fc1ae354ea20029672673372, type: 3}
+  - {fileID: 8741854931463003878, guid: ac793439bd29fb34d95abf401b4a3afd, type: 3}
+  - {fileID: 3501425831982439515, guid: c0a3bb4a9395c8743a84eecca0e05d54, type: 3}
+  m_PerlinScale: 0.5
+  m_Z: 0

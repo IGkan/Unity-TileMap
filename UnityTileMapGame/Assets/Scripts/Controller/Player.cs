@@ -13,37 +13,55 @@ namespace Tower
 
         Vector3 mMoveDirection;
         float mMoveSpeed = 0.3f;
+        private bool isMoving;
+
         void Update()
         {
+            //transform.position = Vector3.MoveTowards(transform.position, new Vector3(-17.5f, -4.5f, 0), mMoveSpeed * Time.deltaTime);
+
+
             if (Input.GetKeyDown(KeyCode.Escape))
             {
                 UIMgr.OpenPanel<UIHomePanel>();
             }
-            if(Input.GetKey(KeyCode.W))
+
+            if (isMoving == false)
             {
-                mMoveDirection = Vector3.up;
-                PlayerMove();
-            }
-            if (Input.GetKey(KeyCode.S))
-            {
-                mMoveDirection = Vector3.down;
-                PlayerMove();
-            }
-            if (Input.GetKey(KeyCode.A))
-            {
-                mMoveDirection = Vector3.left;
-                PlayerMove();
-            }
-            if (Input.GetKey(KeyCode.D))
-            {
-                mMoveDirection = Vector3.right;
-                PlayerMove();
+                if (Input.GetKey(KeyCode.W))
+                {
+                    isMoving = true;
+                    mMoveDirection = Vector3.up;
+                    PlayerMove();
+                }
+                if (Input.GetKey(KeyCode.S))
+                {
+                    isMoving = true;
+                    mMoveDirection = Vector3.down;
+                    PlayerMove();
+                }
+                if (Input.GetKey(KeyCode.A))
+                {
+                    isMoving = true;
+                    mMoveDirection = Vector3.left;
+                    PlayerMove();
+                }
+                if (Input.GetKey(KeyCode.D))
+                {
+                    isMoving = true;
+                    mMoveDirection = Vector3.right;
+                    PlayerMove();
+                }
             }
         }
         void PlayerMove()
         {
-            transform.DOMove(transform.position + mMoveDirection, mMoveSpeed).SetEase(Ease.Linear);
-            //transform.DOMove(transform.position + mMoveDirection, mMoveSpeed).SetEase(Ease.Linear).OnComplete(changeMovingState);
+            //transform.DOLocalMove(transform.position + mMoveDirection, mMoveSpeed).SetEase(Ease.Linear);
+            //transform.GetComponent<Rigidbody2D>().DOMove(transform.position + mMoveDirection, mMoveSpeed).SetEase(Ease.Linear).OnComplete(changeMovingState);
+            //transform.DOMove(transform.position + mMoveDirection, mMoveSpeed,).SetEase(Ease.Linear).OnComplete(changeMovingState);
+        }
+        void changeMovingState()
+        {
+            isMoving = false;
         }
         private void OnTriggerEnter2D(Collider2D collision)
         {
