@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 5799947393884284458}
   - component: {fileID: 2882210436215072077}
   - component: {fileID: 6943404717540902504}
-  - component: {fileID: 4696525268244607412}
+  - component: {fileID: 5987568926760956919}
   m_Layer: 0
   m_Name: PurpleDoor
   m_TagString: Door
@@ -100,8 +100,8 @@ MonoBehaviour:
   Level: 0
   Experience: 0
   Gold: 0
---- !u!60 &4696525268244607412
-PolygonCollider2D:
+--- !u!61 &5987568926760956919
+BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -110,7 +110,7 @@ PolygonCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -123,9 +123,6 @@ PolygonCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Points:
-    m_Paths:
-    - - {x: -0.5, y: 0.5}
-      - {x: -0.5, y: -0.5}
-      - {x: 0.5, y: -0.5}
-      - {x: 0.5, y: 0.5}
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1}
+  m_EdgeRadius: 0

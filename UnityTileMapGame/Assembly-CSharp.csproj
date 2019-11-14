@@ -379,6 +379,7 @@
     <Compile Include="Assets\QFrameworkData\QAssets.cs" />
     <Compile Include="Assets\Scripts\App.cs" />
     <Compile Include="Assets\Scripts\Controller\Player.cs" />
+    <Compile Include="Assets\Scripts\Controller\TileDataMsg.cs" />
     <Compile Include="Assets\Scripts\Model\PlayerData.cs" />
     <Compile Include="Assets\Scripts\Monster\Monster.cs" />
     <Compile Include="Assets\Scripts\Monster\MonsterBase.cs" />

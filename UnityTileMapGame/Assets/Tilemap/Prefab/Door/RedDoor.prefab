@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 8590315560672740737}
   - component: {fileID: 7045095145139422674}
   - component: {fileID: 170498485662008389}
-  - component: {fileID: 2488503043749766783}
+  - component: {fileID: 2907330886304939672}
   m_Layer: 0
   m_Name: RedDoor
   m_TagString: Door
@@ -100,8 +100,8 @@ MonoBehaviour:
   Level: 0
   Experience: 0
   Gold: 0
---- !u!60 &2488503043749766783
-PolygonCollider2D:
+--- !u!61 &2907330886304939672
+BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -110,7 +110,7 @@ PolygonCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -123,9 +123,6 @@ PolygonCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Points:
-    m_Paths:
-    - - {x: -0.5, y: 0.5}
-      - {x: -0.5, y: -0.5}
-      - {x: 0.5, y: -0.5}
-      - {x: 0.5, y: 0.5}
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1}
+  m_EdgeRadius: 0

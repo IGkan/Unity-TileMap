@@ -17,6 +17,9 @@ namespace Tower
         public IntReactiveProperty Defend = new IntReactiveProperty(2);
         public IntReactiveProperty Experience = new IntReactiveProperty(0);
         public IntReactiveProperty Gold = new IntReactiveProperty(0);
+        public IntReactiveProperty YellowKey = new IntReactiveProperty(1);
+        public IntReactiveProperty RedKey = new IntReactiveProperty(1);
+        public IntReactiveProperty PurpleKey = new IntReactiveProperty(1);
 
         public void InitPlayerData()
         {

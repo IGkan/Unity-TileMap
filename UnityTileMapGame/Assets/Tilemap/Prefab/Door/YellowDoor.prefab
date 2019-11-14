@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 1711772529604131187}
   - component: {fileID: 4130907354529121590}
   - component: {fileID: 2100104751252241143}
-  - component: {fileID: 2557373421348590017}
+  - component: {fileID: 7641953510284143026}
   m_Layer: 0
   m_Name: YellowDoor
   m_TagString: Door
@@ -100,8 +100,8 @@ MonoBehaviour:
   Level: 0
   Experience: 0
   Gold: 0
---- !u!60 &2557373421348590017
-PolygonCollider2D:
+--- !u!61 &7641953510284143026
+BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -110,7 +110,7 @@ PolygonCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -123,9 +123,6 @@ PolygonCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Points:
-    m_Paths:
-    - - {x: -0.5, y: 0.5}
-      - {x: -0.5, y: -0.5}
-      - {x: 0.5, y: -0.5}
-      - {x: 0.5, y: 0.5}
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1}
+  m_EdgeRadius: 0
