@@ -1357,6 +1357,13 @@
       "readme": {
         "items": [
           {
+            "version": "v0.2.0",
+            "content": "变动很大、现在暂不稳定，不推荐更新",
+            "author": "liangxie",
+            "date": "2019 年 11 月 14 日 23:36",
+            "VersionNumber": 200
+          },
+          {
             "version": "v0.1.20",
             "content": "升级  PackageKit 到 v0.0.37",
             "author": "liangxie",
@@ -1499,6 +1506,25 @@
         ]
       },
       "PackageVersions": [
+        {
+          "Version": "v0.2.0",
+          "Type": 0,
+          "AccessRight": 0,
+          "DownloadUrl": "http://file.liangxiegame.com/Frameworkv0_2_0_e4799fd6_440f_45b6_a042_7c3f5fb19752.unitypackage",
+          "InstallPath": "Assets/QFramework/Framework",
+          "DocUrl": null,
+          "Readme": {
+            "version": "v0.2.0",
+            "content": "变动很大、现在暂不稳定，不推荐更新",
+            "author": "liangxie",
+            "date": "2019 年 11 月 14 日 23:36",
+            "VersionNumber": 200
+          },
+          "Id": "7290929f-f3e6-4504-83d4-4c05de0867f8",
+          "Name": "Framework",
+          "VersionNumber": 200,
+          "FileName": "Framework_v0.2.0.unitypackage"
+        },
         {
           "Version": "v0.1.20",
           "Type": 0,
@@ -1880,13 +1906,13 @@
           "FileName": "_v0.1.1.unitypackage"
         }
       ],
-      "Version": "v0.1.20",
-      "DownloadUrl": "http://file.liangxiegame.com/Frameworkv0_1_20_5daaa038_530b_4971_90e2_b9a65e9f8a34.unitypackage",
+      "Version": "v0.2.0",
+      "DownloadUrl": "http://file.liangxiegame.com/Frameworkv0_2_0_e4799fd6_440f_45b6_a042_7c3f5fb19752.unitypackage",
       "InstallPath": "Assets/QFramework/Framework",
       "DocUrl": null,
       "Type": 0,
       "AccessRight": 0,
-      "VersionNumber": 120,
+      "VersionNumber": 200,
       "Installed": true
     },
     {

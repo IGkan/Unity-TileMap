@@ -25,7 +25,6 @@ namespace Tower
         }
         void Update()
         {
-            Debug.Log(mPlayerData.RedKey.Value);
             if (Input.GetKeyDown(KeyCode.Escape))
             {
                 UIMgr.OpenPanel<UIHomePanel>();
@@ -77,6 +76,7 @@ namespace Tower
                     switch (hit.collider.tag)
                     {
                         case "Npc":
+
                             break;
                         case "Door":
                             // 将要移动到的下一个位置是门
@@ -130,6 +130,16 @@ namespace Tower
                             }
                             break;
                         case "Monster":
+                            int count;
+                            bool fightWinBool = hit.collider.transform.GetComponent<Monster>().MyOnTriggerEnter2D(hit.collider,out count);
+                            if (fightWinBool)
+                            {
+                                PlayerMove(mMoveDirectionCell);
+                            }
+                            else
+                            {
+                                ChangeMovingState();
+                            }
                             break;
                         case "Prop":
                             break;

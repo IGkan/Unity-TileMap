@@ -17,7 +17,7 @@ namespace Tower
         public int Experience;
         public int Gold; 
 
-        MonsterBase monster;
+        public MonsterBase monster;
         private void Reset()
         {
             Name = transform.name;
@@ -31,20 +31,22 @@ namespace Tower
 
         }
 
-        protected override void OnTriggerEnter2D(Collider2D other)
+        public  bool MyOnTriggerEnter2D(Collider2D other ,out int count)
         {
             var playerData = PlayerData.Instance;
             if (playerData.Attack.Value > Defend)
             {
                 this.SendMsg(new AudioSoundMsg("fight"));
-                int count = Execute(monster, 1);// 1 => 回调且执行,直接作用 PlayerData, count 怪物预计对玩家造成的伤害
+                count = Execute(monster, 1);// 1 => 回调且执行,直接作用 PlayerData, count 怪物预计对玩家造成的伤害
                 playerData.Life.Value -= count;
                 playerData.Experience.Value += Experience;
                 playerData.Gold.Value += Gold;
+                return true;
             }
             else
             {
-                GameObject.Find("tipText").GetComponent<Text>().text = "您打不过它!请继续提升战斗力!";
+                //GameObject.Find("tipText").GetComponent<Text>().text = "您打不过它!请继续提升战斗力!";
+                return false;
             }
         }
 
