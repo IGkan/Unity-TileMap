@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 3319472740475943454}
   - component: {fileID: 8280834837251603663}
   - component: {fileID: 7408383026658485110}
-  - component: {fileID: 6814001563342507739}
+  - component: {fileID: 7353040575946459404}
   m_Layer: 0
   m_Name: Gold
   m_TagString: Prop
@@ -99,9 +99,12 @@ MonoBehaviour:
   Defend: 0
   Level: 0
   Experience: 0
-  Gold: 0
---- !u!60 &6814001563342507739
-PolygonCollider2D:
+  Gold: 2
+  YellowKey: 0
+  RedKey: 0
+  PurpleKey: 0
+--- !u!61 &7353040575946459404
+BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -123,10 +126,6 @@ PolygonCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Points:
-    m_Paths:
-    - - {x: -0.5, y: 0.5}
-      - {x: -0.5, y: -0.5}
-      - {x: 0.375, y: -0.5}
-      - {x: 0.5, y: -0.21875}
-      - {x: 0.5, y: 0.5}
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1}
+  m_EdgeRadius: 0

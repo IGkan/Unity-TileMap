@@ -11,10 +11,10 @@ GameObject:
   - component: {fileID: 7174172609222770523}
   - component: {fileID: 6335327067560159771}
   - component: {fileID: 8681410990698323135}
-  - component: {fileID: 4759556331287227116}
+  - component: {fileID: 1501006014}
   m_Layer: 0
   m_Name: enemy11_4
-  m_TagString: Untagged
+  m_TagString: Monster
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -100,8 +100,9 @@ MonoBehaviour:
   Defend: 30
   Experience: 30
   Gold: 30
---- !u!60 &4759556331287227116
-PolygonCollider2D:
+  monster: {fileID: 0}
+--- !u!61 &1501006014
+BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -123,11 +124,6 @@ PolygonCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Points:
-    m_Paths:
-    - - {x: -0.5, y: 0.5}
-      - {x: -0.5, y: -0.46875}
-      - {x: -0.4375, y: -0.46875}
-      - {x: -0.375, y: -0.5}
-      - {x: 0.5, y: -0.5}
-      - {x: 0.5, y: 0.5}
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1}
+  m_EdgeRadius: 0

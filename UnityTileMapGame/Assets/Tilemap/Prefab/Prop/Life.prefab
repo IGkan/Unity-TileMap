@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 6351764680929624864}
   - component: {fileID: 4815176848484155377}
   - component: {fileID: 3399155128184801375}
-  - component: {fileID: 6769868535190278271}
+  - component: {fileID: 4358716198730847509}
   m_Layer: 0
   m_Name: Life
   m_TagString: Prop
@@ -94,14 +94,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Name: 
-  Life: 0
+  Life: 2
   Attack: 0
   Defend: 0
   Level: 0
   Experience: 0
   Gold: 0
---- !u!60 &6769868535190278271
-PolygonCollider2D:
+  YellowKey: 0
+  RedKey: 0
+  PurpleKey: 0
+--- !u!61 &4358716198730847509
+BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -123,14 +126,6 @@ PolygonCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Points:
-    m_Paths:
-    - - {x: 0.3125, y: 0.5}
-      - {x: -0.25, y: 0.5}
-      - {x: -0.3125, y: 0.46875}
-      - {x: -0.34375, y: 0.25}
-      - {x: -0.34375, y: -0.375}
-      - {x: -0.21875, y: -0.46875}
-      - {x: 0.25, y: -0.46875}
-      - {x: 0.34375, y: -0.4375}
-      - {x: 0.34375, y: 0.46875}
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1}
+  m_EdgeRadius: 0

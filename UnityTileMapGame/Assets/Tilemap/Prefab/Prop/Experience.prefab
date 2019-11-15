@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 3779834212779268913}
   - component: {fileID: 5441654397834897890}
   - component: {fileID: 6548443796223195689}
-  - component: {fileID: 6295462815376767821}
+  - component: {fileID: 8700283724985325458}
   m_Layer: 0
   m_Name: Experience
   m_TagString: Prop
@@ -98,10 +98,13 @@ MonoBehaviour:
   Attack: 0
   Defend: 0
   Level: 0
-  Experience: 0
+  Experience: 2
   Gold: 0
---- !u!60 &6295462815376767821
-PolygonCollider2D:
+  YellowKey: 0
+  RedKey: 0
+  PurpleKey: 0
+--- !u!61 &8700283724985325458
+BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -123,14 +126,6 @@ PolygonCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Points:
-    m_Paths:
-    - - {x: 0.3125, y: 0.5}
-      - {x: -0.25, y: 0.5}
-      - {x: -0.3125, y: 0.46875}
-      - {x: -0.34375, y: 0.25}
-      - {x: -0.34375, y: -0.375}
-      - {x: -0.21875, y: -0.46875}
-      - {x: 0.25, y: -0.46875}
-      - {x: 0.34375, y: -0.4375}
-      - {x: 0.34375, y: 0.46875}
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1}
+  m_EdgeRadius: 0

@@ -6,6 +6,9 @@ TagManager:
   tags:
   - Prop
   - Door
+  - Npc
+  - Stair
+  - Monster
   layers:
   - Default
   - TransparentFX

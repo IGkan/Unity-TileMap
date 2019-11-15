@@ -1,27 +1,36 @@
 namespace Tower
 {
     using DG.Tweening;
+    using QF;
     using QF.Res;
     using QFramework;
-    using System;
     using UnityEngine;
     using UnityEngine.Tilemaps;
-    using static UnityEngine.Tilemaps.Tile;
 
-    public class Player : QMonoBehaviour
+    public class Player : QMonoBehaviour,ISingleton
     {
         public PlayerData mPlayerData = PlayerData.Instance;
 
         public override IManager Manager => UIManager.Instance;
+        public static Player Instance
+        {
+            get { return MonoSingletonProperty<Player>.Instance ;}
+        }
 
         public Tilemap wallTilemap;
 
         Vector3Int mTargetTilePos;
-        float mMoveSpeed = 0.3f;
+        public float mMoveSpeed = 0.3f;
         private bool isMoving;
+        bool mCanMove = true;
+       
         private void Start()
         {
-            mTargetTilePos = new Vector3Int(Mathf.FloorToInt(transform.position.x),Mathf.FloorToInt(transform.position.y),0); // 初始化玩家所在tile坐标 向下取整
+            InitPlayerTilePos();
+        }
+
+        public void InitPlayerTilePos () {
+            mTargetTilePos = new Vector3Int(Mathf.FloorToInt(transform.position.x), Mathf.FloorToInt(transform.position.y), 0); // 初始化玩家所在tile坐标 向下取整
         }
         void Update()
         {
@@ -30,33 +39,33 @@ namespace Tower
                 UIMgr.OpenPanel<UIHomePanel>();
             }
 
-            if (!isMoving)
+            if (!isMoving && mCanMove)
             {
                 if (Input.GetKey(KeyCode.W))
                 {
-                    isMoving = true;
                     JudgeMove(new Vector3Int(0,1,0));
+                    return;
                 }
                 if (Input.GetKey(KeyCode.S))
                 {
-                    isMoving = true;
                     JudgeMove(new Vector3Int(0, -1,0));
+                    return;
+
                 }
                 if (Input.GetKey(KeyCode.A))
                 {
-                    isMoving = true;
                     JudgeMove(new Vector3Int(-1, 0,0));
+                    return;
+
                 }
                 if (Input.GetKey(KeyCode.D))
                 {
-                    isMoving = true;
                     JudgeMove(new Vector3Int(1, 0,0));
+                    return;
+
                 }
             }
-            else
-            {
-
-            }
+            
         }
 
         /// <summary>
@@ -64,6 +73,8 @@ namespace Tower
         /// </summary>
         void JudgeMove(Vector3Int mMoveDirectionCell)
         {
+            isMoving = true;
+
             //取出主角下一步将要移动到的所在的方格名稱
             bool hasTile = wallTilemap.HasTile(mTargetTilePos + mMoveDirectionCell);
 
@@ -73,18 +84,39 @@ namespace Tower
                 RaycastHit2D hit = Physics2D.Raycast(transform.position + mMoveDirectionCell, Vector2.zero);
                 if (hit.collider != null)
                 {
+                    Debug.Log(hit.collider.name);
+                   Transform hitTransform = hit.collider.transform;
                     switch (hit.collider.tag)
                     {
                         case "Npc":
-
+                            ChangeMovingState();
+                            this.SendMsg(new AudioSoundMsg("talk"));
+                            // 打开对话系统
+                            switch (hit.collider.name)
+                            {
+                                case "npc1_12":
+                                    mPlayerData.YellowKey.Value += 1;
+                                    mPlayerData.RedKey.Value += 1;
+                                    mPlayerData.PurpleKey.Value += 1;
+                                    break;
+                                default:
+                                    break;
+                            }
+                            break;
+                        case "Stair":
+                            ChangeMovingState();
+                            this.SendMsg(new AudioSoundMsg("prop"));
+                            hitTransform.GetComponent<Stair>().ChangeStair(hit.collider.name);
                             break;
                         case "Door":
                             // 将要移动到的下一个位置是门
                             switch (hit.collider.name)
                             {
                                 case "YellowDoor":
-                                    if(mPlayerData.YellowKey.Value > 0)
+                                    if(mPlayerData.RedKey.Value > 0)
                                     {
+                                        this.SendMsg(new AudioSoundMsg("door"));
+
                                         mPlayerData.YellowKey.Value -= 1;
                                         hit.collider.gameObject.SetActive(false);
                                         PlayerMove(mMoveDirectionCell);
@@ -99,6 +131,8 @@ namespace Tower
                                 case "RedDoor":
                                     if (mPlayerData.RedKey.Value > 0)
                                     {
+                                        this.SendMsg(new AudioSoundMsg("door"));
+
                                         mPlayerData.RedKey.Value -= 1;
                                         hit.collider.gameObject.SetActive(false);
                                         PlayerMove(mMoveDirectionCell);
@@ -113,6 +147,8 @@ namespace Tower
                                 case "PurpleDoor":
                                     if (mPlayerData.PurpleKey.Value > 0)
                                     {
+                                        this.SendMsg(new AudioSoundMsg("door"));
+
                                         mPlayerData.PurpleKey.Value -= 1;
                                         hit.collider.gameObject.SetActive(false);
                                         PlayerMove(mMoveDirectionCell);
@@ -130,10 +166,10 @@ namespace Tower
                             }
                             break;
                         case "Monster":
-                            int count;
-                            bool fightWinBool = hit.collider.transform.GetComponent<Monster>().MyOnTriggerEnter2D(hit.collider,out count);
+                            bool fightWinBool = hitTransform.GetComponent<Monster>().MonsterExecute(hit.collider);
                             if (fightWinBool)
                             {
+                                this.SendMsg(new AudioSoundMsg("fight"));
                                 PlayerMove(mMoveDirectionCell);
                             }
                             else
@@ -142,9 +178,10 @@ namespace Tower
                             }
                             break;
                         case "Prop":
+                            this.SendMsg(new AudioSoundMsg("prop"));
+                            hitTransform.GetComponent<Prop>().PropExecute(hitTransform.name);
+                            PlayerMove(mMoveDirectionCell);
                             break;
-
-
                         default:
                             break;
                     }
@@ -171,40 +208,10 @@ namespace Tower
         {
             isMoving = false;
         }
-        private void OnTriggerEnter2D(Collider2D collision)
-        {
-            var playerData = PlayerData.Instance;
-            if (collision.CompareTag("Prop"))
-            {
-                this.SendMsg(new AudioSoundMsg("prop"));
-                switch (collision.name)
-                {
-                    case "Life":
-                        playerData.Life.Value += 10;
-                        break;
-                    case "Attack":
-                        playerData.Attack.Value += 2;
-                        break;
-                    case "Defend":
-                        playerData.Defend.Value += 2;
-                        break;
-                    case "Level":
-                        playerData.Level.Value += 1;
-                        break;
-                    case "Experience":
-                        playerData.Experience.Value += 10;
-                        break;
-                    case "Gold":
-                        playerData.Gold.Value += 10;
-                        break;
-                    default:
-                        break;
-                }
-            }
-           
-        }
 
-      
+        public void OnSingletonInit()
+        {
+        }
     }
    
 

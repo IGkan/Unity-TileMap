@@ -1357,6 +1357,27 @@
       "readme": {
         "items": [
           {
+            "version": "v0.5.0",
+            "content": "add editor http，不推荐更新",
+            "author": "liangxie",
+            "date": "2019 年 11 月 15 日 17:09",
+            "VersionNumber": 500
+          },
+          {
+            "version": "v0.4.0",
+            "content": "不推荐更新",
+            "author": "liangxie",
+            "date": "2019 年 11 月 15 日 12:51",
+            "VersionNumber": 400
+          },
+          {
+            "version": "v0.3.0",
+            "content": "不推荐更新",
+            "author": "liangxie",
+            "date": "2019 年 11 月 15 日 01:37",
+            "VersionNumber": 300
+          },
+          {
             "version": "v0.2.0",
             "content": "变动很大、现在暂不稳定，不推荐更新",
             "author": "liangxie",
@@ -1506,6 +1527,63 @@
         ]
       },
       "PackageVersions": [
+        {
+          "Version": "v0.5.0",
+          "Type": 0,
+          "AccessRight": 0,
+          "DownloadUrl": "http://file.liangxiegame.com/Frameworkv0_5_0_b0ba0698_5df6_4e3a_b28b_dbc4098045a3.unitypackage",
+          "InstallPath": "Assets/QFramework/Framework",
+          "DocUrl": null,
+          "Readme": {
+            "version": "v0.5.0",
+            "content": "add editor http，不推荐更新",
+            "author": "liangxie",
+            "date": "2019 年 11 月 15 日 17:09",
+            "VersionNumber": 500
+          },
+          "Id": "c3ea39e9-f56f-431a-9a73-47a955464e44",
+          "Name": "Framework",
+          "VersionNumber": 500,
+          "FileName": "Framework_v0.5.0.unitypackage"
+        },
+        {
+          "Version": "v0.4.0",
+          "Type": 0,
+          "AccessRight": 0,
+          "DownloadUrl": "http://file.liangxiegame.com/Frameworkv0_4_0_79ad66a4_ba87_4f7e_9fe2_ccfef2782c1e.unitypackage",
+          "InstallPath": "Assets/QFramework/Framework",
+          "DocUrl": null,
+          "Readme": {
+            "version": "v0.4.0",
+            "content": "不推荐更新",
+            "author": "liangxie",
+            "date": "2019 年 11 月 15 日 12:51",
+            "VersionNumber": 400
+          },
+          "Id": "84962b24-2f49-4eab-9592-1ecc3fa806b0",
+          "Name": "Framework",
+          "VersionNumber": 400,
+          "FileName": "Framework_v0.4.0.unitypackage"
+        },
+        {
+          "Version": "v0.3.0",
+          "Type": 0,
+          "AccessRight": 0,
+          "DownloadUrl": "http://file.liangxiegame.com/Frameworkv0_3_0_a6726a97_9fee_4924_97a3_5ed506b49e0a.unitypackage",
+          "InstallPath": "Assets/QFramework/Framework",
+          "DocUrl": null,
+          "Readme": {
+            "version": "v0.3.0",
+            "content": "不推荐更新",
+            "author": "liangxie",
+            "date": "2019 年 11 月 15 日 01:37",
+            "VersionNumber": 300
+          },
+          "Id": "6db7e3c2-b8c1-4d8c-bd3e-87d64f0e1653",
+          "Name": "Framework",
+          "VersionNumber": 300,
+          "FileName": "Framework_v0.3.0.unitypackage"
+        },
         {
           "Version": "v0.2.0",
           "Type": 0,
@@ -1906,13 +1984,13 @@
           "FileName": "_v0.1.1.unitypackage"
         }
       ],
-      "Version": "v0.2.0",
-      "DownloadUrl": "http://file.liangxiegame.com/Frameworkv0_2_0_e4799fd6_440f_45b6_a042_7c3f5fb19752.unitypackage",
+      "Version": "v0.5.0",
+      "DownloadUrl": "http://file.liangxiegame.com/Frameworkv0_5_0_b0ba0698_5df6_4e3a_b28b_dbc4098045a3.unitypackage",
       "InstallPath": "Assets/QFramework/Framework",
       "DocUrl": null,
       "Type": 0,
       "AccessRight": 0,
-      "VersionNumber": 200,
+      "VersionNumber": 500,
       "Installed": true
     },
     {
@@ -4505,127 +4583,6 @@
       "Installed": false
     },
     {
-      "Name": "XiaoxiaoLib",
-      "readme": {
-        "items": [
-          {
-            "version": "v0.0.4",
-            "content": null,
-            "author": "liangxie",
-            "date": "2019 年 08 月 11 日 11:54",
-            "VersionNumber": 4
-          },
-          {
-            "version": "v0.0.3",
-            "content": null,
-            "author": "liangxie",
-            "date": "2019 年 08 月 11 日 11:51",
-            "VersionNumber": 3
-          },
-          {
-            "version": "v0.0.2",
-            "content": null,
-            "author": "liangxie",
-            "date": "2019 年 08 月 11 日 11:49",
-            "VersionNumber": 2
-          },
-          {
-            "version": "v0.0.1",
-            "content": null,
-            "author": "liangxie",
-            "date": "2019 年 08 月 07 日 10:11",
-            "VersionNumber": 1
-          }
-        ]
-      },
-      "PackageVersions": [
-        {
-          "Version": "v0.0.4",
-          "Type": 0,
-          "AccessRight": 0,
-          "DownloadUrl": "http://file.liangxiegame.com/XiaoxiaoLibv0_0_4_161ae019_a992_4603_b45c_bf4e5e01b764.unitypackage",
-          "InstallPath": "Assets/XiaoxiaoLib/",
-          "DocUrl": null,
-          "Readme": {
-            "version": "v0.0.4",
-            "content": null,
-            "author": "liangxie",
-            "date": "2019 年 08 月 11 日 11:54",
-            "VersionNumber": 4
-          },
-          "Id": "9489da09-8d31-4825-9049-b81d1f83aea8",
-          "Name": "XiaoxiaoLib",
-          "VersionNumber": 4,
-          "FileName": "XiaoxiaoLib_v0.0.4.unitypackage"
-        },
-        {
-          "Version": "v0.0.3",
-          "Type": 0,
-          "AccessRight": 0,
-          "DownloadUrl": "http://file.liangxiegame.com/XiaoxiaoLibv0_0_3_52f91f70_911a_4046_a9e0_7ec8afb8cba5.unitypackage",
-          "InstallPath": "Assets/XiaoxiaoLib/",
-          "DocUrl": null,
-          "Readme": {
-            "version": "v0.0.3",
-            "content": null,
-            "author": "liangxie",
-            "date": "2019 年 08 月 11 日 11:51",
-            "VersionNumber": 3
-          },
-          "Id": "46805405-9df3-4bae-86a1-036349429bcf",
-          "Name": "XiaoxiaoLib",
-          "VersionNumber": 3,
-          "FileName": "XiaoxiaoLib_v0.0.3.unitypackage"
-        },
-        {
-          "Version": "v0.0.2",
-          "Type": 0,
-          "AccessRight": 0,
-          "DownloadUrl": "http://file.liangxiegame.com/XiaoxiaoLibv0_0_2_4d0629c4_9e90_4d0e_b9af_78c5a66a453c.unitypackage",
-          "InstallPath": "Assets/XiaoxiaoLib/",
-          "DocUrl": null,
-          "Readme": {
-            "version": "v0.0.2",
-            "content": null,
-            "author": "liangxie",
-            "date": "2019 年 08 月 11 日 11:49",
-            "VersionNumber": 2
-          },
-          "Id": "8feef4d3-0068-4201-affa-fe9591496227",
-          "Name": "XiaoxiaoLib",
-          "VersionNumber": 2,
-          "FileName": "XiaoxiaoLib_v0.0.2.unitypackage"
-        },
-        {
-          "Version": "v0.0.1",
-          "Type": 0,
-          "AccessRight": 0,
-          "DownloadUrl": "http://file.liangxiegame.com/XiaoxiaoLibv0_0_1_76314e4a_c381_4977_9307_45696219f527.unitypackage",
-          "InstallPath": "Assets/XiaoxiaoLib/",
-          "DocUrl": null,
-          "Readme": {
-            "version": "v0.0.1",
-            "content": null,
-            "author": "liangxie",
-            "date": "2019 年 08 月 07 日 10:11",
-            "VersionNumber": 1
-          },
-          "Id": "aedc00f0-e3f2-43c3-b63e-fbe3f433e801",
-          "Name": "XiaoxiaoLib",
-          "VersionNumber": 1,
-          "FileName": "XiaoxiaoLib_v0.0.1.unitypackage"
-        }
-      ],
-      "Version": "v0.0.4",
-      "DownloadUrl": "http://file.liangxiegame.com/XiaoxiaoLibv0_0_4_161ae019_a992_4603_b45c_bf4e5e01b764.unitypackage",
-      "InstallPath": "Assets/XiaoxiaoLib/",
-      "DocUrl": null,
-      "Type": 0,
-      "AccessRight": 0,
-      "VersionNumber": 4,
-      "Installed": false
-    },
-    {
       "Name": "1.EditorPlatform",
       "readme": {
         "items": [
@@ -5143,6 +5100,101 @@
       "Installed": false
     },
     {
+      "Name": "JsonDotnetExtensions",
+      "readme": {
+        "items": [
+          {
+            "version": "v0.0.3",
+            "content": "JsonDotnet Extension",
+            "author": "liangxie",
+            "date": "2019 年 11 月 15 日 00:21",
+            "VersionNumber": 3
+          },
+          {
+            "version": "v0.0.2",
+            "content": "添加 SerializeHelper",
+            "author": "liangxie",
+            "date": "2019 年 11 月 15 日 00:16",
+            "VersionNumber": 2
+          },
+          {
+            "version": "v0.0.1",
+            "content": "json dotnet extension",
+            "author": "liangxie",
+            "date": "2019 年 11 月 14 日 16:02",
+            "VersionNumber": 1
+          }
+        ]
+      },
+      "PackageVersions": [
+        {
+          "Version": "v0.0.3",
+          "Type": 3,
+          "AccessRight": 0,
+          "DownloadUrl": "http://file.liangxiegame.com/JsonDotnetExtensionsv0_0_3_b32ef22c_504c_4cdc_835b_65de89ca7fb7.unitypackage",
+          "InstallPath": "Assets/QFramework/Extensions/JsonDotnetExtensions/",
+          "DocUrl": null,
+          "Readme": {
+            "version": "v0.0.3",
+            "content": "JsonDotnet Extension",
+            "author": "liangxie",
+            "date": "2019 年 11 月 15 日 00:21",
+            "VersionNumber": 3
+          },
+          "Id": "66902e5b-30aa-4b77-aadd-174dbbc9e233",
+          "Name": "JsonDotnetExtensions",
+          "VersionNumber": 3,
+          "FileName": "JsonDotnetExtensions_v0.0.3.unitypackage"
+        },
+        {
+          "Version": "v0.0.2",
+          "Type": 0,
+          "AccessRight": 0,
+          "DownloadUrl": "http://file.liangxiegame.com/JsonDotnetExtensionsv0_0_2_7152338c_2729_486e_a3d3_bed2093658e0.unitypackage",
+          "InstallPath": "Assets/QFramework/Extensions/JsonDotnetExtensions/",
+          "DocUrl": null,
+          "Readme": {
+            "version": "v0.0.2",
+            "content": "添加 SerializeHelper",
+            "author": "liangxie",
+            "date": "2019 年 11 月 15 日 00:16",
+            "VersionNumber": 2
+          },
+          "Id": "f8464ac8-ee67-41be-8133-d0825ea26ecf",
+          "Name": "JsonDotnetExtensions",
+          "VersionNumber": 2,
+          "FileName": "JsonDotnetExtensions_v0.0.2.unitypackage"
+        },
+        {
+          "Version": "v0.0.1",
+          "Type": 0,
+          "AccessRight": 0,
+          "DownloadUrl": "http://file.liangxiegame.com/JsonDotnetExtensionsv0_0_1_a967b83b_0991_4396_a0c6_41a74f3f7d74.unitypackage",
+          "InstallPath": "Assets/QFramework/Extensions/JsonDotnetExtensions/",
+          "DocUrl": null,
+          "Readme": {
+            "version": "v0.0.1",
+            "content": "json dotnet extension",
+            "author": "liangxie",
+            "date": "2019 年 11 月 14 日 16:02",
+            "VersionNumber": 1
+          },
+          "Id": "9f2a95ed-3eca-43c2-a064-a2da842e4ab4",
+          "Name": "JsonDotnetExtensions",
+          "VersionNumber": 1,
+          "FileName": "JsonDotnetExtensions_v0.0.1.unitypackage"
+        }
+      ],
+      "Version": "v0.0.3",
+      "DownloadUrl": "http://file.liangxiegame.com/JsonDotnetExtensionsv0_0_3_b32ef22c_504c_4cdc_835b_65de89ca7fb7.unitypackage",
+      "InstallPath": "Assets/QFramework/Extensions/JsonDotnetExtensions/",
+      "DocUrl": null,
+      "Type": 3,
+      "AccessRight": 0,
+      "VersionNumber": 3,
+      "Installed": false
+    },
+    {
       "Name": "UIImageWaveDirectionShader",
       "readme": {
         "items": [
@@ -5579,49 +5631,6 @@
       "Type": 0,
       "AccessRight": 0,
       "VersionNumber": 3,
-      "Installed": false
-    },
-    {
-      "Name": "JsonDotnetExtensions",
-      "readme": {
-        "items": [
-          {
-            "version": "v0.0.1",
-            "content": "json dotnet extension",
-            "author": "liangxie",
-            "date": "2019 年 11 月 14 日 16:02",
-            "VersionNumber": 1
-          }
-        ]
-      },
-      "PackageVersions": [
-        {
-          "Version": "v0.0.1",
-          "Type": 0,
-          "AccessRight": 0,
-          "DownloadUrl": "http://file.liangxiegame.com/JsonDotnetExtensionsv0_0_1_a967b83b_0991_4396_a0c6_41a74f3f7d74.unitypackage",
-          "InstallPath": "Assets/QFramework/Extensions/JsonDotnetExtensions/",
-          "DocUrl": null,
-          "Readme": {
-            "version": "v0.0.1",
-            "content": "json dotnet extension",
-            "author": "liangxie",
-            "date": "2019 年 11 月 14 日 16:02",
-            "VersionNumber": 1
-          },
-          "Id": "9f2a95ed-3eca-43c2-a064-a2da842e4ab4",
-          "Name": "JsonDotnetExtensions",
-          "VersionNumber": 1,
-          "FileName": "JsonDotnetExtensions_v0.0.1.unitypackage"
-        }
-      ],
-      "Version": "v0.0.1",
-      "DownloadUrl": "http://file.liangxiegame.com/JsonDotnetExtensionsv0_0_1_a967b83b_0991_4396_a0c6_41a74f3f7d74.unitypackage",
-      "InstallPath": "Assets/QFramework/Extensions/JsonDotnetExtensions/",
-      "DocUrl": null,
-      "Type": 0,
-      "AccessRight": 0,
-      "VersionNumber": 1,
       "Installed": false
     },
     {

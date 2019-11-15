@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 4152151109032214510}
   - component: {fileID: 6469277703606344197}
   - component: {fileID: 9014955644162709440}
-  - component: {fileID: 9118663919591116127}
+  - component: {fileID: 1871974104744675643}
   m_Layer: 0
   m_Name: Defend
   m_TagString: Prop
@@ -96,12 +96,15 @@ MonoBehaviour:
   Name: 
   Life: 0
   Attack: 0
-  Defend: 0
+  Defend: 2
   Level: 0
   Experience: 0
   Gold: 0
---- !u!60 &9118663919591116127
-PolygonCollider2D:
+  YellowKey: 0
+  RedKey: 0
+  PurpleKey: 0
+--- !u!61 &1871974104744675643
+BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -123,13 +126,6 @@ PolygonCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Points:
-    m_Paths:
-    - - {x: -0.375, y: 0.40625}
-      - {x: -0.46875, y: 0.3125}
-      - {x: -0.46875, y: -0.3125}
-      - {x: -0.1875, y: -0.46875}
-      - {x: 0.28125, y: -0.46875}
-      - {x: 0.40625, y: -0.34375}
-      - {x: 0.40625, y: 0.3125}
-      - {x: 0.375, y: 0.40625}
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1}
+  m_EdgeRadius: 0

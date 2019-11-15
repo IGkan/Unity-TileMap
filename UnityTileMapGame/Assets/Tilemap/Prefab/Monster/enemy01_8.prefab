@@ -10,11 +10,11 @@ GameObject:
   m_Component:
   - component: {fileID: 3472209869238843260}
   - component: {fileID: 3472209869238843261}
-  - component: {fileID: 2745275815339196329}
   - component: {fileID: 4217602162417066342}
+  - component: {fileID: 7300624960473963229}
   m_Layer: 0
   m_Name: enemy01_8
-  m_TagString: Untagged
+  m_TagString: Monster
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -81,52 +81,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!60 &2745275815339196329
-PolygonCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3472209869238843264}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.9375, y: 0.96875}
-    newSize: {x: 2.8125, y: 2.90625}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  m_Points:
-    m_Paths:
-    - - {x: -0.03125, y: -0.484375}
-      - {x: 0.33333334, y: -0.484375}
-      - {x: 0.34375, y: -0.41145834}
-      - {x: 0.3541667, y: -0.359375}
-      - {x: 0.4375, y: -0.31770834}
-      - {x: 0.46875, y: -0.24479167}
-      - {x: 0.46875, y: 0.453125}
-      - {x: 0.4166667, y: 0.484375}
-      - {x: -0.42708334, y: 0.484375}
-      - {x: -0.46875, y: 0.4322917}
-      - {x: -0.46875, y: -0.24479167}
-      - {x: -0.40625, y: -0.359375}
-      - {x: -0.34375, y: -0.328125}
-      - {x: -0.3125, y: -0.19270834}
-      - {x: -0.3541667, y: -0.390625}
-      - {x: -0.33333334, y: -0.484375}
-      - {x: -0.14583334, y: -0.484375}
-      - {x: -0.114583336, y: -0.47395834}
-      - {x: -0.10416667, y: -0.453125}
-      - {x: -0.10416667, y: -0.34895834}
-      - {x: -0.10416667, y: -0.390625}
 --- !u!114 &4217602162417066342
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -146,3 +100,30 @@ MonoBehaviour:
   Defend: 29
   Experience: 29
   Gold: 29
+  monster: {fileID: 0}
+--- !u!61 &7300624960473963229
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3472209869238843264}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.9375, y: 0.96875}
+    newSize: {x: 2.8125, y: 2.90625}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.9375, y: 0.96875}
+  m_EdgeRadius: 0
