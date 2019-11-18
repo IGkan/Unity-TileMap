@@ -40,10 +40,12 @@ namespace Tower
             mResLoader.LoadSync<GameObject>("GameScenePrefab")
                 .Instantiate();
             PlayerData.Instance.InitPlayerData();
+            SendMsg(new AudioMusicMsg("bg"));
         }
 
         protected override void RegisterUIEvent()
         {
+            // MVP模式,数据订阅
             PlayerData.Instance.Name.Select(content => "名字: " + content).SubscribeToText(Name);
             PlayerData.Instance.CurrntFloor.Select(content => "第 " + content + " 层").SubscribeToText(CurrntFloor);
             PlayerData.Instance.Level.Select(content => "等级: " + content).SubscribeToText(Level);
@@ -55,6 +57,12 @@ namespace Tower
             PlayerData.Instance.YellowKey.Select(content => "黄钥匙: " + content).SubscribeToText(YellowKey);
             PlayerData.Instance.RedKey.Select(content => "红钥匙: " + content).SubscribeToText(RedKey);
             PlayerData.Instance.PurpleKey.Select(content => "紫钥匙: " + content).SubscribeToText(PurpleKey);
+
+            // UI事件
+            BtnContinue.onClick.AddListener(()=> {
+                GuidePanel.gameObject.SetActive(false); // 关闭引导界面
+                Player.Instance.mCanMove = true; // 重新让玩家可移动
+            });
 
         }
         protected override void OnOpen(QFramework.IUIData uiData)

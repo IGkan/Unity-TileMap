@@ -10,6 +10,7 @@ namespace Tower
     {
         private PlayerData() { }
 
+        public BoolReactiveProperty NewGame = new BoolReactiveProperty(true);
         public StringReactiveProperty Name = new StringReactiveProperty("Mr Li");
         public IntReactiveProperty CurrntFloor = new IntReactiveProperty(1);
         public IntReactiveProperty Level = new IntReactiveProperty(1);
@@ -24,6 +25,7 @@ namespace Tower
 
         public void InitPlayerData()
         {
+            NewGame.Value = true;
             Name.Value = "Mr Li";
             CurrntFloor.Value = 1;
             Level.Value = 1;

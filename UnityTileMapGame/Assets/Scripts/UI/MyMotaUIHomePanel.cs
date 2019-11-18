@@ -46,6 +46,7 @@ namespace Tower
             BtnStart.onClick.AddListener(() =>
             {
                 CloseSelf();
+                PlayerData.Instance.NewGame.Value = true;
                 UIMgr.OpenPanel<MyMotaUIGamePanel>();
             });
         }

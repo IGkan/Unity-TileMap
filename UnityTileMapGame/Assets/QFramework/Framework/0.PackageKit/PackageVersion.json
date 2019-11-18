@@ -1,19 +1,19 @@
 {
-  "Version": "v0.0.36",
+  "Version": "v0.0.35",
   "Type": 0,
   "AccessRight": 0,
   "DownloadUrl": null,
   "InstallPath": "Assets/QFramework/Framework/0.PackageKit/",
   "DocUrl": "http://qf.lianxiegame.com",
   "Readme": {
-    "version": "v0.0.36",
-    "content": "修复 random extension's bug",
+    "version": "v0.0.35",
+    "content": "包管理器支持排序",
     "author": "liangxie",
-    "date": "2019 年 11 月 05 日 11:40",
-    "VersionNumber": 36
+    "date": "2019 年 10 月 20 日 12:08",
+    "VersionNumber": 35
   },
   "Id": null,
   "Name": "0.PackageKit",
-  "VersionNumber": 36,
-  "FileName": "0.PackageKit_v0.0.36.unitypackage"
+  "VersionNumber": 35,
+  "FileName": "0.PackageKit_v0.0.35.unitypackage"
 }

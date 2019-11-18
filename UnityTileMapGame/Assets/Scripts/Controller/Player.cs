@@ -2,19 +2,21 @@ namespace Tower
 {
     using DG.Tweening;
     using QF;
+    using QF.Action;
+    using QF.Extensions;
     using QF.Res;
     using QFramework;
     using UnityEngine;
     using UnityEngine.Tilemaps;
 
-    public class Player : QMonoBehaviour,ISingleton
+    public class Player : QMonoBehaviour, ISingleton
     {
         public PlayerData mPlayerData = PlayerData.Instance;
 
         public override IManager Manager => UIManager.Instance;
         public static Player Instance
         {
-            get { return MonoSingletonProperty<Player>.Instance ;}
+            get { return MonoSingletonProperty<Player>.Instance; }
         }
 
         public Tilemap wallTilemap;
@@ -22,14 +24,16 @@ namespace Tower
         Vector3Int mTargetTilePos;
         public float mMoveSpeed = 0.3f;
         private bool isMoving;
-        bool mCanMove = true;
-       
+        public bool mCanMove = true;
+        string mColliderName;
+
         private void Start()
         {
             InitPlayerTilePos();
         }
 
-        public void InitPlayerTilePos () {
+        public void InitPlayerTilePos()
+        {
             mTargetTilePos = new Vector3Int(Mathf.FloorToInt(transform.position.x), Mathf.FloorToInt(transform.position.y), 0); // 初始化玩家所在tile坐标 向下取整
         }
         void Update()
@@ -43,29 +47,29 @@ namespace Tower
             {
                 if (Input.GetKey(KeyCode.W))
                 {
-                    JudgeMove(new Vector3Int(0,1,0));
+                    JudgeMove(new Vector3Int(0, 1, 0));
                     return;
                 }
                 if (Input.GetKey(KeyCode.S))
                 {
-                    JudgeMove(new Vector3Int(0, -1,0));
+                    JudgeMove(new Vector3Int(0, -1, 0));
                     return;
 
                 }
                 if (Input.GetKey(KeyCode.A))
                 {
-                    JudgeMove(new Vector3Int(-1, 0,0));
+                    JudgeMove(new Vector3Int(-1, 0, 0));
                     return;
 
                 }
                 if (Input.GetKey(KeyCode.D))
                 {
-                    JudgeMove(new Vector3Int(1, 0,0));
+                    JudgeMove(new Vector3Int(1, 0, 0));
                     return;
 
                 }
             }
-            
+
         }
 
         /// <summary>
@@ -80,12 +84,18 @@ namespace Tower
 
             if (!hasTile)
             {
-             
+
                 RaycastHit2D hit = Physics2D.Raycast(transform.position + mMoveDirectionCell, Vector2.zero);
                 if (hit.collider != null)
                 {
+                    if (hit.collider.name + transform.position.x == mColliderName) // + transform.position.x 是因为需要避免两次碰到相同的collider
+                    {
+                        ChangeMovingState();
+                        return;
+                    }
+                    mColliderName = hit.collider.name + transform.position.x;
                     Debug.Log(hit.collider.name);
-                   Transform hitTransform = hit.collider.transform;
+                    Transform hitTransform = hit.collider.transform;
                     switch (hit.collider.tag)
                     {
                         case "Npc":
@@ -95,25 +105,35 @@ namespace Tower
                             switch (hit.collider.name)
                             {
                                 case "npc1_12":
-                                    mPlayerData.YellowKey.Value += 1;
-                                    mPlayerData.RedKey.Value += 1;
-                                    mPlayerData.PurpleKey.Value += 1;
+                                    if (mPlayerData.NewGame.Value)
+                                    {
+                                        UIMgr.GetPanel<MyMotaUIGamePanel>().GuidePanel.gameObject.SetActive(true);
+                                        mCanMove = false;
+                                        mPlayerData.YellowKey.Value += 1;
+                                        mPlayerData.RedKey.Value += 1;
+                                        mPlayerData.PurpleKey.Value += 1;
+                                        mPlayerData.NewGame.Value = false;
+                                    }
                                     break;
                                 default:
                                     break;
                             }
                             break;
                         case "Stair":
-                            ChangeMovingState();
                             this.SendMsg(new AudioSoundMsg("prop"));
                             hitTransform.GetComponent<Stair>().ChangeStair(hit.collider.name);
+                            this.Sequence()
+                                 .Delay(1.0f)
+                                 .Event(() => Log.I("Delayed 1 second"))
+                                 .Event(() =>ChangeMovingState())
+                                 .Begin();
                             break;
                         case "Door":
                             // 将要移动到的下一个位置是门
                             switch (hit.collider.name)
                             {
                                 case "YellowDoor":
-                                    if(mPlayerData.RedKey.Value > 0)
+                                    if (mPlayerData.RedKey.Value > 0)
                                     {
                                         this.SendMsg(new AudioSoundMsg("door"));
 
@@ -213,6 +233,6 @@ namespace Tower
         {
         }
     }
-   
+
 
 }

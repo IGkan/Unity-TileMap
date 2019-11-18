@@ -71,6 +71,12 @@ namespace Tower
         [SerializeField()]
         public UnityEngine.UI.Button Button2;
         
+        [SerializeField()]
+        public UnityEngine.UI.Image GuidePanel;
+        
+        [SerializeField()]
+        public UnityEngine.UI.Button BtnContinue;
+        
         private MyMotaUIGamePanelData mPrivateData = null;
         
         public MyMotaUIGamePanelData mData
@@ -104,6 +110,8 @@ namespace Tower
             Button1 = null;
             MenuBtn = null;
             Button2 = null;
+            GuidePanel = null;
+            BtnContinue = null;
             mData = null;
         }
     }
