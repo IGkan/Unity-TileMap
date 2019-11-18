@@ -87,465 +87,6 @@
       "Installed": false
     },
     {
-      "Name": "SpriteShader",
-      "readme": {
-        "items": [
-          {
-            "version": "v0.0.18",
-            "content": "burn",
-            "author": "liangxie",
-            "date": "2019 年 11 月 06 日 15:42",
-            "VersionNumber": 18
-          },
-          {
-            "version": "v0.0.17",
-            "content": "toon fire",
-            "author": "liangxie",
-            "date": "2019 年 10 月 31 日 22:21",
-            "VersionNumber": 17
-          },
-          {
-            "version": "v0.0.16",
-            "content": "水面效果 和 涂鸦效果 实现",
-            "author": "liangxie",
-            "date": "2019 年 10 月 29 日 01:49",
-            "VersionNumber": 16
-          },
-          {
-            "version": "v0.0.15",
-            "content": "add black hole",
-            "author": "liangxie",
-            "date": "2019 年 10 月 29 日 00:10",
-            "VersionNumber": 15
-          },
-          {
-            "version": "v0.0.14",
-            "content": "add rect add grid",
-            "author": "liangxie",
-            "date": "2019 年 10 月 26 日 17:27",
-            "VersionNumber": 14
-          },
-          {
-            "version": "v0.0.12",
-            "content": "add sin and cos",
-            "author": "liangxie",
-            "date": "2019 年 10 月 25 日 21:36",
-            "VersionNumber": 12
-          },
-          {
-            "version": "v0.0.11",
-            "content": "add dline",
-            "author": "liangxie",
-            "date": "2019 年 10 月 24 日 20:02",
-            "VersionNumber": 11
-          },
-          {
-            "version": "v0.0.10",
-            "content": "添加 RightHalf 和 GradientRightHalf",
-            "author": "liangxie",
-            "date": "2019 年 10 月 24 日 16:51",
-            "VersionNumber": 10
-          },
-          {
-            "version": "v0.0.9",
-            "content": "add additive shader",
-            "author": "liangxie",
-            "date": "2019 年 10 月 23 日 21:25",
-            "VersionNumber": 9
-          },
-          {
-            "version": "v0.0.8",
-            "content": "添加颜色填充效果",
-            "author": "liangxie",
-            "date": "2019 年 10 月 05 日 15:21",
-            "VersionNumber": 8
-          },
-          {
-            "version": "v0.0.7",
-            "content": "添加铅笔效果",
-            "author": "liangxie",
-            "date": "2019 年 10 月 05 日 01:05",
-            "VersionNumber": 7
-          },
-          {
-            "version": "v0.0.6",
-            "content": "添加描边 Shader",
-            "author": "liangxie",
-            "date": "2019 年 10 月 04 日 23:53",
-            "VersionNumber": 6
-          },
-          {
-            "version": "v0.0.5",
-            "content": "添加边缘检测的 Shader",
-            "author": "liangxie",
-            "date": "2019 年 10 月 03 日 23:09",
-            "VersionNumber": 5
-          },
-          {
-            "version": "v0.0.4",
-            "content": "添加锐化效果",
-            "author": "liangxie",
-            "date": "2019 年 10 月 02 日 16:55",
-            "VersionNumber": 4
-          },
-          {
-            "version": "v0.0.3",
-            "content": "添加 4 gradient",
-            "author": "liangxie",
-            "date": "2019 年 09 月 29 日 16:24",
-            "VersionNumber": 3
-          },
-          {
-            "version": "v0.0.2",
-            "content": "完成颜色置灰案例",
-            "author": "liangxie",
-            "date": "2019 年 09 月 27 日 16:50",
-            "VersionNumber": 2
-          },
-          {
-            "version": "v0.0.1",
-            "content": "实现 Gray ",
-            "author": "liangxie",
-            "date": "2019 年 09 月 25 日 16:15",
-            "VersionNumber": 1
-          }
-        ]
-      },
-      "PackageVersions": [
-        {
-          "Version": "v0.0.18",
-          "Type": 6,
-          "AccessRight": 0,
-          "DownloadUrl": "http://file.liangxiegame.com/SpriteShaderv0_0_18_56c1ab19_19c4_473b_a70e_c26905dc3db0.unitypackage",
-          "InstallPath": "Assets/QFramework/Pro/Shader/SpriteShader/",
-          "DocUrl": null,
-          "Readme": {
-            "version": "v0.0.18",
-            "content": "burn",
-            "author": "liangxie",
-            "date": "2019 年 11 月 06 日 15:42",
-            "VersionNumber": 18
-          },
-          "Id": "d997915b-61e4-483e-aac5-5fa67c0e2910",
-          "Name": "SpriteShader",
-          "VersionNumber": 18,
-          "FileName": "SpriteShader_v0.0.18.unitypackage"
-        },
-        {
-          "Version": "v0.0.17",
-          "Type": 6,
-          "AccessRight": 0,
-          "DownloadUrl": "http://file.liangxiegame.com/SpriteShaderv0_0_17_b6c1bb63_d67e_4a84_a428_f593277088a0.unitypackage",
-          "InstallPath": "Assets/QFramework/Pro/Shader/SpriteShader/",
-          "DocUrl": null,
-          "Readme": {
-            "version": "v0.0.17",
-            "content": "toon fire",
-            "author": "liangxie",
-            "date": "2019 年 10 月 31 日 22:21",
-            "VersionNumber": 17
-          },
-          "Id": "26fb95d4-368e-417b-b8da-6169e1b1a0df",
-          "Name": "SpriteShader",
-          "VersionNumber": 17,
-          "FileName": "SpriteShader_v0.0.17.unitypackage"
-        },
-        {
-          "Version": "v0.0.16",
-          "Type": 6,
-          "AccessRight": 0,
-          "DownloadUrl": "http://file.liangxiegame.com/SpriteShaderv0_0_16_e51b06b1_5f83_4427_b97f_244bd9676cee.unitypackage",
-          "InstallPath": "Assets/QFramework/Pro/Shader/SpriteShader/",
-          "DocUrl": null,
-          "Readme": {
-            "version": "v0.0.16",
-            "content": "水面效果 和 涂鸦效果 实现",
-            "author": "liangxie",
-            "date": "2019 年 10 月 29 日 01:49",
-            "VersionNumber": 16
-          },
-          "Id": "ae8dda20-f1e9-4448-9c5b-664a95aa6eee",
-          "Name": "SpriteShader",
-          "VersionNumber": 16,
-          "FileName": "SpriteShader_v0.0.16.unitypackage"
-        },
-        {
-          "Version": "v0.0.15",
-          "Type": 6,
-          "AccessRight": 0,
-          "DownloadUrl": "http://file.liangxiegame.com/SpriteShaderv0_0_15_eacc635a_dbb8_47ad_8ad9_010f5584611c.unitypackage",
-          "InstallPath": "Assets/QFramework/Pro/Shader/SpriteShader/",
-          "DocUrl": null,
-          "Readme": {
-            "version": "v0.0.15",
-            "content": "add black hole",
-            "author": "liangxie",
-            "date": "2019 年 10 月 29 日 00:10",
-            "VersionNumber": 15
-          },
-          "Id": "a3c3ae7a-26df-4b5d-bce4-ec2fb263bc7f",
-          "Name": "SpriteShader",
-          "VersionNumber": 15,
-          "FileName": "SpriteShader_v0.0.15.unitypackage"
-        },
-        {
-          "Version": "v0.0.14",
-          "Type": 6,
-          "AccessRight": 0,
-          "DownloadUrl": "http://file.liangxiegame.com/SpriteShaderv0_0_14_f80503df_de88_4067_bb55_a0b1d52ad0aa.unitypackage",
-          "InstallPath": "Assets/QFramework/Pro/Shader/SpriteShader/",
-          "DocUrl": null,
-          "Readme": {
-            "version": "v0.0.14",
-            "content": "add rect add grid",
-            "author": "liangxie",
-            "date": "2019 年 10 月 26 日 17:27",
-            "VersionNumber": 14
-          },
-          "Id": "e397d344-f6bc-4875-9f8d-6bba1123e03e",
-          "Name": "SpriteShader",
-          "VersionNumber": 14,
-          "FileName": "SpriteShader_v0.0.14.unitypackage"
-        },
-        {
-          "Version": "v0.0.12",
-          "Type": 6,
-          "AccessRight": 0,
-          "DownloadUrl": "http://file.liangxiegame.com/SpriteShaderv0_0_12_7de57331_1e32_4b53_bb39_5788cc37f344.unitypackage",
-          "InstallPath": "Assets/QFramework/Pro/Shader/SpriteShader/",
-          "DocUrl": null,
-          "Readme": {
-            "version": "v0.0.12",
-            "content": "add sin and cos",
-            "author": "liangxie",
-            "date": "2019 年 10 月 25 日 21:36",
-            "VersionNumber": 12
-          },
-          "Id": "5b614505-dcef-4f40-b478-d985571bcb64",
-          "Name": "SpriteShader",
-          "VersionNumber": 12,
-          "FileName": "SpriteShader_v0.0.12.unitypackage"
-        },
-        {
-          "Version": "v0.0.11",
-          "Type": 6,
-          "AccessRight": 0,
-          "DownloadUrl": "http://file.liangxiegame.com/SpriteShaderv0_0_11_ac6df033_243f_41cf_9302_6a9e6135fa9e.unitypackage",
-          "InstallPath": "Assets/QFramework/Pro/Shader/SpriteShader/",
-          "DocUrl": null,
-          "Readme": {
-            "version": "v0.0.11",
-            "content": "add dline",
-            "author": "liangxie",
-            "date": "2019 年 10 月 24 日 20:02",
-            "VersionNumber": 11
-          },
-          "Id": "557a4b25-e50d-4611-89d8-59de8cb10f0e",
-          "Name": "SpriteShader",
-          "VersionNumber": 11,
-          "FileName": "SpriteShader_v0.0.11.unitypackage"
-        },
-        {
-          "Version": "v0.0.10",
-          "Type": 6,
-          "AccessRight": 0,
-          "DownloadUrl": "http://file.liangxiegame.com/SpriteShaderv0_0_10_2dd68050_06e0_4c17_8e07_495e634d4b36.unitypackage",
-          "InstallPath": "Assets/QFramework/Pro/Shader/SpriteShader/",
-          "DocUrl": null,
-          "Readme": {
-            "version": "v0.0.10",
-            "content": "添加 RightHalf 和 GradientRightHalf",
-            "author": "liangxie",
-            "date": "2019 年 10 月 24 日 16:51",
-            "VersionNumber": 10
-          },
-          "Id": "86c0da8f-2bef-4f51-bd62-9fb03cb53f75",
-          "Name": "SpriteShader",
-          "VersionNumber": 10,
-          "FileName": "SpriteShader_v0.0.10.unitypackage"
-        },
-        {
-          "Version": "v0.0.9",
-          "Type": 6,
-          "AccessRight": 0,
-          "DownloadUrl": "http://file.liangxiegame.com/SpriteShaderv0_0_9_1e373904_d41b_4c2d_9c90_4372e749e36c.unitypackage",
-          "InstallPath": "Assets/QFramework/Pro/Shader/SpriteShader/",
-          "DocUrl": null,
-          "Readme": {
-            "version": "v0.0.9",
-            "content": "add additive shader",
-            "author": "liangxie",
-            "date": "2019 年 10 月 23 日 21:25",
-            "VersionNumber": 9
-          },
-          "Id": "783b8289-507c-4b8f-ad92-031abc01977f",
-          "Name": "SpriteShader",
-          "VersionNumber": 9,
-          "FileName": "SpriteShader_v0.0.9.unitypackage"
-        },
-        {
-          "Version": "v0.0.8",
-          "Type": 6,
-          "AccessRight": 0,
-          "DownloadUrl": "http://file.liangxiegame.com/SpriteShaderv0_0_8_75a38bba_397b_4664_aacf_36cb995d1ed9.unitypackage",
-          "InstallPath": "Assets/QFramework/Pro/Shader/SpriteShader/",
-          "DocUrl": null,
-          "Readme": {
-            "version": "v0.0.8",
-            "content": "添加颜色填充效果",
-            "author": "liangxie",
-            "date": "2019 年 10 月 05 日 15:21",
-            "VersionNumber": 8
-          },
-          "Id": "c7140be0-2a49-4746-ab14-8c0f18b31663",
-          "Name": "SpriteShader",
-          "VersionNumber": 8,
-          "FileName": "SpriteShader_v0.0.8.unitypackage"
-        },
-        {
-          "Version": "v0.0.7",
-          "Type": 6,
-          "AccessRight": 0,
-          "DownloadUrl": "http://file.liangxiegame.com/SpriteShaderv0_0_7_9977f979_3f27_4549_be24_478922d2cd3e.unitypackage",
-          "InstallPath": "Assets/QFramework/Pro/Shader/SpriteShader/",
-          "DocUrl": null,
-          "Readme": {
-            "version": "v0.0.7",
-            "content": "添加铅笔效果",
-            "author": "liangxie",
-            "date": "2019 年 10 月 05 日 01:05",
-            "VersionNumber": 7
-          },
-          "Id": "7c3d676a-af65-49ea-873c-8d58ff9c65fa",
-          "Name": "SpriteShader",
-          "VersionNumber": 7,
-          "FileName": "SpriteShader_v0.0.7.unitypackage"
-        },
-        {
-          "Version": "v0.0.6",
-          "Type": 6,
-          "AccessRight": 0,
-          "DownloadUrl": "http://file.liangxiegame.com/SpriteShaderv0_0_6_89aec37d_8fbe_4771_8e9c_42a6013f5e5c.unitypackage",
-          "InstallPath": "Assets/QFramework/Pro/Shader/SpriteShader/",
-          "DocUrl": null,
-          "Readme": {
-            "version": "v0.0.6",
-            "content": "添加描边 Shader",
-            "author": "liangxie",
-            "date": "2019 年 10 月 04 日 23:53",
-            "VersionNumber": 6
-          },
-          "Id": "01aa5022-1540-4fb9-92a9-141878bf4ba1",
-          "Name": "SpriteShader",
-          "VersionNumber": 6,
-          "FileName": "SpriteShader_v0.0.6.unitypackage"
-        },
-        {
-          "Version": "v0.0.5",
-          "Type": 6,
-          "AccessRight": 0,
-          "DownloadUrl": "http://file.liangxiegame.com/SpriteShaderv0_0_5_76a33ec8_c0ea_4e15_9a74_fbbfd5e93826.unitypackage",
-          "InstallPath": "Assets/QFramework/Pro/Shader/SpriteShader/",
-          "DocUrl": null,
-          "Readme": {
-            "version": "v0.0.5",
-            "content": "添加边缘检测的 Shader",
-            "author": "liangxie",
-            "date": "2019 年 10 月 03 日 23:09",
-            "VersionNumber": 5
-          },
-          "Id": "a698a250-c90b-4b32-b491-69120a62e6c0",
-          "Name": "SpriteShader",
-          "VersionNumber": 5,
-          "FileName": "SpriteShader_v0.0.5.unitypackage"
-        },
-        {
-          "Version": "v0.0.4",
-          "Type": 6,
-          "AccessRight": 0,
-          "DownloadUrl": "http://file.liangxiegame.com/SpriteShaderv0_0_4_f3a0875e_7ec6_46ff_8406_85b75380c313.unitypackage",
-          "InstallPath": "Assets/QFramework/Pro/Shader/SpriteShader/",
-          "DocUrl": null,
-          "Readme": {
-            "version": "v0.0.4",
-            "content": "添加锐化效果",
-            "author": "liangxie",
-            "date": "2019 年 10 月 02 日 16:55",
-            "VersionNumber": 4
-          },
-          "Id": "3cab1541-3f49-4e76-ad53-7a5f0766a10c",
-          "Name": "SpriteShader",
-          "VersionNumber": 4,
-          "FileName": "SpriteShader_v0.0.4.unitypackage"
-        },
-        {
-          "Version": "v0.0.3",
-          "Type": 6,
-          "AccessRight": 0,
-          "DownloadUrl": "http://file.liangxiegame.com/SpriteShaderv0_0_3_67b5dc9b_7c85_43f7_8f13_7a20b6aa6696.unitypackage",
-          "InstallPath": "Assets/QFramework/Pro/Shader/SpriteShader/",
-          "DocUrl": null,
-          "Readme": {
-            "version": "v0.0.3",
-            "content": "添加 4 gradient",
-            "author": "liangxie",
-            "date": "2019 年 09 月 29 日 16:24",
-            "VersionNumber": 3
-          },
-          "Id": "5888b790-bf70-4c73-995c-c7d0f87eeb37",
-          "Name": "SpriteShader",
-          "VersionNumber": 3,
-          "FileName": "SpriteShader_v0.0.3.unitypackage"
-        },
-        {
-          "Version": "v0.0.2",
-          "Type": 6,
-          "AccessRight": 0,
-          "DownloadUrl": "http://file.liangxiegame.com/SpriteShaderv0_0_2_985cb650_aefc_47c8_a167_1fbe11612f0a.unitypackage",
-          "InstallPath": "Assets/QFramework/Pro/Shader/SpriteShader/",
-          "DocUrl": null,
-          "Readme": {
-            "version": "v0.0.2",
-            "content": "完成颜色置灰案例",
-            "author": "liangxie",
-            "date": "2019 年 09 月 27 日 16:50",
-            "VersionNumber": 2
-          },
-          "Id": "1cefc90b-e6ed-44c7-b3e6-be55edf1aa1f",
-          "Name": "SpriteShader",
-          "VersionNumber": 2,
-          "FileName": "SpriteShader_v0.0.2.unitypackage"
-        },
-        {
-          "Version": "v0.0.1",
-          "Type": 6,
-          "AccessRight": 0,
-          "DownloadUrl": "http://file.liangxiegame.com/SpriteShaderv0_0_1_85c89ae2_7429_4cbd_96c4_aec8bf3b6a14.unitypackage",
-          "InstallPath": "Assets/QFramework/Pro/Shader/SpriteShader/",
-          "DocUrl": null,
-          "Readme": {
-            "version": "v0.0.1",
-            "content": "实现 Gray ",
-            "author": "liangxie",
-            "date": "2019 年 09 月 25 日 16:15",
-            "VersionNumber": 1
-          },
-          "Id": "181f2e64-01bb-43ef-9f67-34118b46d096",
-          "Name": "SpriteShader",
-          "VersionNumber": 1,
-          "FileName": "SpriteShader_v0.0.1.unitypackage"
-        }
-      ],
-      "Version": "v0.0.18",
-      "DownloadUrl": "http://file.liangxiegame.com/SpriteShaderv0_0_18_56c1ab19_19c4_473b_a70e_c26905dc3db0.unitypackage",
-      "InstallPath": "Assets/QFramework/Pro/Shader/SpriteShader/",
-      "DocUrl": null,
-      "Type": 6,
-      "AccessRight": 0,
-      "VersionNumber": 18,
-      "Installed": false
-    },
-    {
       "Name": "Example",
       "readme": {
         "items": [
@@ -3978,6 +3519,335 @@
       "Installed": false
     },
     {
+      "Name": "SpriteShader",
+      "readme": {
+        "items": [
+          {
+            "version": "v0.0.18",
+            "content": "burn",
+            "author": "liangxie",
+            "date": "2019 年 11 月 06 日 15:42",
+            "VersionNumber": 18
+          },
+          {
+            "version": "v0.0.17",
+            "content": "toon fire",
+            "author": "liangxie",
+            "date": "2019 年 10 月 31 日 22:21",
+            "VersionNumber": 17
+          },
+          {
+            "version": "v0.0.16",
+            "content": "水面效果 和 涂鸦效果 实现",
+            "author": "liangxie",
+            "date": "2019 年 10 月 29 日 01:49",
+            "VersionNumber": 16
+          },
+          {
+            "version": "v0.0.15",
+            "content": "add black hole",
+            "author": "liangxie",
+            "date": "2019 年 10 月 29 日 00:10",
+            "VersionNumber": 15
+          },
+          {
+            "version": "v0.0.14",
+            "content": "add rect add grid",
+            "author": "liangxie",
+            "date": "2019 年 10 月 26 日 17:27",
+            "VersionNumber": 14
+          },
+          {
+            "version": "v0.0.12",
+            "content": "add sin and cos",
+            "author": "liangxie",
+            "date": "2019 年 10 月 25 日 21:36",
+            "VersionNumber": 12
+          },
+          {
+            "version": "v0.0.11",
+            "content": "add dline",
+            "author": "liangxie",
+            "date": "2019 年 10 月 24 日 20:02",
+            "VersionNumber": 11
+          },
+          {
+            "version": "v0.0.10",
+            "content": "添加 RightHalf 和 GradientRightHalf",
+            "author": "liangxie",
+            "date": "2019 年 10 月 24 日 16:51",
+            "VersionNumber": 10
+          },
+          {
+            "version": "v0.0.9",
+            "content": "add additive shader",
+            "author": "liangxie",
+            "date": "2019 年 10 月 23 日 21:25",
+            "VersionNumber": 9
+          },
+          {
+            "version": "v0.0.5",
+            "content": "添加边缘检测的 Shader",
+            "author": "liangxie",
+            "date": "2019 年 10 月 03 日 23:09",
+            "VersionNumber": 5
+          },
+          {
+            "version": "v0.0.4",
+            "content": "添加锐化效果",
+            "author": "liangxie",
+            "date": "2019 年 10 月 02 日 16:55",
+            "VersionNumber": 4
+          },
+          {
+            "version": "v0.0.3",
+            "content": "添加 4 gradient",
+            "author": "liangxie",
+            "date": "2019 年 09 月 29 日 16:24",
+            "VersionNumber": 3
+          }
+        ]
+      },
+      "PackageVersions": [
+        {
+          "Version": "v0.0.18",
+          "Type": 6,
+          "AccessRight": 0,
+          "DownloadUrl": "http://file.liangxiegame.com/SpriteShaderv0_0_18_56c1ab19_19c4_473b_a70e_c26905dc3db0.unitypackage",
+          "InstallPath": "Assets/QFramework/Pro/Shader/SpriteShader/",
+          "DocUrl": null,
+          "Readme": {
+            "version": "v0.0.18",
+            "content": "burn",
+            "author": "liangxie",
+            "date": "2019 年 11 月 06 日 15:42",
+            "VersionNumber": 18
+          },
+          "Id": "d997915b-61e4-483e-aac5-5fa67c0e2910",
+          "Name": "SpriteShader",
+          "VersionNumber": 18,
+          "FileName": "SpriteShader_v0.0.18.unitypackage"
+        },
+        {
+          "Version": "v0.0.17",
+          "Type": 6,
+          "AccessRight": 0,
+          "DownloadUrl": "http://file.liangxiegame.com/SpriteShaderv0_0_17_b6c1bb63_d67e_4a84_a428_f593277088a0.unitypackage",
+          "InstallPath": "Assets/QFramework/Pro/Shader/SpriteShader/",
+          "DocUrl": null,
+          "Readme": {
+            "version": "v0.0.17",
+            "content": "toon fire",
+            "author": "liangxie",
+            "date": "2019 年 10 月 31 日 22:21",
+            "VersionNumber": 17
+          },
+          "Id": "26fb95d4-368e-417b-b8da-6169e1b1a0df",
+          "Name": "SpriteShader",
+          "VersionNumber": 17,
+          "FileName": "SpriteShader_v0.0.17.unitypackage"
+        },
+        {
+          "Version": "v0.0.16",
+          "Type": 6,
+          "AccessRight": 0,
+          "DownloadUrl": "http://file.liangxiegame.com/SpriteShaderv0_0_16_e51b06b1_5f83_4427_b97f_244bd9676cee.unitypackage",
+          "InstallPath": "Assets/QFramework/Pro/Shader/SpriteShader/",
+          "DocUrl": null,
+          "Readme": {
+            "version": "v0.0.16",
+            "content": "水面效果 和 涂鸦效果 实现",
+            "author": "liangxie",
+            "date": "2019 年 10 月 29 日 01:49",
+            "VersionNumber": 16
+          },
+          "Id": "ae8dda20-f1e9-4448-9c5b-664a95aa6eee",
+          "Name": "SpriteShader",
+          "VersionNumber": 16,
+          "FileName": "SpriteShader_v0.0.16.unitypackage"
+        },
+        {
+          "Version": "v0.0.15",
+          "Type": 6,
+          "AccessRight": 0,
+          "DownloadUrl": "http://file.liangxiegame.com/SpriteShaderv0_0_15_eacc635a_dbb8_47ad_8ad9_010f5584611c.unitypackage",
+          "InstallPath": "Assets/QFramework/Pro/Shader/SpriteShader/",
+          "DocUrl": null,
+          "Readme": {
+            "version": "v0.0.15",
+            "content": "add black hole",
+            "author": "liangxie",
+            "date": "2019 年 10 月 29 日 00:10",
+            "VersionNumber": 15
+          },
+          "Id": "a3c3ae7a-26df-4b5d-bce4-ec2fb263bc7f",
+          "Name": "SpriteShader",
+          "VersionNumber": 15,
+          "FileName": "SpriteShader_v0.0.15.unitypackage"
+        },
+        {
+          "Version": "v0.0.14",
+          "Type": 6,
+          "AccessRight": 0,
+          "DownloadUrl": "http://file.liangxiegame.com/SpriteShaderv0_0_14_f80503df_de88_4067_bb55_a0b1d52ad0aa.unitypackage",
+          "InstallPath": "Assets/QFramework/Pro/Shader/SpriteShader/",
+          "DocUrl": null,
+          "Readme": {
+            "version": "v0.0.14",
+            "content": "add rect add grid",
+            "author": "liangxie",
+            "date": "2019 年 10 月 26 日 17:27",
+            "VersionNumber": 14
+          },
+          "Id": "e397d344-f6bc-4875-9f8d-6bba1123e03e",
+          "Name": "SpriteShader",
+          "VersionNumber": 14,
+          "FileName": "SpriteShader_v0.0.14.unitypackage"
+        },
+        {
+          "Version": "v0.0.12",
+          "Type": 6,
+          "AccessRight": 0,
+          "DownloadUrl": "http://file.liangxiegame.com/SpriteShaderv0_0_12_7de57331_1e32_4b53_bb39_5788cc37f344.unitypackage",
+          "InstallPath": "Assets/QFramework/Pro/Shader/SpriteShader/",
+          "DocUrl": null,
+          "Readme": {
+            "version": "v0.0.12",
+            "content": "add sin and cos",
+            "author": "liangxie",
+            "date": "2019 年 10 月 25 日 21:36",
+            "VersionNumber": 12
+          },
+          "Id": "5b614505-dcef-4f40-b478-d985571bcb64",
+          "Name": "SpriteShader",
+          "VersionNumber": 12,
+          "FileName": "SpriteShader_v0.0.12.unitypackage"
+        },
+        {
+          "Version": "v0.0.11",
+          "Type": 6,
+          "AccessRight": 0,
+          "DownloadUrl": "http://file.liangxiegame.com/SpriteShaderv0_0_11_ac6df033_243f_41cf_9302_6a9e6135fa9e.unitypackage",
+          "InstallPath": "Assets/QFramework/Pro/Shader/SpriteShader/",
+          "DocUrl": null,
+          "Readme": {
+            "version": "v0.0.11",
+            "content": "add dline",
+            "author": "liangxie",
+            "date": "2019 年 10 月 24 日 20:02",
+            "VersionNumber": 11
+          },
+          "Id": "557a4b25-e50d-4611-89d8-59de8cb10f0e",
+          "Name": "SpriteShader",
+          "VersionNumber": 11,
+          "FileName": "SpriteShader_v0.0.11.unitypackage"
+        },
+        {
+          "Version": "v0.0.10",
+          "Type": 6,
+          "AccessRight": 0,
+          "DownloadUrl": "http://file.liangxiegame.com/SpriteShaderv0_0_10_2dd68050_06e0_4c17_8e07_495e634d4b36.unitypackage",
+          "InstallPath": "Assets/QFramework/Pro/Shader/SpriteShader/",
+          "DocUrl": null,
+          "Readme": {
+            "version": "v0.0.10",
+            "content": "添加 RightHalf 和 GradientRightHalf",
+            "author": "liangxie",
+            "date": "2019 年 10 月 24 日 16:51",
+            "VersionNumber": 10
+          },
+          "Id": "86c0da8f-2bef-4f51-bd62-9fb03cb53f75",
+          "Name": "SpriteShader",
+          "VersionNumber": 10,
+          "FileName": "SpriteShader_v0.0.10.unitypackage"
+        },
+        {
+          "Version": "v0.0.9",
+          "Type": 6,
+          "AccessRight": 0,
+          "DownloadUrl": "http://file.liangxiegame.com/SpriteShaderv0_0_9_1e373904_d41b_4c2d_9c90_4372e749e36c.unitypackage",
+          "InstallPath": "Assets/QFramework/Pro/Shader/SpriteShader/",
+          "DocUrl": null,
+          "Readme": {
+            "version": "v0.0.9",
+            "content": "add additive shader",
+            "author": "liangxie",
+            "date": "2019 年 10 月 23 日 21:25",
+            "VersionNumber": 9
+          },
+          "Id": "783b8289-507c-4b8f-ad92-031abc01977f",
+          "Name": "SpriteShader",
+          "VersionNumber": 9,
+          "FileName": "SpriteShader_v0.0.9.unitypackage"
+        },
+        {
+          "Version": "v0.0.5",
+          "Type": 6,
+          "AccessRight": 0,
+          "DownloadUrl": "http://file.liangxiegame.com/SpriteShaderv0_0_5_76a33ec8_c0ea_4e15_9a74_fbbfd5e93826.unitypackage",
+          "InstallPath": "Assets/QFramework/Pro/Shader/SpriteShader/",
+          "DocUrl": null,
+          "Readme": {
+            "version": "v0.0.5",
+            "content": "添加边缘检测的 Shader",
+            "author": "liangxie",
+            "date": "2019 年 10 月 03 日 23:09",
+            "VersionNumber": 5
+          },
+          "Id": "a698a250-c90b-4b32-b491-69120a62e6c0",
+          "Name": "SpriteShader",
+          "VersionNumber": 5,
+          "FileName": "SpriteShader_v0.0.5.unitypackage"
+        },
+        {
+          "Version": "v0.0.4",
+          "Type": 6,
+          "AccessRight": 0,
+          "DownloadUrl": "http://file.liangxiegame.com/SpriteShaderv0_0_4_f3a0875e_7ec6_46ff_8406_85b75380c313.unitypackage",
+          "InstallPath": "Assets/QFramework/Pro/Shader/SpriteShader/",
+          "DocUrl": null,
+          "Readme": {
+            "version": "v0.0.4",
+            "content": "添加锐化效果",
+            "author": "liangxie",
+            "date": "2019 年 10 月 02 日 16:55",
+            "VersionNumber": 4
+          },
+          "Id": "3cab1541-3f49-4e76-ad53-7a5f0766a10c",
+          "Name": "SpriteShader",
+          "VersionNumber": 4,
+          "FileName": "SpriteShader_v0.0.4.unitypackage"
+        },
+        {
+          "Version": "v0.0.3",
+          "Type": 6,
+          "AccessRight": 0,
+          "DownloadUrl": "http://file.liangxiegame.com/SpriteShaderv0_0_3_67b5dc9b_7c85_43f7_8f13_7a20b6aa6696.unitypackage",
+          "InstallPath": "Assets/QFramework/Pro/Shader/SpriteShader/",
+          "DocUrl": null,
+          "Readme": {
+            "version": "v0.0.3",
+            "content": "添加 4 gradient",
+            "author": "liangxie",
+            "date": "2019 年 09 月 29 日 16:24",
+            "VersionNumber": 3
+          },
+          "Id": "5888b790-bf70-4c73-995c-c7d0f87eeb37",
+          "Name": "SpriteShader",
+          "VersionNumber": 3,
+          "FileName": "SpriteShader_v0.0.3.unitypackage"
+        }
+      ],
+      "Version": "v0.0.18",
+      "DownloadUrl": "http://file.liangxiegame.com/SpriteShaderv0_0_18_56c1ab19_19c4_473b_a70e_c26905dc3db0.unitypackage",
+      "InstallPath": "Assets/QFramework/Pro/Shader/SpriteShader/",
+      "DocUrl": null,
+      "Type": 6,
+      "AccessRight": 0,
+      "VersionNumber": 18,
+      "Installed": false
+    },
+    {
       "Name": "MyFramework",
       "readme": {
         "items": [
@@ -6422,13 +6292,6 @@
             "author": "liangxie",
             "date": "2019 年 09 月 08 日 14:03",
             "VersionNumber": 2
-          },
-          {
-            "version": "v0.0.1",
-            "content": "remove serialize  helper\t\t\t",
-            "author": "liangxie",
-            "date": "2019 年 09 月 05 日 17:34",
-            "VersionNumber": 1
           }
         ]
       },
@@ -6451,25 +6314,6 @@
           "Name": "1.Core",
           "VersionNumber": 2,
           "FileName": "1.Core_v0.0.2.unitypackage"
-        },
-        {
-          "Version": "v0.0.1",
-          "Type": 0,
-          "AccessRight": 0,
-          "DownloadUrl": "http://file.liangxiegame.com/1.Corev0_0_1_8c1acee6_c961_45b8_b1c1_b1869f8f7c05.unitypackage",
-          "InstallPath": "Assets/QFramework/Framework/1.Core/",
-          "DocUrl": null,
-          "Readme": {
-            "version": "v0.0.1",
-            "content": "remove serialize  helper\t\t\t",
-            "author": "liangxie",
-            "date": "2019 年 09 月 05 日 17:34",
-            "VersionNumber": 1
-          },
-          "Id": "d307fd94-0fb2-4844-84ac-4d22846b6ee9",
-          "Name": "1.Core",
-          "VersionNumber": 1,
-          "FileName": "1.Core_v0.0.1.unitypackage"
         }
       ],
       "Version": "v0.0.2",

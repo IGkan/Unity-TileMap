@@ -133,7 +133,7 @@ namespace Tower
                             switch (hit.collider.name)
                             {
                                 case "YellowDoor":
-                                    if (mPlayerData.RedKey.Value > 0)
+                                    if (mPlayerData.YellowKey.Value > 0)
                                     {
                                         this.SendMsg(new AudioSoundMsg("door"));
 
