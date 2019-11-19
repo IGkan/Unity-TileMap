@@ -10,7 +10,6 @@ namespace Tower
     {
         private PlayerData() { }
         // 玩家属性
-        public BoolReactiveProperty NewGame = new BoolReactiveProperty(true);
         public StringReactiveProperty Name = new StringReactiveProperty("Mr Li");
         public IntReactiveProperty CurrntFloor = new IntReactiveProperty(1);
         public IntReactiveProperty Level = new IntReactiveProperty(1);
@@ -22,6 +21,12 @@ namespace Tower
         public IntReactiveProperty YellowKey = new IntReactiveProperty(0);
         public IntReactiveProperty RedKey = new IntReactiveProperty(0);
         public IntReactiveProperty PurpleKey = new IntReactiveProperty(0);
+
+
+        // 玩家其他相关属性
+        public BoolReactiveProperty NewGame = new BoolReactiveProperty(true); // 是否新游戏
+        public IntReactiveProperty MaxFloor = new IntReactiveProperty(25); // 游戏最大关卡数
+        public BoolReactiveProperty CanSelectFloor = new BoolReactiveProperty(false); // 是否吃到道具可以自由选择关卡
 
         // 商店购买使用的属性
         public IntReactiveProperty AddAttack = new IntReactiveProperty(10);

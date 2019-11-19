@@ -19,12 +19,12 @@ namespace Tower
     using UniRx;
     using UnityEngine;
     using UnityEngine.UI;
-    
-    
+
+
     public class MyMotaUIGamePanelData : QFramework.UIPanelData
     {
     }
-    
+
     public partial class MyMotaUIGamePanel : QFramework.UIPanel
     {
         ResLoader mResLoader = ResLoader.Allocate();
@@ -32,7 +32,7 @@ namespace Tower
         {
 
         }
-        
+
         protected override void OnInit(QFramework.IUIData uiData)
         {
             mData = uiData as MyMotaUIGamePanelData ?? new MyMotaUIGamePanelData();
@@ -59,25 +59,38 @@ namespace Tower
             PlayerData.Instance.PurpleKey.Select(content => "紫钥匙: " + content).SubscribeToText(PurpleKey);
 
             // UI事件
-            BtnContinue.onClick.AddListener(()=> {
+            BtnContinue.onClick.AddListener(() =>
+            {
                 GuidePanel.Hide(); // 关闭引导界面
                 Player.Instance.mCanMove = true; // 重新让玩家可移动
             });
+
+            PlayerData.Instance.CanSelectFloor.Subscribe(content =>
+                {
+                    if (PlayerData.Instance.CanSelectFloor.Value)
+                    {
+                        // 替换图标
+
+                        // 
+                        FloorPanel.Show();
+                    }
+                }
+            );
 
 
         }
         protected override void OnOpen(QFramework.IUIData uiData)
         {
         }
-        
+
         protected override void OnShow()
         {
         }
-        
+
         protected override void OnHide()
         {
         }
-        
+
         protected override void OnClose()
         {
             mResLoader.Recycle2Cache();

@@ -80,6 +80,9 @@ namespace Tower
         [SerializeField()]
         public npc2_8Panel npc2_8Panel;
         
+        [SerializeField()]
+        public FloorPanel FloorPanel;
+        
         private MyMotaUIGamePanelData mPrivateData = null;
         
         public MyMotaUIGamePanelData mData
@@ -116,6 +119,7 @@ namespace Tower
             npc2_4Panel = null;
             npc2_12Panel = null;
             npc2_8Panel = null;
+            FloorPanel = null;
             mData = null;
         }
     }

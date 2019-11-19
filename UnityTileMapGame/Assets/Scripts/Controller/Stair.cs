@@ -21,13 +21,18 @@ namespace Tower
                 default:
                     break;
             }
-            Player.Instance.InitPlayerTilePos();
         }
 
-
-       public static void ComeUp(int targetFloor)
+        private static void InitPlayerTilePosAndCamera(int targetFloor)
         {
             Camera.main.transform.position = new Vector3(0.5f + (targetFloor - 1) * 12, 0.56f, -10);
+            Player.Instance.InitPlayerTilePos();
+            PlayerData.Instance.CurrntFloor.Value = targetFloor;
+
+        }
+
+        public static void ComeUp(int targetFloor)
+        {
             switch (targetFloor)
             {
                 case 1:
@@ -106,12 +111,12 @@ namespace Tower
                     Player.Instance.transform.position = new Vector3(284.5f, -4.5f, 0);
                     break;
             }
+
+            InitPlayerTilePosAndCamera(targetFloor);
         }
 
         void ComeDown(int targetFloor)
         {
-            Camera.main.transform.position = new Vector3(0.5f + (targetFloor - 1) * 12, 0.56f, -10);
-
             switch (targetFloor)
             {
                 case 1:
@@ -190,6 +195,7 @@ namespace Tower
                     Player.Instance.transform.position = new Vector3(293.5f, -0.5f, 0);
                     break;
             }
+            InitPlayerTilePosAndCamera(targetFloor);
         }
     }
 

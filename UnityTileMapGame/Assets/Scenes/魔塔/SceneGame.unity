@@ -156,7 +156,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &108500509
 GameObject:
@@ -182,14 +182,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 108500509}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1611638901}
   - {fileID: 1706802307}
   - {fileID: 1956450385}
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 234179746}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &108500511
@@ -245,8 +245,10 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1312021292}
+  - {fileID: 108500510}
+  - {fileID: 916532637}
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &547461947 stripped
 Transform:
@@ -438,8 +440,8 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_Father: {fileID: 234179746}
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &1131347827 stripped
 Transform:
@@ -2733,11 +2735,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1956450385}
     m_Modifications:
-    - target: {fileID: 7385830822315116859, guid: a48665bac235b05409412d461936bbe0,
-        type: 3}
-      propertyPath: m_Name
-      value: PurpleKey
-      objectReference: {fileID: 0}
     - target: {fileID: 840847121774741070, guid: a48665bac235b05409412d461936bbe0,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2792,6 +2789,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7385830822315116859, guid: a48665bac235b05409412d461936bbe0,
+        type: 3}
+      propertyPath: m_Name
+      value: PurpleKey
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a48665bac235b05409412d461936bbe0, type: 3}
