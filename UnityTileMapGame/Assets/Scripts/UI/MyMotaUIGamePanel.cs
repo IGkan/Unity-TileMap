@@ -60,9 +60,10 @@ namespace Tower
 
             // UI事件
             BtnContinue.onClick.AddListener(()=> {
-                GuidePanel.gameObject.SetActive(false); // 关闭引导界面
+                GuidePanel.Hide(); // 关闭引导界面
                 Player.Instance.mCanMove = true; // 重新让玩家可移动
             });
+
 
         }
         protected override void OnOpen(QFramework.IUIData uiData)

@@ -9,7 +9,7 @@ namespace Tower
     public class PlayerData : ISingleton
     {
         private PlayerData() { }
-
+        // 玩家属性
         public BoolReactiveProperty NewGame = new BoolReactiveProperty(true);
         public StringReactiveProperty Name = new StringReactiveProperty("Mr Li");
         public IntReactiveProperty CurrntFloor = new IntReactiveProperty(1);
@@ -23,6 +23,16 @@ namespace Tower
         public IntReactiveProperty RedKey = new IntReactiveProperty(0);
         public IntReactiveProperty PurpleKey = new IntReactiveProperty(0);
 
+        // 商店购买使用的属性
+        public IntReactiveProperty AddAttack = new IntReactiveProperty(10);
+        public IntReactiveProperty AddDefend = new IntReactiveProperty(10);
+        public IntReactiveProperty AddLife = new IntReactiveProperty(100);
+        public IntReactiveProperty AddYellowKey = new IntReactiveProperty(1);
+        public IntReactiveProperty AddRedKey = new IntReactiveProperty(1);
+        public IntReactiveProperty AddPurpleKey = new IntReactiveProperty(1);
+        public IntReactiveProperty AddLevel = new IntReactiveProperty(1);
+        public IntReactiveProperty GoldCharge = new IntReactiveProperty(100); // 购买花费的金币 
+        public IntReactiveProperty ExperienceCharge = new IntReactiveProperty(100); //购买花费的经验
         public void InitPlayerData()
         {
             NewGame.Value = true;

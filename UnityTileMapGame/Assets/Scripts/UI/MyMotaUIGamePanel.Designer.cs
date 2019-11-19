@@ -60,22 +60,25 @@ namespace Tower
         public UnityEngine.UI.Text Extend;
         
         [SerializeField()]
-        public UnityEngine.UI.Button Button;
-        
-        [SerializeField()]
-        public UnityEngine.UI.Button Button1;
-        
-        [SerializeField()]
-        public UnityEngine.UI.Button MenuBtn;
-        
-        [SerializeField()]
-        public UnityEngine.UI.Button Button2;
+        public MenuPanel MenuPanel;
         
         [SerializeField()]
         public UnityEngine.UI.Image GuidePanel;
         
         [SerializeField()]
         public UnityEngine.UI.Button BtnContinue;
+        
+        [SerializeField()]
+        public npc2_0Panel npc2_0Panel;
+        
+        [SerializeField()]
+        public npc2_4Panel npc2_4Panel;
+        
+        [SerializeField()]
+        public npc2_12Panel npc2_12Panel;
+        
+        [SerializeField()]
+        public npc2_8Panel npc2_8Panel;
         
         private MyMotaUIGamePanelData mPrivateData = null;
         
@@ -106,12 +109,13 @@ namespace Tower
             RedKey = null;
             PurpleKey = null;
             Extend = null;
-            Button = null;
-            Button1 = null;
-            MenuBtn = null;
-            Button2 = null;
+            MenuPanel = null;
             GuidePanel = null;
             BtnContinue = null;
+            npc2_0Panel = null;
+            npc2_4Panel = null;
+            npc2_12Panel = null;
+            npc2_8Panel = null;
             mData = null;
         }
     }

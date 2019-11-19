@@ -3,7 +3,6 @@ namespace Tower
     using DG.Tweening;
     using QF;
     using QF.Action;
-    using QF.Extensions;
     using QF.Res;
     using QFramework;
     using UnityEngine;
@@ -48,25 +47,29 @@ namespace Tower
                 if (Input.GetKey(KeyCode.W))
                 {
                     JudgeMove(new Vector3Int(0, 1, 0));
+                    PlayerAnimatorMsg.Instance.ChangePlayerState(PlayerAnimatorState.Up);
                     return;
                 }
                 if (Input.GetKey(KeyCode.S))
                 {
                     JudgeMove(new Vector3Int(0, -1, 0));
-                    return;
+                    PlayerAnimatorMsg.Instance.ChangePlayerState(PlayerAnimatorState.Down);
 
+                    return;
                 }
                 if (Input.GetKey(KeyCode.A))
                 {
                     JudgeMove(new Vector3Int(-1, 0, 0));
-                    return;
+                    PlayerAnimatorMsg.Instance.ChangePlayerState(PlayerAnimatorState.Left);
 
+                    return;
                 }
                 if (Input.GetKey(KeyCode.D))
                 {
                     JudgeMove(new Vector3Int(1, 0, 0));
-                    return;
+                    PlayerAnimatorMsg.Instance.ChangePlayerState(PlayerAnimatorState.Right);
 
+                    return;
                 }
             }
 
@@ -98,28 +101,11 @@ namespace Tower
                     Transform hitTransform = hit.collider.transform;
                     switch (hit.collider.tag)
                     {
-                        case "Npc":
-                            ChangeMovingState();
-                            this.SendMsg(new AudioSoundMsg("talk"));
-                            // 打开对话系统
-                            switch (hit.collider.name)
-                            {
-                                case "npc1_12":
-                                    if (mPlayerData.NewGame.Value)
-                                    {
-                                        UIMgr.GetPanel<MyMotaUIGamePanel>().GuidePanel.gameObject.SetActive(true);
-                                        mCanMove = false;
-                                        mPlayerData.YellowKey.Value += 1;
-                                        mPlayerData.RedKey.Value += 1;
-                                        mPlayerData.PurpleKey.Value += 1;
-                                        mPlayerData.NewGame.Value = false;
-                                    }
-                                    break;
-                                default:
-                                    break;
-                            }
+                        case "Npc":  // 打开对话系统
+                            hitTransform.GetComponent<Npc>().NpcExecute(hit.collider.name);
                             break;
-                        case "Stair":
+
+                        case "Stair": // 切换关卡
                             this.SendMsg(new AudioSoundMsg("prop"));
                             hitTransform.GetComponent<Stair>().ChangeStair(hit.collider.name);
                             this.Sequence()
@@ -224,7 +210,7 @@ namespace Tower
             mTargetTilePos += mMoveDirectionCell;
             transform.DOMove(transform.position + mMoveDirectionCell, mMoveSpeed).SetEase(Ease.Linear).OnComplete(ChangeMovingState);
         }
-        void ChangeMovingState()
+        public void ChangeMovingState()
         {
             isMoving = false;
         }

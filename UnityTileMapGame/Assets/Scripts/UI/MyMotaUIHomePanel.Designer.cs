@@ -30,13 +30,22 @@ namespace Tower
         public UnityEngine.UI.Button BtnReload;
         
         [SerializeField()]
+        public UnityEngine.UI.Button BtnSetting;
+        
+        [SerializeField()]
         public UnityEngine.UI.Button BtnAbout;
         
         [SerializeField()]
         public UnityEngine.UI.Button BtnQuit;
         
         [SerializeField()]
+        public UnityEngine.UI.Image AboutPanel;
+        
+        [SerializeField()]
         public UnityEngine.UI.Text Text;
+        
+        [SerializeField()]
+        public UnityEngine.UI.Image SettingPanel;
         
         private MyMotaUIHomePanelData mPrivateData = null;
         
@@ -57,9 +66,12 @@ namespace Tower
         {
             BtnStart = null;
             BtnReload = null;
+            BtnSetting = null;
             BtnAbout = null;
             BtnQuit = null;
+            AboutPanel = null;
             Text = null;
+            SettingPanel = null;
             mData = null;
         }
     }

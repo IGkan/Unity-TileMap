@@ -11,6 +11,7 @@
 namespace Tower
 {
     using QF;
+    using QF.Extensions;
     using QF.Res;
     using QFramework;
     using System;
@@ -49,6 +50,24 @@ namespace Tower
                 PlayerData.Instance.NewGame.Value = true;
                 UIMgr.OpenPanel<MyMotaUIGamePanel>();
             });
+
+            BtnReload.onClick.AddListener(() =>
+            {
+
+            });
+            BtnSetting.onClick.AddListener(() =>
+            {
+                SettingPanel.gameObject.SetActive(!SettingPanel.gameObject.activeSelf);
+            });
+            BtnAbout.onClick.AddListener(() =>
+            {
+                AboutPanel.gameObject.SetActive(!AboutPanel.gameObject.activeSelf);
+            });
+            BtnQuit.onClick.AddListener(() =>
+            {
+                Application.Quit();
+            });
+
         }
         protected override void OnOpen(QFramework.IUIData uiData)
         {
