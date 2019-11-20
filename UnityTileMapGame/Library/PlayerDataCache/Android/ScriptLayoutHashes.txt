@@ -1,6 +1,6 @@
 Android
 PlayerPath?
-E:/LSF/UnityApks/Mota.apk
+F:/UnityApk/Mota.apk
 SceneListBegin?
 Assets/Scenes/魔塔/MotaAPP.unity
 SceneListEnd?
