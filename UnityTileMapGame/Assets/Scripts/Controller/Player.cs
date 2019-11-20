@@ -42,37 +42,89 @@ namespace Tower
                 UIMgr.OpenPanel<UIHomePanel>();
             }
 
-            if (!isMoving && mCanMove)
+            if (Input.GetKey(KeyCode.W))
             {
-                if (Input.GetKey(KeyCode.W))
-                {
-                    JudgeMove(new Vector3Int(0, 1, 0));
-                    PlayerAnimatorMsg.Instance.ChangePlayerState(PlayerAnimatorState.Up);
-                    return;
-                }
-                if (Input.GetKey(KeyCode.S))
-                {
-                    JudgeMove(new Vector3Int(0, -1, 0));
-                    PlayerAnimatorMsg.Instance.ChangePlayerState(PlayerAnimatorState.Down);
-
-                    return;
-                }
-                if (Input.GetKey(KeyCode.A))
-                {
-                    JudgeMove(new Vector3Int(-1, 0, 0));
-                    PlayerAnimatorMsg.Instance.ChangePlayerState(PlayerAnimatorState.Left);
-
-                    return;
-                }
-                if (Input.GetKey(KeyCode.D))
-                {
-                    JudgeMove(new Vector3Int(1, 0, 0));
-                    PlayerAnimatorMsg.Instance.ChangePlayerState(PlayerAnimatorState.Right);
-
-                    return;
-                }
+                PressEvent(PlayerAnimatorState.Up, Vector3Int.up);
+                return;
+            }
+            if (Input.GetKey(KeyCode.S))
+            {
+                PressEvent(PlayerAnimatorState.Down, Vector3Int.down);
+                return;
+            }
+            if (Input.GetKey(KeyCode.A))
+            {
+                PressEvent(PlayerAnimatorState.Left, Vector3Int.left);
+                return;
+            }
+            if (Input.GetKey(KeyCode.D))
+            {
+                PressEvent(PlayerAnimatorState.Right, Vector3Int.right);
+                return;
             }
 
+            #region
+            //if (!isMoving && mCanMove)
+            //{
+            //    if (Input.GetKey(KeyCode.W))
+            //    {
+            //        JudgeMove(Vector3Int.up);
+            //        PlayerAnimatorMsg.Instance.ChangePlayerState(PlayerAnimatorState.Up);
+            //        return;
+            //    }
+            //    if (Input.GetKey(KeyCode.S))
+            //    {
+            //        JudgeMove(Vector3Int.down);
+            //        PlayerAnimatorMsg.Instance.ChangePlayerState(PlayerAnimatorState.Down);
+
+            //        return;
+            //    }
+            //    if (Input.GetKey(KeyCode.A))
+            //    {
+            //        JudgeMove(Vector3Int.left);
+            //        PlayerAnimatorMsg.Instance.ChangePlayerState(PlayerAnimatorState.Left);
+
+            //        return;
+            //    }
+            //    if (Input.GetKey(KeyCode.D))
+            //    {
+            //        JudgeMove(Vector3Int.right);
+            //        PlayerAnimatorMsg.Instance.ChangePlayerState(PlayerAnimatorState.Right);
+
+            //        return;
+            //    }
+            //}
+            #endregion
+
+        }
+
+        /// <summary>
+        /// 手机端 遥感事件处理
+        /// </summary>
+        public void PressUp()
+        {
+            PressEvent(PlayerAnimatorState.Up, Vector3Int.up);
+        }
+        public void PressDown()
+        {
+            PressEvent(PlayerAnimatorState.Down, Vector3Int.down);
+        }
+        public void PressLeft()
+        {
+            PressEvent(PlayerAnimatorState.Left, Vector3Int.left);
+        }
+        public void PressRight()
+        {
+            PressEvent(PlayerAnimatorState.Right, Vector3Int.right);
+        }
+
+        void PressEvent(PlayerAnimatorState state, Vector3Int Dir)
+        {
+            if (!isMoving && mCanMove)
+            {
+                PlayerAnimatorMsg.Instance.ChangePlayerState(state);
+                JudgeMove(Dir);
+            }
         }
 
         /// <summary>
@@ -111,7 +163,7 @@ namespace Tower
                             this.Sequence()
                                  .Delay(1.0f)
                                  .Event(() => Log.I("Delayed 1 second"))
-                                 .Event(() =>ChangeMovingState())
+                                 .Event(() => ChangeMovingState())
                                  .Begin();
                             break;
                         case "Door":

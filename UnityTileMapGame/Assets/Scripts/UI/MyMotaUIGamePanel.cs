@@ -12,14 +12,10 @@ namespace Tower
 {
     using QF.Extensions;
     using QF.Res;
-    using System;
-    using System.Collections;
-    using System.Collections.Generic;
     using System.Linq;
     using UniRx;
     using UnityEngine;
     using UnityEngine.UI;
-
 
     public class MyMotaUIGamePanelData : QFramework.UIPanelData
     {
@@ -39,6 +35,10 @@ namespace Tower
 
             mResLoader.LoadSync<GameObject>("GameScenePrefab")
                 .Instantiate();
+
+            mResLoader.LoadSync<GameObject>("MyEasyTouchJoystick")
+               .Instantiate();
+
             PlayerData.Instance.InitPlayerData();
             SendMsg(new AudioMusicMsg("bg"));
         }
@@ -65,17 +65,7 @@ namespace Tower
                 Player.Instance.mCanMove = true; // 重新让玩家可移动
             });
 
-            PlayerData.Instance.CanSelectFloor.Subscribe(content =>
-                {
-                    if (PlayerData.Instance.CanSelectFloor.Value)
-                    {
-                        // 替换图标
 
-                        // 
-                        FloorPanel.Show();
-                    }
-                }
-            );
 
 
         }

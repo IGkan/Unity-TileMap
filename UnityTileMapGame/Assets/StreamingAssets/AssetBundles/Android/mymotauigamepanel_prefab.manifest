@@ -1,0 +1,64 @@
+ManifestFileVersion: 0
+CRC: 141591332
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: b53a492e34c4c8961017fa1b390dce93
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 30496f5e1600e6686b6974fbbf08a365
+HashAppended: 0
+ClassTypes:
+- Class: 1
+  Script: {instanceID: 0}
+- Class: 21
+  Script: {instanceID: 0}
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 48
+  Script: {instanceID: 0}
+- Class: 114
+  Script: {fileID: 1392445389, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+- Class: 114
+  Script: {fileID: -2095666955, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+- Class: 114
+  Script: {fileID: -405508275, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+- Class: 114
+  Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+- Class: 114
+  Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+- Class: 114
+  Script: {fileID: 1297475563, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 95575e23b3853874589d412720265e07, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 815fa2830a4f867449e54bd4733b95f2, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 446df73555a483b49a8716f9b519de71, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: e977b506792f55d42b77a0b24845f74f, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: d217ff167a3ec0b4b9ae1c5f7d121b3a, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 0d51f3a7c41ab0346b49ae50d456bece, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 9787d7c7fab2e64458f2dd63e7d92059, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: b18b500eb17850b4a8943dbd1a52e5db, type: 3}
+- Class: 115
+  Script: {instanceID: 0}
+- Class: 128
+  Script: {instanceID: 0}
+- Class: 213
+  Script: {instanceID: 0}
+- Class: 222
+  Script: {instanceID: 0}
+- Class: 224
+  Script: {instanceID: 0}
+Assets:
+- Assets/Art/UIPrefab/MyMotaUIGamePanel.prefab
+Dependencies:
+- E:/LSF/GithubDesktop/UnityTileMapGame/Unity-TileMap/UnityTileMapGame/AssetBundles/Android/settingon_png
+- E:/LSF/GithubDesktop/UnityTileMapGame/Unity-TileMap/UnityTileMapGame/AssetBundles/Android/selectleveloff_png
+- E:/LSF/GithubDesktop/UnityTileMapGame/Unity-TileMap/UnityTileMapGame/AssetBundles/Android/peepoff_png
+- E:/LSF/GithubDesktop/UnityTileMapGame/Unity-TileMap/UnityTileMapGame/AssetBundles/Android/musicon_png

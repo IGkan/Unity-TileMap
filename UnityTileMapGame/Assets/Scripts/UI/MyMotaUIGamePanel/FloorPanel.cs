@@ -32,10 +32,7 @@ namespace Tower
                       })
                     .Show();
             }
-        }
 
-        protected override void OnBeforeDestroy()
-        {
         }
     }
 }

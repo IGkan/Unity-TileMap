@@ -1,0 +1,69 @@
+ManifestFileVersion: 0
+CRC: 252533015
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 9cb6ac8f84dcf8e2240409e9500d4b84
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 9a05d04a1ad5dbabe9beb2232acc01a9
+HashAppended: 0
+ClassTypes:
+- Class: 1
+  Script: {instanceID: 0}
+- Class: 4
+  Script: {instanceID: 0}
+- Class: 20
+  Script: {instanceID: 0}
+- Class: 21
+  Script: {instanceID: 0}
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 48
+  Script: {instanceID: 0}
+- Class: 50
+  Script: {instanceID: 0}
+- Class: 61
+  Script: {instanceID: 0}
+- Class: 66
+  Script: {instanceID: 0}
+- Class: 74
+  Script: {instanceID: 0}
+- Class: 91
+  Script: {instanceID: 0}
+- Class: 95
+  Script: {instanceID: 0}
+- Class: 114
+  Script: {fileID: 13312, guid: 0000000000000000e000000000000000, type: 0}
+- Class: 114
+  Script: {fileID: 11500000, guid: 4b3bb5529716c904dabe567301fa0765, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 191d0a436a7d26f458f430635fdfff5d, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 498032c356272164fa1763aafbdd5fe5, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 9b48ff6689dfe0940bf45774391471f5, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 51a2c61b6a7508a49890afeb7cc9787a, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 3ad3acbdcc9f707449eab9f38b90dd22, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: eedc98bead3d4704ba40e6e6ff98e8e8, type: 3}
+- Class: 115
+  Script: {instanceID: 0}
+- Class: 212
+  Script: {instanceID: 0}
+- Class: 213
+  Script: {instanceID: 0}
+- Class: 19719996
+  Script: {instanceID: 0}
+- Class: 156049354
+  Script: {instanceID: 0}
+- Class: 483693784
+  Script: {instanceID: 0}
+- Class: 1839735485
+  Script: {instanceID: 0}
+Assets:
+- Assets/Art/Prefab/GameScenePrefab.prefab
+Dependencies:
+- E:/LSF/GithubDesktop/UnityTileMapGame/Unity-TileMap/UnityTileMapGame/AssetBundles/Android/player_prefab

@@ -6,6 +6,6 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: "Assets/Scenes/\u9003\u51FA\u9057\u8FF9/App.unity"
-    guid: 111ce0a817fb19a4b993bed04e02ae63
+    path: "Assets/Scenes/\u9B54\u5854/MotaAPP.unity"
+    guid: 14a9a1078ba29dc409729fb0a7992aa5
   m_configObjects: {}

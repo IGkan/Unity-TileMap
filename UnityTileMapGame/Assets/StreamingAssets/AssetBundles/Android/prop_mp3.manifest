@@ -1,0 +1,16 @@
+ManifestFileVersion: 0
+CRC: 2406246897
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 4eb81766834af7a10424b69903d74374
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 3f7d0c5e0986ec71841622bcb2f9be1c
+HashAppended: 0
+ClassTypes:
+- Class: 83
+  Script: {instanceID: 0}
+Assets:
+- Assets/Art/Music/Audio/prop.mp3
+Dependencies: []

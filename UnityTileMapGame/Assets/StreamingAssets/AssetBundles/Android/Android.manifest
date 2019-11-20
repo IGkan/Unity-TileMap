@@ -1,0 +1,87 @@
+ManifestFileVersion: 0
+CRC: 4161469369
+AssetBundleManifest:
+  AssetBundleInfos:
+    Info_0:
+      Name: bg_mp3
+      Dependencies: {}
+    Info_1:
+      Name: mymotauigamepanel_prefab
+      Dependencies:
+        Dependency_0: settingon_png
+        Dependency_1: selectleveloff_png
+        Dependency_2: peepoff_png
+        Dependency_3: musicon_png
+    Info_2:
+      Name: settingon_png
+      Dependencies: {}
+    Info_3:
+      Name: mymotauihomepanel_prefab
+      Dependencies: {}
+    Info_4:
+      Name: uiendpanel_prefab
+      Dependencies: {}
+    Info_5:
+      Name: uigamepanel_prefab
+      Dependencies: {}
+    Info_6:
+      Name: uihomepanel_prefab
+      Dependencies: {}
+    Info_7:
+      Name: settingoff_png
+      Dependencies: {}
+    Info_8:
+      Name: selectlevelon_png
+      Dependencies: {}
+    Info_9:
+      Name: selectleveloff_png
+      Dependencies: {}
+    Info_10:
+      Name: peepon_png
+      Dependencies: {}
+    Info_11:
+      Name: peepoff_png
+      Dependencies: {}
+    Info_12:
+      Name: musicon_png
+      Dependencies: {}
+    Info_13:
+      Name: musicoff_png
+      Dependencies: {}
+    Info_14:
+      Name: player_prefab
+      Dependencies: {}
+    Info_15:
+      Name: myeasytouchjoystick_prefab
+      Dependencies: {}
+    Info_16:
+      Name: gamesceneprefab_prefab
+      Dependencies:
+        Dependency_0: player_prefab
+    Info_17:
+      Name: boss_mp3
+      Dependencies: {}
+    Info_18:
+      Name: door_mp3
+      Dependencies: {}
+    Info_19:
+      Name: end_mp3
+      Dependencies: {}
+    Info_20:
+      Name: feixing_mp3
+      Dependencies: {}
+    Info_21:
+      Name: fight_mp3
+      Dependencies: {}
+    Info_22:
+      Name: prop_mp3
+      Dependencies: {}
+    Info_23:
+      Name: shangdian_mp3
+      Dependencies: {}
+    Info_24:
+      Name: start_mp3
+      Dependencies: {}
+    Info_25:
+      Name: talk_mp3
+      Dependencies: {}
