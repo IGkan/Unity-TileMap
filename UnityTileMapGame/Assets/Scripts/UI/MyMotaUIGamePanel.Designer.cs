@@ -83,6 +83,12 @@ namespace Tower
         [SerializeField()]
         public FloorPanel FloorPanel;
         
+        [SerializeField()]
+        public UnityEngine.UI.Image TipPanel;
+        
+        [SerializeField()]
+        public UnityEngine.UI.Text MonsterTipText;
+        
         private MyMotaUIGamePanelData mPrivateData = null;
         
         public MyMotaUIGamePanelData mData
@@ -120,6 +126,8 @@ namespace Tower
             npc2_12Panel = null;
             npc2_8Panel = null;
             FloorPanel = null;
+            TipPanel = null;
+            MonsterTipText = null;
             mData = null;
         }
     }

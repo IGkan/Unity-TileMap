@@ -24,6 +24,8 @@ namespace Tower
                         self.onClick.AddListener(() =>
                         {
                             Stair.ComeUp(Convert.ToInt32(self.name));
+                            this.gameObject.SetActive(false);
+                            Player.Instance.mCanMove = true;
                         });
                     })
                       .ApplySelfTo(self =>

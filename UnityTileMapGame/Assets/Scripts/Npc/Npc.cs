@@ -19,7 +19,7 @@ namespace Tower
                 case "npc1_12": // 精灵引导界面
                     if (PlayerData.Instance.NewGame.Value)
                     {
-                        UIMgr.GetPanel<MyMotaUIGamePanel>().GuidePanel.Show(); // 打开购买界面
+                        UIMgr.GetPanel<MyMotaUIGamePanel>().GuidePanel.Show(); // 打开界面
                         PlayerData.Instance.YellowKey.Value += 1;
                         PlayerData.Instance.RedKey.Value += 1;
                         PlayerData.Instance.PurpleKey.Value += 1;
@@ -64,6 +64,9 @@ namespace Tower
                     PlayerData.Instance.AddLife.Value = 300;
                     PlayerData.Instance.GoldCharge.Value = 100;
                     Player.Instance.mCanMove = false; //聊天界面禁止移动
+                    break;
+
+                case "npc-02_12": // 小公主
 
                     break;
                 default:

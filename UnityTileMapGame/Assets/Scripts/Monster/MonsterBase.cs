@@ -39,7 +39,7 @@ namespace Tower
         /// <param name="child"></param>
         /// <param name="ExecuteMode">0 => 只回调得到预计对玩家造成的伤害不执行其他逻辑, 1 => 回调且直接作用 PlayerData </param>
         /// <returns></returns>
-        protected int Execute(MonsterBase child, int ExecuteMode = 0)
+        protected int Execute(MonsterBase child)
         {
             var playerData = PlayerData.Instance;
             int oneAttack = child.mAttack - playerData.Defend.Value; // 怪物一回合对玩家造成的伤害
@@ -51,7 +51,7 @@ namespace Tower
                     child.mLife -= (playerData.Attack.Value - child.mDefend);
                     if (child.mLife <= 0) // 怪物死亡
                     {
-                       if(ExecuteMode == 1) gameObject.Hide();  //1 => 回调且执行,直接作用 PlayerData
+                       gameObject.Hide();  //1 => 回调且执行,直接作用 PlayerData
                         return count;
                     }
                 }
@@ -63,10 +63,41 @@ namespace Tower
                 if (child.mAttack - playerData.Defend.Value > 0) // 怪物能对玩家造成伤害
                 {
                     count += oneAttack;
-                    if (playerData.Life.Value <= 0) // 玩家死亡
+                }
+                else
+                {
+                    //Log.I("怪物破不了你的防御！");
+                }
+            }
+            return count;
+        }
+
+
+
+        protected int ExpectDamaged(MonsterBase child)
+        {
+            var playerData = PlayerData.Instance;
+            int oneAttack = child.mAttack - playerData.Defend.Value; // 怪物一回合对玩家造成的伤害
+            int count = 0; // 怪物对玩家造成的总伤害
+            int mChildLife = child.mLife;
+            while (mChildLife > 0)
+            {
+                if (playerData.Attack.Value - child.mDefend > 0) // 玩家能对怪物造成伤害
+                {
+                    mChildLife -= (playerData.Attack.Value - child.mDefend);
+                    if (mChildLife <= 0) // 怪物死亡
                     {
                         return count;
                     }
+                }
+                else
+                {
+                    Log.I("你破不了它防御");
+                    return count;
+                }
+                if (child.mAttack - playerData.Defend.Value > 0) // 怪物能对玩家造成伤害
+                {
+                    count += oneAttack;
                 }
                 else
                 {

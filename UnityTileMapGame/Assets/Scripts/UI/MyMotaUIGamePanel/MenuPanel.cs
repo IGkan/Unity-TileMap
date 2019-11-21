@@ -24,17 +24,17 @@ namespace Tower
                 OpenSelectLevelPanel(); //选择关卡
             });
 
-            BtnPeep.onClick.AddListener(() =>
+            BtnPeep.onClick.AddListener(() =>  // 怪物属性开关
             {
-                // 查看怪物属性
+               // PlayerData.Instance.CanPeepMonster.Value = !PlayerData.Instance.CanPeepMonster.Value; // 查看怪物属性
             });
 
-            BtnSetting.onClick.AddListener(() =>
+            BtnSetting.onClick.AddListener(() =>  // 设置界面开关
             {
-                // 设置界面
+
             });
 
-
+            // 选关
             PlayerData.Instance.CanSelectFloor.Subscribe(content =>
             {
                 if (content)
@@ -52,6 +52,23 @@ namespace Tower
             }
             );
 
+            // 查看怪物属性
+            PlayerData.Instance.CanPeepMonster.Subscribe(content =>
+            {
+                if (content)
+                {
+                    // 替换图标
+                    var sprite = mResLoader.LoadSprite("PeepMonsterOn");
+                    BtnPeep.GetComponent<Image>().sprite = sprite;
+
+                }
+                else
+                {
+                    var sprite = mResLoader.LoadSprite("PeepMonsterOff");
+                    BtnPeep.GetComponent<Image>().sprite = sprite;
+                }
+            }
+          );
             AudioManager.Instance.SoundOn.Subscribe(content =>
             {
                 if (content)
@@ -73,8 +90,18 @@ namespace Tower
         {
             if (PlayerData.Instance.CanSelectFloor.Value)
             {
-                // 打开关卡面板
-                UIMgr.GetPanel<MyMotaUIGamePanel>().FloorPanel.gameObject.SetActive(UIMgr.GetPanel<MyMotaUIGamePanel>().FloorPanel.isActiveAndEnabled ? false : true);
+                if (UIMgr.GetPanel<MyMotaUIGamePanel>().FloorPanel.isActiveAndEnabled)
+                {
+                    // 关闭关卡面板
+                    UIMgr.GetPanel<MyMotaUIGamePanel>().FloorPanel.gameObject.SetActive(false);
+                    Player.Instance.mCanMove = true;
+                }
+                else
+                {
+                    // 打开关卡面板
+                    UIMgr.GetPanel<MyMotaUIGamePanel>().FloorPanel.gameObject.SetActive(true);
+                    Player.Instance.mCanMove = false;
+                }
             }
         }
         public void PlayAudioSwitch()

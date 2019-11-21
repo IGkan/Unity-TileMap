@@ -1,7 +1,5 @@
 ﻿using QF;
 using UniRx;
-using UnityEngine;
-using QF.Extensions;
 
 namespace Tower
 {
@@ -27,6 +25,7 @@ namespace Tower
         public BoolReactiveProperty NewGame = new BoolReactiveProperty(true); // 是否新游戏
         public IntReactiveProperty MaxFloor = new IntReactiveProperty(25); // 游戏最大关卡数
         public BoolReactiveProperty CanSelectFloor = new BoolReactiveProperty(false); // 是否吃到道具可以自由选择关卡
+        public BoolReactiveProperty CanPeepMonster = new BoolReactiveProperty(false); // 是否吃到道具可以查看怪物信息和对玩家的预计伤害等
 
         // 商店购买使用的属性
         public IntReactiveProperty AddAttack = new IntReactiveProperty(10);
@@ -38,6 +37,8 @@ namespace Tower
         public IntReactiveProperty AddLevel = new IntReactiveProperty(1);
         public IntReactiveProperty GoldCharge = new IntReactiveProperty(100); // 购买花费的金币 
         public IntReactiveProperty ExperienceCharge = new IntReactiveProperty(100); //购买花费的经验
+
+
         public void InitPlayerData()
         {
             NewGame.Value = true;

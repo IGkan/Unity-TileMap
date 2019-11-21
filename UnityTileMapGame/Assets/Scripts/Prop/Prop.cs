@@ -30,6 +30,7 @@ namespace Tower
 
         public void PropExecute(string name)
         {
+            gameObject.Hide();
             switch (name)
             {
                 case "Life":
@@ -59,11 +60,15 @@ namespace Tower
                 case "PurpleKey":
                     PlayerData.Instance.PurpleKey.Value += this.PurpleKey;
                     break;
+                case "SelectLevel":
+                    PlayerData.Instance.CanSelectFloor.Value = true;
+                    break;
+                case "PeepMonster":
+                    PlayerData.Instance.CanPeepMonster.Value = true;
+                    break;
                 default:
                     break;
             }
-            gameObject.Hide();
-
         }
 
         public void OnSingletonInit()

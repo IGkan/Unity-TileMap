@@ -7,6 +7,7 @@ namespace Tower
     using QFramework;
     using UnityEngine;
     using UnityEngine.Tilemaps;
+    using QF.Extensions;
 
     public class Player : QMonoBehaviour, ISingleton
     {
@@ -35,7 +36,26 @@ namespace Tower
         {
             mTargetTilePos = new Vector3Int(Mathf.FloorToInt(transform.position.x), Mathf.FloorToInt(transform.position.y), 0); // 初始化玩家所在tile坐标 向下取整
         }
+
+        // 用于射线检测查看怪物属性
         void Update()
+        {
+            if (PlayerData.Instance.CanPeepMonster.Value) return;
+            if (Input.GetMouseButtonDown(0))
+            {
+                RaycastHit2D hit = Physics2D.Raycast(Camera.main.ScreenToWorldPoint(Input.mousePosition), Vector2.zero, 100f);
+                if (hit.collider.IsNotNull())
+                {
+                    if (hit.collider.CompareTag("Monster"))
+                    {
+                        // 调用 Monster 身上的显示UI方法
+                        hit.collider.GetComponent<Monster>().MonsterDisplay();
+                    }
+                }
+            }
+        }
+        // 移动
+        void FixedUpdate()
         {
             if (Input.GetKeyDown(KeyCode.Escape))
             {
@@ -62,40 +82,6 @@ namespace Tower
                 PressEvent(PlayerAnimatorState.Right, Vector3Int.right);
                 return;
             }
-
-            #region
-            //if (!isMoving && mCanMove)
-            //{
-            //    if (Input.GetKey(KeyCode.W))
-            //    {
-            //        JudgeMove(Vector3Int.up);
-            //        PlayerAnimatorMsg.Instance.ChangePlayerState(PlayerAnimatorState.Up);
-            //        return;
-            //    }
-            //    if (Input.GetKey(KeyCode.S))
-            //    {
-            //        JudgeMove(Vector3Int.down);
-            //        PlayerAnimatorMsg.Instance.ChangePlayerState(PlayerAnimatorState.Down);
-
-            //        return;
-            //    }
-            //    if (Input.GetKey(KeyCode.A))
-            //    {
-            //        JudgeMove(Vector3Int.left);
-            //        PlayerAnimatorMsg.Instance.ChangePlayerState(PlayerAnimatorState.Left);
-
-            //        return;
-            //    }
-            //    if (Input.GetKey(KeyCode.D))
-            //    {
-            //        JudgeMove(Vector3Int.right);
-            //        PlayerAnimatorMsg.Instance.ChangePlayerState(PlayerAnimatorState.Right);
-
-            //        return;
-            //    }
-            //}
-            #endregion
-
         }
 
         /// <summary>
@@ -161,8 +147,8 @@ namespace Tower
                             this.SendMsg(new AudioSoundMsg("prop"));
                             hitTransform.GetComponent<Stair>().ChangeStair(hit.collider.name);
                             this.Sequence()
-                                 .Delay(1.0f)
-                                 .Event(() => Log.I("Delayed 1 second"))
+                                 .Delay(0.5f)
+                                 .Event(() => Log.I("Delayed 0.5 second"))
                                  .Event(() => ChangeMovingState())
                                  .Begin();
                             break;
