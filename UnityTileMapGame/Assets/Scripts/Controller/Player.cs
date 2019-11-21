@@ -40,7 +40,7 @@ namespace Tower
         // 用于射线检测查看怪物属性
         void Update()
         {
-            if (PlayerData.Instance.CanPeepMonster.Value) return;
+            if (!PlayerData.Instance.CanPeepMonster.Value) return;
             if (Input.GetMouseButtonDown(0))
             {
                 RaycastHit2D hit = Physics2D.Raycast(Camera.main.ScreenToWorldPoint(Input.mousePosition), Vector2.zero, 100f);
