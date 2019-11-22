@@ -129,7 +129,7 @@ namespace Tower
                 RaycastHit2D hit = Physics2D.Raycast(transform.position + mMoveDirectionCell, Vector2.zero);
                 if (hit.collider != null)
                 {
-                    if (hit.collider.name + transform.position.x == mColliderName) // + transform.position.x 是因为需要避免两次碰到相同的collider
+                    if (hit.collider.name + transform.position.x == mColliderName && !hit.collider.CompareTag("Monster")&& !hit.collider.CompareTag("Prop")) // + transform.position.x 是因为需要避免两次碰到相同的collider
                     {
                         ChangeMovingState();
                         return;
@@ -163,13 +163,12 @@ namespace Tower
 
                                         mPlayerData.YellowKey.Value -= 1;
                                         hit.collider.gameObject.SetActive(false);
+                                        PlayerData.Instance.AddHideObjPos(hit.collider.gameObject.transform.localPosition);
                                         PlayerMove(mMoveDirectionCell);
-
                                     }
                                     else
                                     {
                                         ChangeMovingState();
-
                                     }
                                     break;
                                 case "RedDoor":
@@ -179,8 +178,8 @@ namespace Tower
 
                                         mPlayerData.RedKey.Value -= 1;
                                         hit.collider.gameObject.SetActive(false);
+                                        PlayerData.Instance.AddHideObjPos(hit.collider.gameObject.transform.localPosition);
                                         PlayerMove(mMoveDirectionCell);
-
                                     }
                                     else
                                     {
@@ -195,6 +194,7 @@ namespace Tower
 
                                         mPlayerData.PurpleKey.Value -= 1;
                                         hit.collider.gameObject.SetActive(false);
+                                        PlayerData.Instance.AddHideObjPos(hit.collider.gameObject.transform.localPosition);
                                         PlayerMove(mMoveDirectionCell);
 
                                     }

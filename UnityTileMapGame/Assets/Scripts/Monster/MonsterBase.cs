@@ -52,7 +52,8 @@ namespace Tower
                     if (child.mLife <= 0) // 怪物死亡
                     {
                        gameObject.Hide();  //1 => 回调且执行,直接作用 PlayerData
-                        return count;
+                       playerData.AddHideObjPos(gameObject.transform.localPosition);
+                       return count;
                     }
                 }
                 else

@@ -31,7 +31,8 @@ namespace Tower
 
             BtnSetting.onClick.AddListener(() =>  // 设置界面开关
             {
-
+                UIMgr.OpenPanel<MyMotaUIHomePanel>();
+                PlayerData.Instance.SavePlayerData();
             });
 
             // 选关

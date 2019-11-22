@@ -11,6 +11,7 @@
 namespace Tower
 {
     using QF;
+    using QF.Action;
     using QF.Extensions;
     using QF.Res;
     using QFramework;
@@ -19,21 +20,22 @@ namespace Tower
     using System.Collections.Generic;
     using System.Linq;
     using UnityEngine;
+    using UnityEngine.SceneManagement;
     using UnityEngine.UI;
-    
-    
+
+
     public class MyMotaUIHomePanelData : QFramework.UIPanelData
     {
     }
-    
+
     public partial class MyMotaUIHomePanel : QFramework.UIPanel
     {
-        
+
         protected override void ProcessMsg(int eventId, QFramework.QMsg msg)
         {
-            throw new System.NotImplementedException ();
+            throw new System.NotImplementedException();
         }
-        
+
         protected override void OnInit(QFramework.IUIData uiData)
         {
             mData = uiData as MyMotaUIHomePanelData ?? new MyMotaUIHomePanelData();
@@ -44,15 +46,46 @@ namespace Tower
 
         protected override void RegisterUIEvent()
         {
+
             BtnStart.onClick.AddListener(() =>
             {
+                if (transform.parent.childCount == 2)
+                {
+                    GameObject.Find("GameScenePrefab(Clone)").transform.GetComponent<GameScenePrefab>().SetActiveAll();
+                }
+                if(transform.parent.childCount == 1)
+                {
+                    UIMgr.OpenPanel<MyMotaUIGamePanel>();
+
+                }
+                PlayerData.Instance.InitPlayerData();
                 CloseSelf();
-                PlayerData.Instance.NewGame.Value = true;
-                UIMgr.OpenPanel<MyMotaUIGamePanel>();
+                SendMsg(new AudioMusicMsg("bg"));
             });
 
             BtnReload.onClick.AddListener(() =>
             {
+                // 这里可能判断 MyMotaUIGamePanel 是否已打开
+                // 判断以前有没有打开过游戏 如果没有打开过游戏初始化一下数据
+                if (PlayerData.Instance.NewGame.Value)
+                {
+                    PlayerData.Instance.InitPlayerData();
+
+                }
+
+                // 如果玩家一直在游戏中 只需要打开设置界面 不需要重新加载数据
+                if (transform.parent.childCount == 1)
+                {
+                    PlayerData.Instance.CurrntFloor.Value = 1;
+                    UIMgr.OpenPanel<MyMotaUIGamePanel>();
+                    PlayerData.Instance.LoadPlayerData();
+                }
+                if(transform.parent.childCount > 1)
+                {
+                    SendMsg(new AudioMusicMsg("bg"));
+                }
+                CloseSelf();
+
 
             });
             BtnSetting.onClick.AddListener(() =>
@@ -72,15 +105,15 @@ namespace Tower
         protected override void OnOpen(QFramework.IUIData uiData)
         {
         }
-        
+
         protected override void OnShow()
         {
         }
-        
+
         protected override void OnHide()
         {
         }
-        
+
         protected override void OnClose()
         {
         }

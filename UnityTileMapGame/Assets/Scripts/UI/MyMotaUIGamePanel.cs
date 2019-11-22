@@ -36,10 +36,9 @@ namespace Tower
             mResLoader.LoadSync<GameObject>("GameScenePrefab")
                 .Instantiate();
 
-            mResLoader.LoadSync<GameObject>("MyEasyTouchJoystick")
+             mResLoader.LoadSync<GameObject>("MyEasyTouchJoystick")
                .Instantiate();
 
-            PlayerData.Instance.InitPlayerData();
             SendMsg(new AudioMusicMsg("bg"));
         }
 

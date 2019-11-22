@@ -9,6 +9,8 @@ TagManager:
   - Npc
   - Stair
   - Monster
+  - soldier
+  - Prefab
   layers:
   - Default
   - TransparentFX

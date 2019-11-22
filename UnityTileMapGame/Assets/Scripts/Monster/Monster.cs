@@ -55,6 +55,7 @@ namespace Tower
                     if (other.gameObject.name == "enemy11_4") // Boss ,设计结构后面待优化
                     {
                         UIMgr.OpenPanel<MyMotaUIEndPanel>();
+                        UIMgr.ClosePanel<MyMotaUIGamePanel>();
                     }
                     return true;
                 }

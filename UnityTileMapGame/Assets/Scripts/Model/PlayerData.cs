@@ -1,5 +1,7 @@
 ﻿using QF;
+using QF.Extensions;
 using UniRx;
+using UnityEngine;
 
 namespace Tower
 {
@@ -7,41 +9,55 @@ namespace Tower
     public class PlayerData : ISingleton
     {
         private PlayerData() { }
+        public static PlayerData Instance
+        {
+            get
+            {
+                return SingletonProperty<PlayerData>.Instance;
+            }
+        }
+
+        #region 属性
         // 玩家属性
-        public StringReactiveProperty Name = new StringReactiveProperty("Mr Li");
-        public IntReactiveProperty CurrntFloor = new IntReactiveProperty(1);
-        public IntReactiveProperty Level = new IntReactiveProperty(1);
-        public IntReactiveProperty Life = new IntReactiveProperty(100);
-        public IntReactiveProperty Attack = new IntReactiveProperty(10);
-        public IntReactiveProperty Defend = new IntReactiveProperty(10);
-        public IntReactiveProperty Experience = new IntReactiveProperty(0);
-        public IntReactiveProperty Gold = new IntReactiveProperty(0);
-        public IntReactiveProperty YellowKey = new IntReactiveProperty(0);
-        public IntReactiveProperty RedKey = new IntReactiveProperty(0);
-        public IntReactiveProperty PurpleKey = new IntReactiveProperty(0);
+        public StringReactiveProperty Name = new StringReactiveProperty();
+        public IntReactiveProperty CurrntFloor = new IntReactiveProperty();
+        public IntReactiveProperty Level = new IntReactiveProperty();
+        public IntReactiveProperty Life = new IntReactiveProperty();
+        public IntReactiveProperty Attack = new IntReactiveProperty();
+        public IntReactiveProperty Defend = new IntReactiveProperty();
+        public IntReactiveProperty Experience = new IntReactiveProperty();
+        public IntReactiveProperty Gold = new IntReactiveProperty();
+        public IntReactiveProperty YellowKey = new IntReactiveProperty();
+        public IntReactiveProperty RedKey = new IntReactiveProperty();
+        public IntReactiveProperty PurpleKey = new IntReactiveProperty();
 
 
         // 玩家其他相关属性
-        public BoolReactiveProperty NewGame = new BoolReactiveProperty(true); // 是否新游戏
-        public IntReactiveProperty MaxFloor = new IntReactiveProperty(25); // 游戏最大关卡数
-        public BoolReactiveProperty CanSelectFloor = new BoolReactiveProperty(false); // 是否吃到道具可以自由选择关卡
-        public BoolReactiveProperty CanPeepMonster = new BoolReactiveProperty(false); // 是否吃到道具可以查看怪物信息和对玩家的预计伤害等
+        public BoolReactiveProperty NewGame = new BoolReactiveProperty(); // 是否新游戏
+        public IntReactiveProperty MaxFloor = new IntReactiveProperty(); // 游戏最大关卡数
+        public BoolReactiveProperty CanSelectFloor = new BoolReactiveProperty(); // 是否吃到道具可以自由选择关卡
+        public BoolReactiveProperty CanPeepMonster = new BoolReactiveProperty(); // 是否吃到道具可以查看怪物信息和对玩家的预计伤害等
+
+        //public BoolReactiveProperty IsGaming = new BoolReactiveProperty(); // 是否一直在游戏中
 
         // 商店购买使用的属性
-        public IntReactiveProperty AddAttack = new IntReactiveProperty(10);
-        public IntReactiveProperty AddDefend = new IntReactiveProperty(10);
-        public IntReactiveProperty AddLife = new IntReactiveProperty(100);
-        public IntReactiveProperty AddYellowKey = new IntReactiveProperty(1);
-        public IntReactiveProperty AddRedKey = new IntReactiveProperty(1);
-        public IntReactiveProperty AddPurpleKey = new IntReactiveProperty(1);
-        public IntReactiveProperty AddLevel = new IntReactiveProperty(1);
-        public IntReactiveProperty GoldCharge = new IntReactiveProperty(100); // 购买花费的金币 
-        public IntReactiveProperty ExperienceCharge = new IntReactiveProperty(100); //购买花费的经验
+        public IntReactiveProperty AddAttack = new IntReactiveProperty();
+        public IntReactiveProperty AddDefend = new IntReactiveProperty();
+        public IntReactiveProperty AddLife = new IntReactiveProperty();
+        public IntReactiveProperty AddYellowKey = new IntReactiveProperty();
+        public IntReactiveProperty AddRedKey = new IntReactiveProperty();
+        public IntReactiveProperty AddPurpleKey = new IntReactiveProperty();
+        public IntReactiveProperty AddLevel = new IntReactiveProperty();
+        public IntReactiveProperty GoldCharge = new IntReactiveProperty(); // 购买花费的金币 
+        public IntReactiveProperty ExperienceCharge = new IntReactiveProperty(); //购买花费的经验
 
 
+        #endregion
+
+     
+        // 新游戏初始化数据
         public void InitPlayerData()
         {
-            NewGame.Value = true;
             Name.Value = "Mr Li";
             CurrntFloor.Value = 1;
             Level.Value = 1;
@@ -53,29 +69,70 @@ namespace Tower
             YellowKey.Value = 0;
             RedKey.Value = 0;
             PurpleKey.Value = 0;
+
+            NewGame.Value = true;
+            MaxFloor.Value = 26;
+            CanSelectFloor.Value = false;
+            CanPeepMonster.Value = false;
+
+            AddAttack.Value = 10;
+            AddDefend.Value = 10;
+            AddLife.Value = 100;
+            AddYellowKey.Value = 1;
+            AddRedKey.Value = 1;
+            AddYellowKey.Value = 1;
+            GoldCharge.Value = 100;
+            ExperienceCharge.Value = 100;
+
+            Player.Instance.InitPlayerTilePos();
+            Stair.ComeUp(1);
         }
 
-        public static PlayerData Instance
+        public ReactiveCollection<TileData> TileDataCollection = new ReactiveCollection<TileData>();
+
+        public void AddHideObjPos(Vector2 pos)
         {
-            get
-            {
-                return SingletonProperty<PlayerData>.Instance;
-            }
+            var tileData = new TileData();
+            tileData.TileHidePos.Value = pos;
+            TileDataCollection.Add(tileData);
         }
 
-        //public void SavePlayerData()
-        //{
-        //    PlayerPrefs.SetString("PlayerData", this.ToJson());
-        //}
+        public void SavePlayerData()
+        {
+            PlayerPrefs.SetString("PlayerTileData", this.ToJson());
+        }
+        
 
-        //public PlayerData LoadPlayerData()
-        //{
-        //    var jsonContent = PlayerPrefs.GetString("PlayerData", string.Empty);
-        //    return jsonContent.IsNullOrEmpty() ? new PlayerData() : jsonContent.FromJson<PlayerData>();
-        //}
+        public void LoadPlayerData()
+        {
+            var jsonContent = PlayerPrefs.GetString("PlayerTileData", string.Empty);
+            //foreach (var item in jsonContent.FromJson<PlayerData>().TileDataCollection)
+            //{
+            //    Debug.Log(item.TileHidePos.ToString());
+
+            //}
+            if (!NewGame.Value)
+            {
+                foreach (var item in jsonContent.FromJson<PlayerData>().TileDataCollection)
+                {
+                    RaycastHit2D hit = Physics2D.Raycast(item.TileHidePos.Value, Vector2.zero);
+                    if (hit.collider != null)
+                    {
+                        Debug.Log("加载数据隐藏: " + hit.collider.gameObject.name);
+                        hit.collider.gameObject.SetActive(false);
+                    }
+                }
+            }
+            //return jsonContent.IsNullOrEmpty() ? new PlayerData() : jsonContent.FromJson<PlayerData>();
+        }
         public void OnSingletonInit()
         {
 
         }
+    }
+
+    public class TileData{
+        // 隐藏的物体的二维坐标
+        public Vector3ReactiveProperty TileHidePos = new Vector3ReactiveProperty();
     }
 }
