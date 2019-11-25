@@ -27,7 +27,7 @@ namespace Tower
         private void Start()
         {
             monster = new Monster(Name,Level, Life, Attack, Defend, Experience, Gold);
-            TipObj = UIMgr.GetPanel<MyMotaUIGamePanel>().TipPanel.gameObject;
+            m_TipPanel = UIMgr.GetPanel<MyMotaUIGamePanel>().TipPanel;
         }
         public Monster(string _mName, int _mLevel, int _mLife, int _mAttack, int _mDefend, int _mExperience, int _mGold) : base(_mName, _mLevel, _mLife, _mAttack, _mDefend, _mExperience, _mGold)
         {
@@ -52,34 +52,36 @@ namespace Tower
                     playerData.Life.Value -= count;
                     playerData.Experience.Value += Experience;
                     playerData.Gold.Value += Gold;
-                    if (other.gameObject.name == "enemy11_4") // Boss ,设计结构后面待优化
+                    if (other.gameObject.name == "enemy12_8") // Boss ,设计结构后面待优化
                     {
                         UIMgr.OpenPanel<MyMotaUIEndPanel>();
                         UIMgr.ClosePanel<MyMotaUIGamePanel>();
                     }
                     return true;
                 }
-               
             }
-                //GameObject.Find("tipText").GetComponent<Text>().text = "您打不过它!请继续提升战斗力!";
                 return false;
             }
 
 
-        GameObject TipObj;
+        TipPanel m_TipPanel;
         /// <summary>
         /// 调用怪物属性UI 显示
         /// </summary>
         public void MonsterDisplay()
         {
-            if (TipObj.activeSelf) return;
+            string mTip;
+            int ExpectDamagedInt = ExpectDamaged(monster, out mTip);
             this.Sequence()
-                .Event(() => TipObj.gameObject.SetActive(true))
-                .Event(() => UIMgr.GetPanel<MyMotaUIGamePanel>().MonsterTipText.text = "我们是" + " \n" + " 好人" + "\n" + "你吗个打几把")
-                .Delay(1f)
-                 .Event(() => TipObj.SetActive(false))
+                .Event(() => m_TipPanel.Show())
+                .Event(() => m_TipPanel.MonsterTipText.text = "<b><color=red><size=50>" + mTip + "</size></color></b>" + "\n" + 
+                                                                    "怪物攻击值: " + Attack + "\n" +
+                                                                      "怪物防御值: " +Defend +"\n" +
+                                                                            "怪物生命值: " + Life+"\n" +
+                                                                            "击杀赏金: " + Gold + "\n" +
+                                                                            "击杀经验: " + Experience + "\n" +
+                                                                               "怪物将对你造成 " + "<size=70><color=red><i>" +ExpectDamagedInt +"</i></color></size>"+ " 伤害")
                 .Begin();
-
         }
 
          
@@ -89,7 +91,7 @@ namespace Tower
         /// <returns></returns>
         public int GetExpectDamage()
         {
-            return ExpectDamaged(monster);
+            return ExpectDamaged(monster, out string mTip);
         }
 
         public void OnSingletonInit()

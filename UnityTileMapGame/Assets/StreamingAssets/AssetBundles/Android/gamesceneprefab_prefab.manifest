@@ -1,12 +1,12 @@
 ManifestFileVersion: 0
-CRC: 252533015
+CRC: 1658871478
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: 9cb6ac8f84dcf8e2240409e9500d4b84
+    Hash: 71fb5de08e363dc565884f46ee043af5
   TypeTreeHash:
     serializedVersion: 2
-    Hash: 9a05d04a1ad5dbabe9beb2232acc01a9
+    Hash: 3cc280011d1cebced87e5b7799f33415
 HashAppended: 0
 ClassTypes:
 - Class: 1
@@ -65,5 +65,4 @@ ClassTypes:
   Script: {instanceID: 0}
 Assets:
 - Assets/Art/Prefab/GameScenePrefab.prefab
-Dependencies:
-- E:/LSF/GithubDesktop/UnityTileMapGame/Unity-TileMap/UnityTileMapGame/AssetBundles/Android/player_prefab
+Dependencies: []

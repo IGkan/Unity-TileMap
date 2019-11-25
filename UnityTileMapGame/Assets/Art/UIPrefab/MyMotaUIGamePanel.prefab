@@ -37,7 +37,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 262}
   m_SizeDelta: {x: 540, y: 470.22}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &161857717
@@ -1351,6 +1351,7 @@ GameObject:
   - component: {fileID: 7575319210418011184}
   - component: {fileID: 3240489583812856084}
   - component: {fileID: 7156208275994762278}
+  - component: {fileID: 114678513318469836}
   m_Layer: 5
   m_Name: TipPanel
   m_TagString: Untagged
@@ -1375,7 +1376,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: -113}
   m_SizeDelta: {x: 500, y: 300}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &7575319210418011184
@@ -1427,10 +1428,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0d51f3a7c41ab0346b49ae50d456bece, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MarkType: 0
+  MarkType: 1
   CustomComponentName: TipPanel
   ComponentGeneratePath: 
   CustomComment: 
+--- !u!114 &114678513318469836
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2326332956297901566}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 05fed392e92a7ce4893934963c58ec0f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  MonsterTipText: {fileID: 5872199281493613384}
 --- !u!1 &2719998921832154077
 GameObject:
   m_ObjectHideFlags: 0
@@ -2219,9 +2233,9 @@ GameObject:
   m_Component:
   - component: {fileID: 3168369521864717483}
   - component: {fileID: 3168369521864717486}
-  - component: {fileID: 3168369521864717481}
   - component: {fileID: 3168369521864717480}
   - component: {fileID: 622874734149648400}
+  - component: {fileID: 5519869389316105558}
   m_Layer: 5
   m_Name: BtnSetting
   m_TagString: Untagged
@@ -2257,35 +2271,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3168369521864717482}
   m_CullTransparentMesh: 0
---- !u!114 &3168369521864717481
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3168369521864717482}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: d5d56d4042eac3b44a07d21356c4736e, type: 3}
-  m_Type: 0
-  m_PreserveAspect: 0
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
-  m_UseSpriteMesh: 0
 --- !u!114 &3168369521864717480
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2322,7 +2307,7 @@ MonoBehaviour:
     m_PressedTrigger: Pressed
     m_DisabledTrigger: Disabled
   m_Interactable: 1
-  m_TargetGraphic: {fileID: 3168369521864717481}
+  m_TargetGraphic: {fileID: 5519869389316105558}
   m_OnClick:
     m_PersistentCalls:
       m_Calls: []
@@ -2344,6 +2329,35 @@ MonoBehaviour:
   CustomComponentName: Button (2)
   ComponentGeneratePath: 
   CustomComment: 
+--- !u!114 &5519869389316105558
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3168369521864717482}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_Sprite: {fileID: 21300000, guid: d5d56d4042eac3b44a07d21356c4736e, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
 --- !u!1 &3168369522053351956
 GameObject:
   m_ObjectHideFlags: 0
@@ -3140,9 +3154,9 @@ GameObject:
   m_Component:
   - component: {fileID: 3168369522678805465}
   - component: {fileID: 3168369522678805468}
-  - component: {fileID: 3168369522678805471}
   - component: {fileID: 3168369522678805470}
   - component: {fileID: 8202552524372368003}
+  - component: {fileID: 3820086540707741867}
   m_Layer: 5
   m_Name: BtnPeep
   m_TagString: Untagged
@@ -3178,35 +3192,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3168369522678805464}
   m_CullTransparentMesh: 0
---- !u!114 &3168369522678805471
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3168369522678805464}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: 36b371986fb71d94a825b8e913df6be2, type: 3}
-  m_Type: 0
-  m_PreserveAspect: 0
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
-  m_UseSpriteMesh: 0
 --- !u!114 &3168369522678805470
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3243,7 +3228,7 @@ MonoBehaviour:
     m_PressedTrigger: Pressed
     m_DisabledTrigger: Disabled
   m_Interactable: 1
-  m_TargetGraphic: {fileID: 3168369522678805471}
+  m_TargetGraphic: {fileID: 3820086540707741867}
   m_OnClick:
     m_PersistentCalls:
       m_Calls: []
@@ -3265,6 +3250,35 @@ MonoBehaviour:
   CustomComponentName: Button
   ComponentGeneratePath: 
   CustomComment: 
+--- !u!114 &3820086540707741867
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3168369522678805464}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_Sprite: {fileID: 0}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
 --- !u!1 &3168369522751825467
 GameObject:
   m_ObjectHideFlags: 0
@@ -3546,9 +3560,9 @@ GameObject:
   m_Component:
   - component: {fileID: 3168369523015579607}
   - component: {fileID: 3168369523015579594}
-  - component: {fileID: 3168369523015579605}
   - component: {fileID: 3168369523015579604}
   - component: {fileID: 7433439663338422199}
+  - component: {fileID: 6106890847049582829}
   m_Layer: 5
   m_Name: BtnMusic
   m_TagString: Untagged
@@ -3584,35 +3598,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3168369523015579606}
   m_CullTransparentMesh: 0
---- !u!114 &3168369523015579605
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3168369523015579606}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: eb1f29af48761f843a0ed9026444acf1, type: 3}
-  m_Type: 0
-  m_PreserveAspect: 0
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
-  m_UseSpriteMesh: 0
 --- !u!114 &3168369523015579604
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3649,7 +3634,7 @@ MonoBehaviour:
     m_PressedTrigger: Pressed
     m_DisabledTrigger: Disabled
   m_Interactable: 1
-  m_TargetGraphic: {fileID: 3168369523015579605}
+  m_TargetGraphic: {fileID: 6106890847049582829}
   m_OnClick:
     m_PersistentCalls:
       m_Calls: []
@@ -3671,6 +3656,35 @@ MonoBehaviour:
   CustomComponentName: Button (3)
   ComponentGeneratePath: 
   CustomComment: 
+--- !u!114 &6106890847049582829
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3168369523015579606}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_Sprite: {fileID: 0}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
 --- !u!1 &3168369523063100696
 GameObject:
   m_ObjectHideFlags: 0
@@ -3681,9 +3695,9 @@ GameObject:
   m_Component:
   - component: {fileID: 3168369523063100697}
   - component: {fileID: 3168369523063100700}
-  - component: {fileID: 3168369523063100703}
   - component: {fileID: 3168369523063100702}
   - component: {fileID: 2226938003899191303}
+  - component: {fileID: 5038298515962495848}
   m_Layer: 5
   m_Name: BtnSelectLevel
   m_TagString: Untagged
@@ -3719,35 +3733,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3168369523063100696}
   m_CullTransparentMesh: 0
---- !u!114 &3168369523063100703
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3168369523063100696}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: e86a0769f658c154c8fccb39373ad3f4, type: 3}
-  m_Type: 0
-  m_PreserveAspect: 0
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
-  m_UseSpriteMesh: 0
 --- !u!114 &3168369523063100702
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3784,7 +3769,7 @@ MonoBehaviour:
     m_PressedTrigger: Pressed
     m_DisabledTrigger: Disabled
   m_Interactable: 1
-  m_TargetGraphic: {fileID: 3168369523063100703}
+  m_TargetGraphic: {fileID: 5038298515962495848}
   m_OnClick:
     m_PersistentCalls:
       m_Calls: []
@@ -3806,6 +3791,35 @@ MonoBehaviour:
   CustomComponentName: Button (1)
   ComponentGeneratePath: 
   CustomComment: 
+--- !u!114 &5038298515962495848
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3168369523063100696}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_Sprite: {fileID: 0}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
 --- !u!1 &3168369523123533525
 GameObject:
   m_ObjectHideFlags: 0
@@ -4018,8 +4032,7 @@ MonoBehaviour:
   npc2_12Panel: {fileID: 114091730653106934}
   npc2_8Panel: {fileID: 114474871573740450}
   FloorPanel: {fileID: 114028637520424560}
-  TipPanel: {fileID: 3240489583812856084}
-  MonsterTipText: {fileID: 5872199281493613384}
+  TipPanel: {fileID: 114678513318469836}
 --- !u!1 &3168369523373762847
 GameObject:
   m_ObjectHideFlags: 0
@@ -7660,7 +7673,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.990566, g: 0.014017418, b: 0.014017418, a: 1}
+  m_Color: {r: 1, g: 0.9137255, b: 0, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:

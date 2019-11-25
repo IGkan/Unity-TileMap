@@ -34,6 +34,7 @@ namespace Tower
 
         // 玩家其他相关属性
         public BoolReactiveProperty NewGame = new BoolReactiveProperty(); // 是否新游戏
+        public FloatReactiveProperty MoveSpeed = new FloatReactiveProperty(0.2f); // 玩家移动速度
         public IntReactiveProperty MaxFloor = new IntReactiveProperty(); // 游戏最大关卡数
         public BoolReactiveProperty CanSelectFloor = new BoolReactiveProperty(); // 是否吃到道具可以自由选择关卡
         public BoolReactiveProperty CanPeepMonster = new BoolReactiveProperty(); // 是否吃到道具可以查看怪物信息和对玩家的预计伤害等
@@ -61,9 +62,9 @@ namespace Tower
             Name.Value = "Mr Li";
             CurrntFloor.Value = 1;
             Level.Value = 1;
-            Life.Value = 100;
-            Attack.Value = 10;
-            Defend.Value = 10;
+            Attack.Value = 10 + Level.Value*5;
+            Defend.Value = 10 + Level.Value * 5;
+            Life.Value = 100 + Level.Value * 50;
             Experience.Value = 0;
             Gold.Value = 0;
             YellowKey.Value = 0;
@@ -106,11 +107,7 @@ namespace Tower
         public void LoadPlayerData()
         {
             var jsonContent = PlayerPrefs.GetString("PlayerTileData", string.Empty);
-            //foreach (var item in jsonContent.FromJson<PlayerData>().TileDataCollection)
-            //{
-            //    Debug.Log(item.TileHidePos.ToString());
-
-            //}
+  
             if (!NewGame.Value)
             {
                 foreach (var item in jsonContent.FromJson<PlayerData>().TileDataCollection)
@@ -123,7 +120,6 @@ namespace Tower
                     }
                 }
             }
-            //return jsonContent.IsNullOrEmpty() ? new PlayerData() : jsonContent.FromJson<PlayerData>();
         }
         public void OnSingletonInit()
         {

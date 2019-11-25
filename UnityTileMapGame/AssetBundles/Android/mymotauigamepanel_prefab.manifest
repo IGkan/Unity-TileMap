@@ -1,12 +1,12 @@
 ManifestFileVersion: 0
-CRC: 141591332
+CRC: 2135218133
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: b53a492e34c4c8961017fa1b390dce93
+    Hash: 74583a62cb87ae38e1ea4085b726bfa5
   TypeTreeHash:
     serializedVersion: 2
-    Hash: 30496f5e1600e6686b6974fbbf08a365
+    Hash: 8f4369c63c8f3f88b6a0a2559559f1c8
 HashAppended: 0
 ClassTypes:
 - Class: 1
@@ -20,6 +20,8 @@ ClassTypes:
 - Class: 114
   Script: {fileID: 1392445389, guid: f70555f144d8491a825f0804e09c671c, type: 3}
 - Class: 114
+  Script: {fileID: 1741964061, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+- Class: 114
   Script: {fileID: -2095666955, guid: f70555f144d8491a825f0804e09c671c, type: 3}
 - Class: 114
   Script: {fileID: -405508275, guid: f70555f144d8491a825f0804e09c671c, type: 3}
@@ -29,6 +31,8 @@ ClassTypes:
   Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
 - Class: 114
   Script: {fileID: 1297475563, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 05fed392e92a7ce4893934963c58ec0f, type: 3}
 - Class: 114
   Script: {fileID: 11500000, guid: 95575e23b3853874589d412720265e07, type: 3}
 - Class: 114
@@ -58,7 +62,4 @@ ClassTypes:
 Assets:
 - Assets/Art/UIPrefab/MyMotaUIGamePanel.prefab
 Dependencies:
-- E:/LSF/GithubDesktop/UnityTileMapGame/Unity-TileMap/UnityTileMapGame/AssetBundles/Android/settingon_png
-- E:/LSF/GithubDesktop/UnityTileMapGame/Unity-TileMap/UnityTileMapGame/AssetBundles/Android/selectleveloff_png
-- E:/LSF/GithubDesktop/UnityTileMapGame/Unity-TileMap/UnityTileMapGame/AssetBundles/Android/peepoff_png
-- E:/LSF/GithubDesktop/UnityTileMapGame/Unity-TileMap/UnityTileMapGame/AssetBundles/Android/musicon_png
+- E:/LSF/GithubDesktop/UnityTileMapGame/Unity-TileMap/UnityTileMapGame/AssetBundles/Android/sprites

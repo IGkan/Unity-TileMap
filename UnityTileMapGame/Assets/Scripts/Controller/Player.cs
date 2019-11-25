@@ -22,7 +22,6 @@ namespace Tower
         public Tilemap wallTilemap;
 
         Vector3Int mTargetTilePos;
-        public float mMoveSpeed = 0.3f;
         private bool isMoving;
         public bool mCanMove = true;
         string mColliderName;
@@ -246,7 +245,7 @@ namespace Tower
         void PlayerMove(Vector3Int mMoveDirectionCell)
         {
             mTargetTilePos += mMoveDirectionCell;
-            transform.DOMove(transform.position + mMoveDirectionCell, mMoveSpeed).SetEase(Ease.Linear).OnComplete(ChangeMovingState);
+            transform.DOMove(transform.position + mMoveDirectionCell, mPlayerData.MoveSpeed.Value).SetEase(Ease.Linear).OnComplete(ChangeMovingState);
         }
         public void ChangeMovingState()
         {

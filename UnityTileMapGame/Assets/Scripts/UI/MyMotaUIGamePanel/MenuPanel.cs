@@ -6,6 +6,7 @@ using UnityEngine.UI;
 using QFramework;
 using QF.Res;
 using UniRx;
+using UnityEngine;
 
 namespace Tower
 {
@@ -40,15 +41,14 @@ namespace Tower
             {
                 if (content)
                 {
-                    // Ìæ»»Í¼±ê
-                    var sprite = mResLoader.LoadSprite("SelectLevelOn");
-                    BtnSelectLevel.GetComponent<Image>().sprite = sprite;
-                  
+                    //// Ìæ»»Í¼±ê
+                    //var sprite = Resources.Load<Sprite>("Sprites/SelectLevelOn");
+                    //BtnSelectLevel.GetComponent<Image>().sprite = sprite;
                 }
                 else
                 {
-                    var sprite = mResLoader.LoadSprite("SelectLevelOff");
-                    BtnSelectLevel.GetComponent<Image>().sprite = sprite;
+                    //var sprite = Resources.Load<Sprite>("Sprites/SelectLevelOff");
+                    //BtnSelectLevel.GetComponent<Image>().sprite = sprite;
                 }
             }
             );
@@ -58,15 +58,14 @@ namespace Tower
             {
                 if (content)
                 {
-                    // Ìæ»»Í¼±ê
-                    var sprite = mResLoader.LoadSprite("PeepMonsterOn");
-                    BtnPeep.GetComponent<Image>().sprite = sprite;
-
+                    //  // Ìæ»»Í¼±ê
+                    //var sprite = Resources.Load<Sprite>("Sprites/PeepMonsterOn");
+                    //BtnPeep.GetComponent<Image>().sprite = sprite;
                 }
                 else
                 {
-                    var sprite = mResLoader.LoadSprite("PeepMonsterOff");
-                    BtnPeep.GetComponent<Image>().sprite = sprite;
+                    //var sprite = Resources.Load<Sprite>("Sprites/PeepMonsterOff");
+                    //BtnPeep.GetComponent<Image>().sprite = sprite;
                 }
             }
           );
@@ -74,14 +73,15 @@ namespace Tower
             {
                 if (content)
                 {
-                    var sprite = mResLoader.LoadSprite("MusicOn");
-                    BtnMusic.GetComponent<Image>().sprite = sprite;
-
+                    //var sprite = mResLoader.LoadSprite("MusicOn");
+                    //BtnMusic.GetComponent<Image>().sprite = sprite;
+                    //var sprite = Resources.Load<Sprite>("Sprites/MusicOn");
+                    //BtnMusic.GetComponent<Image>().sprite = sprite;
                 }
                 else
                 {
-                    var sprite = mResLoader.LoadSprite("MusicOff");
-                    BtnMusic.GetComponent<Image>().sprite = sprite;
+                    //var sprite = Resources.Load<Sprite>("Sprites/MusicOff");
+                    //BtnMusic.GetComponent<Image>().sprite = sprite;
                 }
             }
            );

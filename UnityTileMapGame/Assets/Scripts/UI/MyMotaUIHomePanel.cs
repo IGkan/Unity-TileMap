@@ -19,6 +19,7 @@ namespace Tower
     using System.Collections;
     using System.Collections.Generic;
     using System.Linq;
+    using UniRx;
     using UnityEngine;
     using UnityEngine.SceneManagement;
     using UnityEngine.UI;
@@ -46,6 +47,12 @@ namespace Tower
 
         protected override void RegisterUIEvent()
         {
+            SpeedSlider.onValueChanged.AddListener((value)=>
+            {
+                float pencent = (value - 1) / (3 - 1);
+                PlayerData.Instance.MoveSpeed.Value = Convert.ToSingle(0.3 - 0.2 * pencent);
+              
+            });
 
             BtnStart.onClick.AddListener(() =>
             {
@@ -70,6 +77,7 @@ namespace Tower
                 if (PlayerData.Instance.NewGame.Value)
                 {
                     PlayerData.Instance.InitPlayerData();
+                  
 
                 }
 
@@ -79,6 +87,7 @@ namespace Tower
                     PlayerData.Instance.CurrntFloor.Value = 1;
                     UIMgr.OpenPanel<MyMotaUIGamePanel>();
                     PlayerData.Instance.LoadPlayerData();
+                    Debug.Log("caonimamammam");
                 }
                 if(transform.parent.childCount > 1)
                 {
@@ -108,6 +117,8 @@ namespace Tower
 
         protected override void OnShow()
         {
+            float pencent = Convert.ToSingle((0.3 - PlayerData.Instance.MoveSpeed.Value) / 0.2);
+            SpeedSlider.value = 1+ 2 * pencent;
         }
 
         protected override void OnHide()
