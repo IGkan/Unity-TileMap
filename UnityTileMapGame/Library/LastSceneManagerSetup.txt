@@ -1,4 +1,4 @@
 sceneSetups:
-- path: "Assets/Scenes/\u9B54\u5854/SceneGame.unity"
+- path: "Assets/Scenes/\u9B54\u5854/MotaAPP.unity"
   isLoaded: 1
   isActive: 1

@@ -4,6 +4,7 @@ namespace Tower
     using QF.Extensions;
     using QF.Res;
     using QFramework;
+    using UniRx;
     using UnityEngine;
    
     public class MonsterBase:QMonoBehaviour
@@ -15,6 +16,7 @@ namespace Tower
         protected int mDefend;
         protected int mExperience;
         protected int mGold;
+
 
         public override IManager Manager => UIManager.Instance;
 
@@ -44,15 +46,17 @@ namespace Tower
             var playerData = PlayerData.Instance;
             int oneAttack = child.mAttack - playerData.Defend.Value; // 怪物一回合对玩家造成的伤害
             int count = 0; // 怪物对玩家造成的总伤害
-            while (child.mLife > 0)
+            int mChildLife = child.mLife;
+            while (mChildLife > 0)
             {
                 if (playerData.Attack.Value - child.mDefend > 0) // 玩家能对怪物造成伤害
                 {
-                    child.mLife -= (playerData.Attack.Value - child.mDefend);
-                    if (child.mLife <= 0) // 怪物死亡
+                    mChildLife -= (playerData.Attack.Value - child.mDefend);
+                    if (mChildLife <= 0 && count < playerData.Life.Value) // 怪物死亡
                     {
                        gameObject.Hide();  //1 => 回调且执行,直接作用 PlayerData
-                        return count;
+                       playerData.AddHideObjPos(gameObject.transform.localPosition);
+                       return count;
                     }
                 }
                 else
@@ -74,7 +78,7 @@ namespace Tower
 
 
 
-        protected int ExpectDamaged(MonsterBase child)
+        protected int ExpectDamaged(MonsterBase child,out string mTip)
         {
             var playerData = PlayerData.Instance;
             int oneAttack = child.mAttack - playerData.Defend.Value; // 怪物一回合对玩家造成的伤害
@@ -85,14 +89,20 @@ namespace Tower
                 if (playerData.Attack.Value - child.mDefend > 0) // 玩家能对怪物造成伤害
                 {
                     mChildLife -= (playerData.Attack.Value - child.mDefend);
-                    if (mChildLife <= 0) // 怪物死亡
+                    if (mChildLife <= 0 && count < playerData.Life.Value) // 怪物死亡
                     {
+                        mTip = "你可以战胜它";
+                        return count;
+                    }
+                    else
+                    {
+                        mTip = "你无法战胜它";
                         return count;
                     }
                 }
                 else
                 {
-                    Log.I("你破不了它防御");
+                    mTip = "你破不了它防御";
                     return count;
                 }
                 if (child.mAttack - playerData.Defend.Value > 0) // 怪物能对玩家造成伤害
@@ -101,9 +111,11 @@ namespace Tower
                 }
                 else
                 {
-                    Log.I("怪物破不了你的防御！");
+                    mTip = "怪物破不了你的防御！";
+                    return count;
                 }
             }
+            mTip = "怪物能对你造成伤害！";
             return count;
         }
     }

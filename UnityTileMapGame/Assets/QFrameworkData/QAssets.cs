@@ -46,20 +46,19 @@ namespace QAssetBundle
         public const string BundleName = "gamesceneprefab_prefab";
         public const string GAMESCENEPREFAB = "gamesceneprefab";
     }
-    public class Musicoff_png
+    public class Music
     {
-        public const string BundleName = "musicoff_png";
-        public const string MUSICOFF = "musicoff";
-    }
-    public class Musicon_png
-    {
-        public const string BundleName = "musicon_png";
-        public const string MUSICON = "musicon";
+        public const string BundleName = "music";
     }
     public class Myeasytouchjoystick_prefab
     {
         public const string BundleName = "myeasytouchjoystick_prefab";
         public const string MYEASYTOUCHJOYSTICK = "myeasytouchjoystick";
+    }
+    public class Mymotauiendpanel_prefab
+    {
+        public const string BundleName = "mymotauiendpanel_prefab";
+        public const string MYMOTAUIENDPANEL = "mymotauiendpanel";
     }
     public class Mymotauigamepanel_prefab
     {
@@ -71,50 +70,31 @@ namespace QAssetBundle
         public const string BundleName = "mymotauihomepanel_prefab";
         public const string MYMOTAUIHOMEPANEL = "mymotauihomepanel";
     }
-    public class Peepoff_png
+    public class Prefab
     {
-        public const string BundleName = "peepoff_png";
-        public const string PEEPOFF = "peepoff";
-    }
-    public class Peepon_png
-    {
-        public const string BundleName = "peepon_png";
-        public const string PEEPON = "peepon";
-    }
-    public class Player_prefab
-    {
-        public const string BundleName = "player_prefab";
-        public const string PLAYER = "player";
+        public const string BundleName = "prefab";
     }
     public class Prop_mp3
     {
         public const string BundleName = "prop_mp3";
         public const string PROP = "prop";
     }
-    public class Selectleveloff_png
-    {
-        public const string BundleName = "selectleveloff_png";
-        public const string SELECTLEVELOFF = "selectleveloff";
-    }
-    public class Selectlevelon_png
-    {
-        public const string BundleName = "selectlevelon_png";
-        public const string SELECTLEVELON = "selectlevelon";
-    }
-    public class Settingoff_png
-    {
-        public const string BundleName = "settingoff_png";
-        public const string SETTINGOFF = "settingoff";
-    }
-    public class Settingon_png
-    {
-        public const string BundleName = "settingon_png";
-        public const string SETTINGON = "settingon";
-    }
     public class Shangdian_mp3
     {
         public const string BundleName = "shangdian_mp3";
         public const string SHANGDIAN = "shangdian";
+    }
+    public class Sprites
+    {
+        public const string BundleName = "sprites";
+        public const string MUSICOFF = "musicoff";
+        public const string MUSICON = "musicon";
+        public const string PEEPMONSTEROFF = "peepmonsteroff";
+        public const string PEEPMONSTERON = "peepmonsteron";
+        public const string SELECTLEVELOFF = "selectleveloff";
+        public const string SELECTLEVELON = "selectlevelon";
+        public const string SETTINGOFF = "settingoff";
+        public const string SETTINGON = "settingon";
     }
     public class Start_mp3
     {
@@ -140,5 +120,9 @@ namespace QAssetBundle
     {
         public const string BundleName = "uihomepanel_prefab";
         public const string UIHOMEPANEL = "uihomepanel";
+    }
+    public class Uiprefab
+    {
+        public const string BundleName = "uiprefab";
     }
 }

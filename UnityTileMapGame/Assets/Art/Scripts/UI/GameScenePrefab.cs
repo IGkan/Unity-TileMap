@@ -33,7 +33,22 @@ namespace Tower
         protected override void OnInit(QFramework.IUIData uiData)
         {
             mData = uiData as GameScenePrefabData ?? new GameScenePrefabData();
-            // please add init code here
+
+        }
+        Transform[] mChildArr;
+
+        private void Start()
+        {
+            mChildArr = GetComponentsInChildren<Transform>();
+
+        }
+
+        public void SetActiveAll() {
+            foreach (Transform item in mChildArr)
+            {
+                item.gameObject.SetActive(true);
+                Debug.Log("wocaonima");
+            }
         }
         
         protected override void OnOpen(QFramework.IUIData uiData)

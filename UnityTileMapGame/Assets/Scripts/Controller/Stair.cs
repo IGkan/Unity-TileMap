@@ -110,6 +110,9 @@ namespace Tower
                 case 25:
                     Player.Instance.transform.position = new Vector3(284.5f, -4.5f, 0);
                     break;
+                case 26:
+                    Player.Instance.transform.position = new Vector3(295.5f, -3.5f, 0);
+                    break;
             }
 
             InitPlayerTilePosAndCamera(targetFloor);
@@ -193,6 +196,9 @@ namespace Tower
                     break;
                 case 25:
                     Player.Instance.transform.position = new Vector3(293.5f, -0.5f, 0);
+                    break;
+                case 26:
+                    Player.Instance.transform.position = new Vector3(285.5f, -4.5f, 0);
                     break;
             }
             InitPlayerTilePosAndCamera(targetFloor);

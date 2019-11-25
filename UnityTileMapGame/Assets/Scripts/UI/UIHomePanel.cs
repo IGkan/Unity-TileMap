@@ -38,7 +38,7 @@ namespace Tower
             BtnStart.onClick.AddListener(() =>
             {
                 CloseSelf();
-                PlayerData.Instance.InitPlayerData();
+                //PlayerData.Instance.InitPlayerData();
                 UIMgr.OpenPanel<UIGamePanel>();
             });
             BtnReload.onClick.AddListener(()=>

@@ -5858,6 +5858,13 @@
       "readme": {
         "items": [
           {
+            "version": "V0.0.115",
+            "content": "添加图片消失分解效果，3D图片环形效果",
+            "author": "MoonIceInk",
+            "date": "2019 年 11 月 25 日 09:48",
+            "VersionNumber": 115
+          },
+          {
             "version": "V0.0.114",
             "content": "更新Odin为2.1.6",
             "author": "MoonIceInk",
@@ -5895,6 +5902,25 @@
         ]
       },
       "PackageVersions": [
+        {
+          "Version": "V0.0.115",
+          "Type": 0,
+          "AccessRight": 0,
+          "DownloadUrl": "http://file.liangxiegame.com/IceInkOhterPluginsV0_0_115_c44d762f_aa4b_4f4b_a154_075edbb0c07a.unitypackage",
+          "InstallPath": "Assets/IceInkOhterPlugins/",
+          "DocUrl": null,
+          "Readme": {
+            "version": "V0.0.115",
+            "content": "添加图片消失分解效果，3D图片环形效果",
+            "author": "MoonIceInk",
+            "date": "2019 年 11 月 25 日 09:48",
+            "VersionNumber": 115
+          },
+          "Id": "bed95404-9d75-4147-956b-ee694d5da805",
+          "Name": "IceInkOhterPlugins",
+          "VersionNumber": 115,
+          "FileName": "IceInkOhterPlugins_V0.0.115.unitypackage"
+        },
         {
           "Version": "V0.0.114",
           "Type": 0,
@@ -5991,13 +6017,13 @@
           "FileName": "IceInkOhterPlugins_V0.0.11.unitypackage"
         }
       ],
-      "Version": "V0.0.114",
-      "DownloadUrl": "http://file.liangxiegame.com/IceInkOhterPluginsV0_0_114_fda21715_16ec_4c98_814b_667f4a39a02d.unitypackage",
+      "Version": "V0.0.115",
+      "DownloadUrl": "http://file.liangxiegame.com/IceInkOhterPluginsV0_0_115_c44d762f_aa4b_4f4b_a154_075edbb0c07a.unitypackage",
       "InstallPath": "Assets/IceInkOhterPlugins/",
       "DocUrl": null,
       "Type": 0,
       "AccessRight": 0,
-      "VersionNumber": 114,
+      "VersionNumber": 115,
       "Installed": false
     },
     {

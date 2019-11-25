@@ -35,11 +35,10 @@ namespace Tower
 
             mResLoader.LoadSync<GameObject>("GameScenePrefab")
                 .Instantiate();
-
+           
             mResLoader.LoadSync<GameObject>("MyEasyTouchJoystick")
                .Instantiate();
 
-            PlayerData.Instance.InitPlayerData();
             SendMsg(new AudioMusicMsg("bg"));
         }
 
@@ -49,6 +48,14 @@ namespace Tower
             PlayerData.Instance.Name.Select(content => "名字: " + content).SubscribeToText(Name);
             PlayerData.Instance.CurrntFloor.Select(content => "第 " + content + " 层").SubscribeToText(CurrntFloor);
             PlayerData.Instance.Level.Select(content => "等级: " + content).SubscribeToText(Level);
+            PlayerData.Instance.Level.Subscribe(content =>
+            {
+                PlayerData.Instance.Attack.Value += content * 5;
+                PlayerData.Instance.Defend.Value += content * 5;
+                PlayerData.Instance.Life.Value += content * 50;
+            }
+            );
+
             PlayerData.Instance.Life.Select(content => "生命: " + content).SubscribeToText(Life);
             PlayerData.Instance.Attack.Select(content => "攻击: " + content).SubscribeToText(Attack);
             PlayerData.Instance.Defend.Select(content => "防御: " + content).SubscribeToText(Defend);
@@ -75,6 +82,11 @@ namespace Tower
 
         protected override void OnShow()
         {
+            //if (PlayerData.Instance.NewGame.Value)
+            //{
+            //    PlayerData.Instance.LoadPlayerData();
+            //    Debug.Log("what the fuck");
+            //}
         }
 
         protected override void OnHide()

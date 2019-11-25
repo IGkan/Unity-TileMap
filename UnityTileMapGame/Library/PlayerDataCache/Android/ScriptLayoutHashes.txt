@@ -1,6 +1,6 @@
 Android
 PlayerPath?
-F:/UnityApk/Mota.apk
+E:/LSF/UnityApks/Mota.apk
 SceneListBegin?
 Assets/Scenes/魔塔/MotaAPP.unity
 SceneListEnd?
@@ -32,7 +32,7 @@ a2113831d3323f931007e1b3812dc814 Assembly-CSharp.dll:Cinemachine.CinemachineFoll
 e7a73f5f78ba6445195ec23b74a1ce2d Unity.TextMeshPro.dll:TMPro.TMP_ScrollbarEventHandler
 aa2dbfc16ca719518da9280ab23d05d8 Assembly-CSharp.dll:.ETCSetDirectActionTransform
 71bb6a6b6c8f052f948db64c7dd3ca4f UniRx.dll:UniRx.Triggers.ObservableVisibleTrigger
-9337daaf3340758cde34e225486f1fee Assembly-CSharp.dll:Tower.MyMotaUIHomePanel
+7a66f51664d92921780c4810b1e6907b Assembly-CSharp.dll:Tower.MyMotaUIHomePanel
 71bb6a6b6c8f052f948db64c7dd3ca4f Assembly-CSharp.dll:.TwoTouchMe
 cf9f5cf2c3145a37ac07f00e50e460f9 UnityEngine.UI.dll:UnityEngine.UI.AspectRatioFitter
 71bb6a6b6c8f052f948db64c7dd3ca4f UnityEngine.UI.dll:UnityEngine.EventSystems.BaseInput
@@ -66,6 +66,7 @@ fc108ce7d98c40ac0907e8ca7f500c76 UnityEngine.UI.dll:UnityEngine.UI.Text
 0fd6822f6177297bd0eb4d83cc7a9030 UnityEngine.UI.dll:UnityEngine.UI.ToggleGroup
 abf1930d8126d0b2e00e9449129a0190 UnityEngine.UI.dll:UnityEngine.EventSystems.TouchInputModule
 64e54c0cbb0177c5ea26f340efb9ff85 UnityEngine.UI.dll:UnityEngine.UI.VerticalLayoutGroup
+c3ea83b4793a4bbc8853bd89f7f207cd Assembly-CSharp.dll:Tower.MyMotaUIEndPanel
 71bb6a6b6c8f052f948db64c7dd3ca4f Assembly-CSharp.dll:Unidux.Example.SceneTransition.PageWatcher
 98ad81e9f689a492509f07e75b810aaa Unity.TextMeshPro.dll:TMPro.TMP_InputField
 1e90d7d6a6263a531c8bfd67056e48ef Assembly-CSharp.dll:QFramework.UIManager
@@ -106,6 +107,7 @@ abf1930d8126d0b2e00e9449129a0190 UnityEngine.UI.dll:UnityEngine.EventSystems.Tou
 8ca7ad9feea2d30aa64dfb7929162184 Assembly-CSharp.dll:Cinemachine.CinemachineExternalCamera
 71bb6a6b6c8f052f948db64c7dd3ca4f Assembly-CSharp.dll:.ETWindow
 71bb6a6b6c8f052f948db64c7dd3ca4f Assembly-CSharp.dll:.Ball
+d141450789e8befafdd2f2a4c28e4fef Assembly-CSharp.dll:Tower.TipPanel
 eca62473df0eb3bd609e491530dc4c02 Assembly-CSharp.dll:Unidux.Example.List.ListItemDispatcher
 71bb6a6b6c8f052f948db64c7dd3ca4f Assembly-CSharp.dll:Tower.MotaApp
 71bb6a6b6c8f052f948db64c7dd3ca4f Assembly-CSharp.dll:.TwoDragMe
@@ -116,7 +118,7 @@ eca62473df0eb3bd609e491530dc4c02 Assembly-CSharp.dll:Unidux.Example.List.ListIte
 71bb6a6b6c8f052f948db64c7dd3ca4f Assembly-CSharp.dll:QF.Res.HttpDownloaderMgr
 71bb6a6b6c8f052f948db64c7dd3ca4f UniRx.dll:UniRx.Triggers.ObservableDestroyTrigger
 71bb6a6b6c8f052f948db64c7dd3ca4f Assembly-CSharp.dll:Unidux.Example.SimpleHttp.SimpleHttpRenderer
-2e673aea3826295cf0a4bcc4d3828466 Assembly-CSharp.dll:Tower.MyMotaUIGamePanel
+afd0ea2a1abea8105f8655cf3ec50a80 Assembly-CSharp.dll:Tower.MyMotaUIGamePanel
 71bb6a6b6c8f052f948db64c7dd3ca4f Assembly-CSharp.dll:Tower.Npc
 71bb6a6b6c8f052f948db64c7dd3ca4f UnityEngine.Timeline.dll:UnityEngine.Timeline.ActivationPlayableAsset
 06f0fef534ca4c1d6064fd77a26bf722 UnityEngine.Timeline.dll:UnityEngine.Timeline.ActivationTrack
@@ -345,7 +347,7 @@ fdb2a643bae914337beea20a6806b775 Assembly-CSharp.dll:.BallRunPlayer
 aff505990b3b2335b9af16f2524559b7 Assembly-CSharp.dll:Unidux.Example.SimpleHttp.Unidux
 58118cdc561a7e0972d67d69033fc8fe Assembly-CSharp.dll:.ButtonInputUI
 d791aa6007fa3640be1164ea75bb087d Unity.TextMeshPro.dll:TMPro.TMP_StyleSheet
-24fba0ee90638ddf5c27f06c59f292f6 Assembly-CSharp.dll:Tower.Player
+ad65a6acba0f69221ae14316b1fc9720 Assembly-CSharp.dll:Tower.Player
 98643c3dbc51de049f9e72715f36fccf Assembly-CSharp.dll:QFramework.UITransitionPanel
 aff505990b3b2335b9af16f2524559b7 Assembly-CSharp.dll:Unidux.Example.Todo.Unidux
 71bb6a6b6c8f052f948db64c7dd3ca4f UniRx.dll:UniRx.Triggers.ObservableRectTransformTrigger
@@ -377,7 +379,6 @@ c3ea83b4793a4bbc8853bd89f7f207cd Assembly-CSharp.dll:Tower.GameScenePrefab
 71bb6a6b6c8f052f948db64c7dd3ca4f Assembly-CSharp.dll:.UIPinch
 71bb6a6b6c8f052f948db64c7dd3ca4f Assembly-CSharp.dll:Cinemachine.CinemachineHardLockToTarget
 cb17b1c858582ef5dfd9fd4047d7a225 Assembly-CSharp.dll:Unidux.Example.List.ListRenderer
-71bb6a6b6c8f052f948db64c7dd3ca4f Assembly-CSharp.dll:.TileDataMsg
 2c38da0504d94a36e68bd2308d606900 Assembly-CSharp.dll:Cinemachine.CinemachineBasicMultiChannelPerlin
 1615d3bb1db164c1672020cea49440ce Assembly-CSharp.dll:Cinemachine.CinemachineClearShot
 71bb6a6b6c8f052f948db64c7dd3ca4f Assembly-CSharp.dll:.SliderText

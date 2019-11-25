@@ -47,6 +47,9 @@ namespace Tower
         [SerializeField()]
         public UnityEngine.UI.Image SettingPanel;
         
+        [SerializeField()]
+        public UnityEngine.UI.Slider SpeedSlider;
+        
         private MyMotaUIHomePanelData mPrivateData = null;
         
         public MyMotaUIHomePanelData mData
@@ -72,6 +75,7 @@ namespace Tower
             AboutPanel = null;
             Text = null;
             SettingPanel = null;
+            SpeedSlider = null;
             mData = null;
         }
     }
