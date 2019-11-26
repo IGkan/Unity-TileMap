@@ -58,7 +58,7 @@ namespace Tower
             {
                 if (transform.parent.childCount == 2)
                 {
-                    GameObject.Find("GameScenePrefab(Clone)").transform.GetComponent<GameScenePrefab>().SetActiveAll();
+                    GameObject.Find("GameScenePrefab(Clone)").GetComponent<GameScenePrefab>().SetActiveAll();
                 }
                 if(transform.parent.childCount == 1)
                 {
@@ -72,21 +72,20 @@ namespace Tower
 
             BtnReload.onClick.AddListener(() =>
             {
-                // 这里可能判断 MyMotaUIGamePanel 是否已打开
-                // 判断以前有没有打开过游戏 如果没有打开过游戏初始化一下数据
-                if (PlayerData.Instance.NewGame.Value)
-                {
-                    PlayerData.Instance.InitPlayerData();
-                  
 
-                }
+                //// 这里可能判断 MyMotaUIGamePanel 是否已打开
+                //// 判断以前有没有打开过游戏 如果没有打开过游戏初始化一下数据
+                //if (PlayerData.Instance.NewGame.Value)
+                //{
+                //    PlayerData.Instance.InitPlayerData();
+                //}
 
                 // 如果玩家一直在游戏中 只需要打开设置界面 不需要重新加载数据
                 if (transform.parent.childCount == 1)
                 {
                     PlayerData.Instance.CurrntFloor.Value = 1;
                     UIMgr.OpenPanel<MyMotaUIGamePanel>();
-                    //PlayerData.Instance.LoadPlayerData();
+                    PlayerData.Instance.LoadPlayerData();
                 }
                 if(transform.parent.childCount > 1)
                 {

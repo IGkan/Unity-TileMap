@@ -82,11 +82,7 @@ namespace Tower
 
         protected override void OnShow()
         {
-            //if (PlayerData.Instance.NewGame.Value)
-            //{
-            //    PlayerData.Instance.LoadPlayerData();
-            //    Debug.Log("what the fuck");
-            //}
+          
         }
 
         protected override void OnHide()

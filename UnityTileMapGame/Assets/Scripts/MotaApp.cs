@@ -15,15 +15,6 @@ namespace Tower
         {
             UIMgr.OpenPanel<MyMotaUIHomePanel>();
         }
-
-        private void OnDestroy()
-        {
-            PlayerData.Instance.SavePlayerData();
-        }
-        private void OnApplicationQuit()
-        {
-            PlayerData.Instance.SavePlayerData();
-        }
     }
 
 }

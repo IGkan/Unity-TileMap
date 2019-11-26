@@ -162,7 +162,7 @@ namespace Tower
 
                                         mPlayerData.YellowKey.Value -= 1;
                                         hit.collider.gameObject.SetActive(false);
-                                        PlayerData.Instance.AddHideObjPos(hit.collider.gameObject.transform.localPosition);
+                                        //PlayerData.Instance.AddHideObjPos(hit.collider.gameObject.transform.localPosition);
                                         PlayerMove(mMoveDirectionCell);
                                     }
                                     else
@@ -177,7 +177,7 @@ namespace Tower
 
                                         mPlayerData.RedKey.Value -= 1;
                                         hit.collider.gameObject.SetActive(false);
-                                        PlayerData.Instance.AddHideObjPos(hit.collider.gameObject.transform.localPosition);
+                                        //PlayerData.Instance.AddHideObjPos(hit.collider.gameObject.transform.localPosition);
                                         PlayerMove(mMoveDirectionCell);
                                     }
                                     else
@@ -193,7 +193,7 @@ namespace Tower
 
                                         mPlayerData.PurpleKey.Value -= 1;
                                         hit.collider.gameObject.SetActive(false);
-                                        PlayerData.Instance.AddHideObjPos(hit.collider.gameObject.transform.localPosition);
+                                        //PlayerData.Instance.AddHideObjPos(hit.collider.gameObject.transform.localPosition);
                                         PlayerMove(mMoveDirectionCell);
 
                                     }
