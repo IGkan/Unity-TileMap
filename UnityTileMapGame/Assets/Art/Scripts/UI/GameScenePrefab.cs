@@ -10,12 +10,7 @@
 
 namespace Tower
 {
-    using System;
-    using System.Collections;
-    using System.Collections.Generic;
-    using System.Linq;
     using UnityEngine;
-    using UnityEngine.UI;
     
     
     public class GameScenePrefabData : QFramework.UIPanelData
@@ -47,7 +42,6 @@ namespace Tower
             foreach (Transform item in mChildArr)
             {
                 item.gameObject.SetActive(true);
-                Debug.Log("wocaonima");
             }
         }
         

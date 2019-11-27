@@ -6,23 +6,20 @@ namespace Tower
 
     public class MotaApp : MonoBehaviour
     {
+        public PlayerData mModel;
         private void Awake()
         {
             ResKit.Init();
             UIMgr.SetResolution(1080, 2244, 0);
+            mModel = new PlayerData();
+            
         }
         private void Start()
         {
-            UIMgr.OpenPanel<MyMotaUIHomePanel>();
-        }
-
-        private void OnDestroy()
-        {
-            PlayerData.Instance.SavePlayerData();
-        }
-        private void OnApplicationQuit()
-        {
-            PlayerData.Instance.SavePlayerData();
+            UIMgr.OpenPanel<MyMotaUIHomePanel>(new MyMotaUIHomePanelData()
+            {
+                Model = mModel
+            }) ;
         }
     }
 

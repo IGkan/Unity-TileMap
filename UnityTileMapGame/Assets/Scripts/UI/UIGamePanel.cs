@@ -36,12 +36,12 @@ namespace Tower
 
         protected override void RegisterUIEvent()
         {
-            PlayerData.Instance.Life.Select(life => "生命: " + life).SubscribeToText(LifeText);
-            PlayerData.Instance.Attack.Select(life => "攻击: " + life).SubscribeToText(AttackText);
-            PlayerData.Instance.Defend.Select(life => "防御: " + life).SubscribeToText(DefendText);
-            PlayerData.Instance.Level.Select(life => "等级: " + life).SubscribeToText(LevelText);
-            PlayerData.Instance.Experience.Select(life => "经验: " + life).SubscribeToText(ExperienceText);
-            PlayerData.Instance.Gold.Select(life => "金币: " + life).SubscribeToText(GoldText);
+            Player.Instance.mPlayerData.Life.Select(life => "生命: " + life).SubscribeToText(LifeText);
+            Player.Instance.mPlayerData.Attack.Select(life => "攻击: " + life).SubscribeToText(AttackText);
+            Player.Instance.mPlayerData.Defend.Select(life => "防御: " + life).SubscribeToText(DefendText);
+            Player.Instance.mPlayerData.Level.Select(life => "等级: " + life).SubscribeToText(LevelText);
+            Player.Instance.mPlayerData.Experience.Select(life => "经验: " + life).SubscribeToText(ExperienceText);
+            Player.Instance.mPlayerData.Gold.Select(life => "金币: " + life).SubscribeToText(GoldText);
         }
 
         protected override void OnOpen(QFramework.IUIData uiData)

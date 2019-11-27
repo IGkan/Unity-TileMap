@@ -9,7 +9,7 @@ public class DebugFloorChange : MonoBehaviour
     {
         yield return new WaitForSeconds(0.5f);
         Stair.ComeUp(floor);
-        //PlayerData.Instance.CurrntFloor.Value = floor;
+        //Player.Instance.mPlayerData.CurrntFloor.Value = floor;
         //Player.Instance.InitPlayerTilePos();
     }
 }

@@ -41,7 +41,7 @@ namespace Tower
         /// <returns></returns>
         public  bool MonsterExecute(Collider2D other)
         {
-            var playerData = PlayerData.Instance;
+            var playerData = Player.Instance.mPlayerData;
             if (playerData.Attack.Value > Defend)
             {
                 int ExpectedCount = GetExpectDamage();

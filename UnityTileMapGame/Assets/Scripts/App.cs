@@ -18,9 +18,5 @@ namespace Tower
             yield return new WaitForSeconds(0.5f);
             UIMgr.OpenPanel<UIHomePanel>();
         }
-        private void OnDestroy()
-        {
-            //PlayerData.Instance.SavePlayerData();
-        }
     }
 }

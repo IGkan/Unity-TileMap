@@ -13,7 +13,7 @@ namespace Tower
     {
         private void Awake()
         {
-            for (int i = 0; i < PlayerData.Instance.MaxFloor.Value; i++)
+            for (int i = 0; i < Player.Instance.mPlayerData.MaxFloor.Value; i++)
             {
                 BtnFloor.Instantiate()
                     .Parent(this)

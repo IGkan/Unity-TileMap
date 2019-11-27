@@ -12,7 +12,7 @@ namespace Tower
 {
 	public partial class MenuPanel : UIElement
 	{
-        ResLoader mResLoader = ResLoader.Allocate();
+        //ResLoader mResLoader = ResLoader.Allocate();
 		private void Start()
 		{
             BtnMusic.onClick.AddListener(() =>
@@ -27,45 +27,46 @@ namespace Tower
 
             BtnPeep.onClick.AddListener(() =>  // 怪物属性开关
             {
-               // PlayerData.Instance.CanPeepMonster.Value = !PlayerData.Instance.CanPeepMonster.Value; // 查看怪物属性
+               // Player.Instance.mPlayerData.CanPeepMonster.Value = !Player.Instance.mPlayerData.CanPeepMonster.Value; // 查看怪物属性
             });
 
             BtnSetting.onClick.AddListener(() =>  // 设置界面开关
             {
+                //Player.Instance.mPlayerData.SavePlayerData();
                 UIMgr.OpenPanel<MyMotaUIHomePanel>();
-                PlayerData.Instance.SavePlayerData();
+
             });
 
             // 选关
-            PlayerData.Instance.CanSelectFloor.Subscribe(content =>
+            Player.Instance.mPlayerData.CanSelectFloor.Subscribe(content =>
             {
                 if (content)
                 {
-                    //// 替换图标
-                    //var sprite = Resources.Load<Sprite>("Sprites/SelectLevelOn");
-                    //BtnSelectLevel.GetComponent<Image>().sprite = sprite;
+                    // 替换图标
+                    var sprite = Resources.Load<Sprite>("Sprites/SelectLevelOn");
+                    BtnSelectLevel.GetComponent<Image>().sprite = sprite;
                 }
                 else
                 {
-                    //var sprite = Resources.Load<Sprite>("Sprites/SelectLevelOff");
-                    //BtnSelectLevel.GetComponent<Image>().sprite = sprite;
+                    var sprite = Resources.Load<Sprite>("Sprites/SelectLevelOff");
+                    BtnSelectLevel.GetComponent<Image>().sprite = sprite;
                 }
             }
             );
 
             // 查看怪物属性
-            PlayerData.Instance.CanPeepMonster.Subscribe(content =>
+            Player.Instance.mPlayerData.CanPeepMonster.Subscribe(content =>
             {
                 if (content)
                 {
                     //  // 替换图标
-                    //var sprite = Resources.Load<Sprite>("Sprites/PeepMonsterOn");
-                    //BtnPeep.GetComponent<Image>().sprite = sprite;
+                    var sprite = Resources.Load<Sprite>("Sprites/PeepMonsterOn");
+                    BtnPeep.GetComponent<Image>().sprite = sprite;
                 }
                 else
                 {
-                    //var sprite = Resources.Load<Sprite>("Sprites/PeepMonsterOff");
-                    //BtnPeep.GetComponent<Image>().sprite = sprite;
+                    var sprite = Resources.Load<Sprite>("Sprites/PeepMonsterOff");
+                    BtnPeep.GetComponent<Image>().sprite = sprite;
                 }
             }
           );
@@ -75,13 +76,13 @@ namespace Tower
                 {
                     //var sprite = mResLoader.LoadSprite("MusicOn");
                     //BtnMusic.GetComponent<Image>().sprite = sprite;
-                    //var sprite = Resources.Load<Sprite>("Sprites/MusicOn");
-                    //BtnMusic.GetComponent<Image>().sprite = sprite;
+                    var sprite = Resources.Load<Sprite>("Sprites/MusicOn");
+                    BtnMusic.GetComponent<Image>().sprite = sprite;
                 }
                 else
                 {
-                    //var sprite = Resources.Load<Sprite>("Sprites/MusicOff");
-                    //BtnMusic.GetComponent<Image>().sprite = sprite;
+                    var sprite = Resources.Load<Sprite>("Sprites/MusicOff");
+                    BtnMusic.GetComponent<Image>().sprite = sprite;
                 }
             }
            );
@@ -89,7 +90,7 @@ namespace Tower
 
         public void OpenSelectLevelPanel()
         {
-            if (PlayerData.Instance.CanSelectFloor.Value)
+            if (Player.Instance.mPlayerData.CanSelectFloor.Value)
             {
                 if (UIMgr.GetPanel<MyMotaUIGamePanel>().FloorPanel.isActiveAndEnabled)
                 {
@@ -121,10 +122,10 @@ namespace Tower
             }
         }
 
-		protected override void OnBeforeDestroy()
-		{
-            mResLoader.Recycle2Cache();
-            mResLoader = null;
-		}
+		//protected override void OnBeforeDestroy()
+		//{
+  //          mResLoader.Recycle2Cache();
+  //          mResLoader = null;
+		//}
 	}
 }
