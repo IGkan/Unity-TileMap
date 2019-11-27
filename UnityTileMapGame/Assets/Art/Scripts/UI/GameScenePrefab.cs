@@ -10,6 +10,14 @@
 
 namespace Tower
 {
+<<<<<<< HEAD
+=======
+    using QF;
+    using System;
+    using System.Collections;
+    using System.Collections.Generic;
+    using System.Linq;
+>>>>>>> 8207420c391999537d5f8dbc19fe02f937f6ba2d
     using UnityEngine;
     
     
@@ -17,9 +25,12 @@ namespace Tower
     {
     }
     
-    public partial class GameScenePrefab : QFramework.UIPanel
+    public partial class GameScenePrefab : QFramework.UIPanel,ISingleton
     {
-        
+        public static GameScenePrefab Instance
+        {
+            get { return MonoSingletonProperty<GameScenePrefab>.Instance; }
+        }
         protected override void ProcessMsg(int eventId, QFramework.QMsg msg)
         {
             throw new System.NotImplementedException ();
@@ -42,6 +53,21 @@ namespace Tower
             foreach (Transform item in mChildArr)
             {
                 item.gameObject.SetActive(true);
+<<<<<<< HEAD
+=======
+            }
+        }
+
+        public void SetHideSave()
+        {
+            foreach (Transform item in mChildArr)
+            {
+                if (!item.gameObject.activeSelf)
+                {
+                    Debug.Log(item.localPosition);
+                    PlayerData.Instance.AddHideObjPos(item.localPosition);
+                }
+>>>>>>> 8207420c391999537d5f8dbc19fe02f937f6ba2d
             }
         }
         
@@ -59,6 +85,11 @@ namespace Tower
         
         protected override void OnClose()
         {
+        }
+
+        public void OnSingletonInit()
+        {
+           
         }
     }
 }

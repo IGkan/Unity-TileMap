@@ -80,6 +80,10 @@ namespace Tower
 
         protected override void OnShow()
         {
+<<<<<<< HEAD
+=======
+          
+>>>>>>> 8207420c391999537d5f8dbc19fe02f937f6ba2d
         }
 
         protected override void OnHide()

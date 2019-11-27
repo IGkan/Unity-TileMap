@@ -98,7 +98,8 @@ namespace Tower
 
         public ReactiveCollection<TileData> TileDataCollection = new ReactiveCollection<TileData>();
 
-        public void AddHideObjPos(Vector2 pos)
+
+        public void AddHideObjPos(Vector3 pos)
         {
             var tileData = new TileData();
             tileData.TileHidePos.Value = pos;
@@ -110,13 +111,29 @@ namespace Tower
         /// </summary>
         public void SavePlayerData()
         {
+<<<<<<< HEAD
 
             Debug.Log("数据保存成功！");
 
+=======
+            GameScenePrefab.Instance.SetHideSave();
+>>>>>>> 8207420c391999537d5f8dbc19fe02f937f6ba2d
             PlayerPrefs.SetString("PlayerTileData", this.ToJson());
 
         }
-        
+        //Transform[] mChildArr;
+        // void SetHideSave()
+        //{
+        //    mChildArr = GameObject.Find("GameScenePrefab(Clone)").GetComponentsInChildren<Transform>();
+        //    foreach (Transform item in mChildArr)
+        //    {
+        //        if (!item.gameObject.activeSelf)
+        //        {
+        //            Debug.Log(item.localPosition);
+        //            PlayerData.Instance.AddHideObjPos(item.localPosition);
+        //        }
+        //    }
+        //}
 
         /// <summary>
         /// 加载数据
@@ -124,6 +141,7 @@ namespace Tower
         public  PlayerData  LoadPlayerData()
         {
             var jsonContent = PlayerPrefs.GetString("PlayerTileData", string.Empty);
+<<<<<<< HEAD
             if (jsonContent.IsNullOrEmpty())
             {
                 InitPlayerData();
@@ -177,6 +195,47 @@ namespace Tower
             if (!jsonContent.IsNullOrEmpty())
             {
                     foreach (var item in jsonContent.FromJson<PlayerData>().TileDataCollection)
+=======
+            PlayerData playerData = jsonContent.FromJson<PlayerData>();
+
+            Name.Value = playerData.Name.Value;
+            CurrntFloor.Value = playerData.CurrntFloor.Value;
+            Level.Value = playerData.Level.Value;
+            Attack.Value = playerData.Attack.Value;
+            Defend.Value = playerData.Defend.Value;
+            Life.Value = playerData.Life.Value;
+            Experience.Value = playerData.Experience.Value;
+            Gold.Value = playerData.Gold.Value;
+            YellowKey.Value = playerData.YellowKey.Value;
+            RedKey.Value = playerData.RedKey.Value;
+            PurpleKey.Value = playerData.PurpleKey.Value;
+
+            NewGame.Value = playerData.NewGame.Value;
+            MaxFloor.Value = playerData.MaxFloor.Value;
+            CanSelectFloor.Value = playerData.CanSelectFloor.Value;
+            CanPeepMonster.Value = playerData.CanPeepMonster.Value;
+
+            AddAttack.Value = playerData.AddAttack.Value;
+            AddDefend.Value = playerData.AddDefend.Value;
+            AddLife.Value = playerData.AddLife.Value;
+            AddYellowKey.Value = playerData.AddYellowKey.Value;
+            AddRedKey.Value = playerData.AddRedKey.Value;
+            AddYellowKey.Value = playerData.AddYellowKey.Value;
+            GoldCharge.Value = playerData.GoldCharge.Value;
+            ExperienceCharge.Value = playerData.ExperienceCharge.Value;
+
+            Player.Instance.InitPlayerTilePos();
+            Stair.ComeUp(1);
+
+
+
+            if (!NewGame.Value)
+            {
+                foreach (var item in playerData.TileDataCollection)
+                {
+                    RaycastHit2D hit = Physics2D.Raycast(item.TileHidePos.Value, Vector2.zero);
+                    if (hit.collider != null)
+>>>>>>> 8207420c391999537d5f8dbc19fe02f937f6ba2d
                     {
                         RaycastHit2D hit = Physics2D.Raycast(item.TileHidePos.Value, Vector2.zero);
                         if (hit.collider != null)
