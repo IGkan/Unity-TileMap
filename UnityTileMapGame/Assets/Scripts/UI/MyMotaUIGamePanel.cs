@@ -82,18 +82,6 @@ namespace Tower
 
         protected override void OnShow()
         {
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-          
->>>>>>> 8207420c391999537d5f8dbc19fe02f937f6ba2d
-=======
-            //if (PlayerData.Instance.NewGame.Value)
-            //{
-            //    PlayerData.Instance.LoadPlayerData();
-            //    Debug.Log("what the fuck");
-            //}
->>>>>>> parent of b1f25529... 11.27
         }
 
         protected override void OnHide()

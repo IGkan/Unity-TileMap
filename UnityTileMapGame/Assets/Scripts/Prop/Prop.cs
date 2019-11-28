@@ -31,15 +31,7 @@ namespace Tower
         public void PropExecute(string name)
         {
             gameObject.Hide();
-<<<<<<< HEAD
-<<<<<<< HEAD
             Player.Instance.mPlayerData.AddHideObjPos(gameObject.transform.localPosition);
-=======
-            //PlayerData.Instance.AddHideObjPos(gameObject.transform.localPosition);
->>>>>>> 8207420c391999537d5f8dbc19fe02f937f6ba2d
-=======
-            PlayerData.Instance.AddHideObjPos(gameObject.transform.localPosition);
->>>>>>> parent of b1f25529... 11.27
             switch (name)
             {
                 case "Life":
