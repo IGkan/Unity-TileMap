@@ -43,7 +43,7 @@ namespace Tower
         /// <returns></returns>
         protected int Execute(MonsterBase child)
         {
-            var playerData = Player.Instance.mPlayerData;
+            var playerData = PlayerData.Instance;
             int oneAttack = child.mAttack - playerData.Defend.Value; // 怪物一回合对玩家造成的伤害
             int count = 0; // 怪物对玩家造成的总伤害
             int mChildLife = child.mLife;
@@ -80,7 +80,7 @@ namespace Tower
 
         protected int ExpectDamaged(MonsterBase child,out string mTip)
         {
-            var playerData = Player.Instance.mPlayerData;
+            var playerData = PlayerData.Instance;
             int oneAttack = child.mAttack - playerData.Defend.Value; // 怪物一回合对玩家造成的伤害
             int count = 0; // 怪物对玩家造成的总伤害
             int mChildLife = child.mLife;

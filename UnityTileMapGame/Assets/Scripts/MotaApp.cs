@@ -6,16 +6,14 @@ namespace Tower
 
     public class MotaApp : MonoBehaviour
     {
-        public PlayerData mModel;
         private void Awake()
         {
             ResKit.Init();
             UIMgr.SetResolution(1080, 2244, 0);
-            mModel = new PlayerData();
-            
         }
         private void Start()
         {
+<<<<<<< HEAD
 <<<<<<< HEAD
             UIMgr.OpenPanel<MyMotaUIHomePanel>(new MyMotaUIHomePanelData()
             {
@@ -24,6 +22,18 @@ namespace Tower
 =======
             UIMgr.OpenPanel<MyMotaUIHomePanel>();
 >>>>>>> 8207420c391999537d5f8dbc19fe02f937f6ba2d
+=======
+            UIMgr.OpenPanel<MyMotaUIHomePanel>();
+        }
+
+        private void OnDestroy()
+        {
+            PlayerData.Instance.SavePlayerData();
+        }
+        private void OnApplicationQuit()
+        {
+            PlayerData.Instance.SavePlayerData();
+>>>>>>> parent of b1f25529... 11.27
         }
     }
 

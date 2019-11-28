@@ -13,10 +13,10 @@ namespace Tower
             BtnAddAttack.onClick.AddListener(() =>
             {
                 // 玩家经验需要大于等于此次消费
-                if (Player.Instance.mPlayerData.Experience.Value >= Player.Instance.mPlayerData.ExperienceCharge.Value)
+                if (PlayerData.Instance.Experience.Value >= PlayerData.Instance.ExperienceCharge.Value)
                 {
-                    Player.Instance.mPlayerData.Experience.Value -= Player.Instance.mPlayerData.ExperienceCharge.Value;
-                    Player.Instance.mPlayerData.Level.Value += Player.Instance.mPlayerData.AddLevel.Value;
+                    PlayerData.Instance.Experience.Value -= PlayerData.Instance.ExperienceCharge.Value;
+                    PlayerData.Instance.Level.Value += PlayerData.Instance.AddLevel.Value;
                 }
             });
             BtnAddPanelQuit.onClick.AddListener(() =>

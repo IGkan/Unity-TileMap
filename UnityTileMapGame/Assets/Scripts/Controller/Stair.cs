@@ -11,12 +11,12 @@ namespace Tower
             switch (name)
             {
                 case "stair_0": // 向下移动
-                    Player.Instance.mPlayerData.CurrntFloor.Value -= 1;
-                    ComeDown(Player.Instance.mPlayerData.CurrntFloor.Value);
+                    PlayerData.Instance.CurrntFloor.Value -= 1;
+                    ComeDown(PlayerData.Instance.CurrntFloor.Value);
                     break;
                 case "stair_1": // 向上移动
-                    Player.Instance.mPlayerData.CurrntFloor.Value += 1;
-                    ComeUp(Player.Instance.mPlayerData.CurrntFloor.Value);
+                    PlayerData.Instance.CurrntFloor.Value += 1;
+                    ComeUp(PlayerData.Instance.CurrntFloor.Value);
                     break;
                 default:
                     break;
@@ -27,7 +27,7 @@ namespace Tower
         {
             Camera.main.transform.position = new Vector3(0.5f + (targetFloor - 1) * 12, 0.56f, -10);
             Player.Instance.InitPlayerTilePos();
-            Player.Instance.mPlayerData.CurrntFloor.Value = targetFloor;
+            PlayerData.Instance.CurrntFloor.Value = targetFloor;
 
         }
 

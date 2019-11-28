@@ -15,10 +15,10 @@ namespace Tower
     using System.Linq;
     using UniRx;
     using UnityEngine;
+    using UnityEngine.UI;
 
     public class MyMotaUIGamePanelData : QFramework.UIPanelData
     {
-        public PlayerData Model = new PlayerData ();
     }
 
     public partial class MyMotaUIGamePanel : QFramework.UIPanel
@@ -33,39 +33,37 @@ namespace Tower
         {
             mData = uiData as MyMotaUIGamePanelData ?? new MyMotaUIGamePanelData();
 
-
-            GameObject mGameScenePrefa = mResLoader.LoadSync<GameObject>("GameScenePrefab")
-                  .Instantiate();
-
-
+            mResLoader.LoadSync<GameObject>("GameScenePrefab")
+                .Instantiate();
+           
             mResLoader.LoadSync<GameObject>("MyEasyTouchJoystick")
-                  .Instantiate();
-            mData.Model.MoveSpeed.Value = PlayerPrefs.GetFloat("MoveSpeed", 0.2f);
-            Player.Instance.mPlayerData = mData.Model;
+               .Instantiate();
+
+            SendMsg(new AudioMusicMsg("bg"));
         }
 
         protected override void RegisterUIEvent()
         {
             // MVP模式,数据订阅
-           mData.Model.Name.Select(content => "名字: " + content).SubscribeToText(Name);
-           mData.Model.CurrntFloor.Select(content => "第 " + content + " 层").SubscribeToText(CurrntFloor);
-           mData.Model.Level.Select(content => "等级: " + content).SubscribeToText(Level);
-      
-           mData.Model.Life.Select(content => "生命: " + content).SubscribeToText(Life);
-           mData.Model.Attack.Select(content => "攻击: " + content).SubscribeToText(Attack);
-           mData.Model.Defend.Select(content => "防御: " + content).SubscribeToText(Defend);
-           mData.Model.Experience.Select(content => "经验: " + content).SubscribeToText(Experience);
-           mData.Model.Gold.Select(content => "金币: " + content).SubscribeToText(Gold);
-           mData.Model.YellowKey.Select(content => "黄钥匙: " + content).SubscribeToText(YellowKey);
-           mData.Model.RedKey.Select(content => "红钥匙: " + content).SubscribeToText(RedKey);
-           mData.Model.PurpleKey.Select(content => "紫钥匙: " + content).SubscribeToText(PurpleKey);
-           mData.Model.Level.Skip(1).Subscribe(content =>
+            PlayerData.Instance.Name.Select(content => "名字: " + content).SubscribeToText(Name);
+            PlayerData.Instance.CurrntFloor.Select(content => "第 " + content + " 层").SubscribeToText(CurrntFloor);
+            PlayerData.Instance.Level.Select(content => "等级: " + content).SubscribeToText(Level);
+            PlayerData.Instance.Level.Subscribe(content =>
             {
-                mData.Model.Attack.Value += 5;
-                mData.Model.Defend.Value += 5;
-                mData.Model.Life.Value += 50;
+                PlayerData.Instance.Attack.Value += content * 5;
+                PlayerData.Instance.Defend.Value += content * 5;
+                PlayerData.Instance.Life.Value += content * 50;
             }
-       );
+            );
+
+            PlayerData.Instance.Life.Select(content => "生命: " + content).SubscribeToText(Life);
+            PlayerData.Instance.Attack.Select(content => "攻击: " + content).SubscribeToText(Attack);
+            PlayerData.Instance.Defend.Select(content => "防御: " + content).SubscribeToText(Defend);
+            PlayerData.Instance.Experience.Select(content => "经验: " + content).SubscribeToText(Experience);
+            PlayerData.Instance.Gold.Select(content => "金币: " + content).SubscribeToText(Gold);
+            PlayerData.Instance.YellowKey.Select(content => "黄钥匙: " + content).SubscribeToText(YellowKey);
+            PlayerData.Instance.RedKey.Select(content => "红钥匙: " + content).SubscribeToText(RedKey);
+            PlayerData.Instance.PurpleKey.Select(content => "紫钥匙: " + content).SubscribeToText(PurpleKey);
 
             // UI事件
             BtnContinue.onClick.AddListener(() =>
@@ -73,6 +71,10 @@ namespace Tower
                 GuidePanel.Hide(); // 关闭引导界面
                 Player.Instance.mCanMove = true; // 重新让玩家可移动
             });
+
+
+
+
         }
         protected override void OnOpen(QFramework.IUIData uiData)
         {
@@ -81,24 +83,27 @@ namespace Tower
         protected override void OnShow()
         {
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
           
 >>>>>>> 8207420c391999537d5f8dbc19fe02f937f6ba2d
+=======
+            //if (PlayerData.Instance.NewGame.Value)
+            //{
+            //    PlayerData.Instance.LoadPlayerData();
+            //    Debug.Log("what the fuck");
+            //}
+>>>>>>> parent of b1f25529... 11.27
         }
 
         protected override void OnHide()
         {
         }
-        protected override void OnClose()
-        {
-          
-        }
 
-        protected override void OnBeforeDestroy()
+        protected override void OnClose()
         {
             mResLoader.Recycle2Cache();
             mResLoader = null;
         }
-
     }
 }
