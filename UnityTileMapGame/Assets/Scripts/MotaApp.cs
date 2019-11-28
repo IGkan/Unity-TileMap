@@ -14,7 +14,7 @@ namespace Tower
         private void Start()
         {
 <<<<<<< HEAD
-<<<<<<< HEAD
+
             UIMgr.OpenPanel<MyMotaUIHomePanel>(new MyMotaUIHomePanelData()
             {
                 Model = mModel
