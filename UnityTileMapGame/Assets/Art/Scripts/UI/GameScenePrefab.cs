@@ -10,8 +10,21 @@
 
 namespace Tower
 {
+<<<<<<< HEAD
     using QF;
     using UnityEngine;
+=======
+<<<<<<< HEAD
+=======
+    using QF;
+    using System;
+    using System.Collections;
+    using System.Collections.Generic;
+    using System.Linq;
+>>>>>>> 8207420c391999537d5f8dbc19fe02f937f6ba2d
+    using UnityEngine;
+    
+>>>>>>> parent of 9e6f122f... 28.2
     
     public class GameScenePrefabData : QFramework.UIPanelData
     {
@@ -45,6 +58,24 @@ namespace Tower
             foreach (Transform item in mChildArr)
             {
                 item.gameObject.SetActive(true);
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+            }
+        }
+
+        public void SetHideSave()
+        {
+            foreach (Transform item in mChildArr)
+            {
+                if (!item.gameObject.activeSelf)
+                {
+                    Debug.Log(item.localPosition);
+                    PlayerData.Instance.AddHideObjPos(item.localPosition);
+                }
+>>>>>>> 8207420c391999537d5f8dbc19fe02f937f6ba2d
+>>>>>>> parent of 9e6f122f... 28.2
             }
         }
         

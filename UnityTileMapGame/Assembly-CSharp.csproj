@@ -468,6 +468,7 @@
     <Compile Include="Assets\Scripts\Npc\Npc.cs" />
     <Compile Include="Assets\Scripts\Prop\Prop.cs" />
     <Compile Include="Assets\Scripts\Test.cs" />
+    <Compile Include="Assets\Scripts\TestNoMono.cs" />
     <Compile Include="Assets\Scripts\UI\MyMotaUIEndPanel.cs" />
     <Compile Include="Assets\Scripts\UI\MyMotaUIEndPanel.Designer.cs" />
     <Compile Include="Assets\Scripts\UI\MyMotaUIGamePanel.cs" />

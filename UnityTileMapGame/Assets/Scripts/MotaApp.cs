@@ -12,11 +12,18 @@ namespace Tower
             ResKit.Init();
             UIMgr.SetResolution(1080, 2244, 0);
             mModel = new PlayerData();
+<<<<<<< HEAD
+=======
+            
+>>>>>>> parent of 9e6f122f... 28.2
         }
         private void Start()
         {
 <<<<<<< HEAD
+<<<<<<< HEAD
 
+=======
+>>>>>>> parent of 9e6f122f... 28.2
             UIMgr.OpenPanel<MyMotaUIHomePanel>(new MyMotaUIHomePanelData()
             {
                 Model = mModel
@@ -24,18 +31,6 @@ namespace Tower
 =======
             UIMgr.OpenPanel<MyMotaUIHomePanel>();
 >>>>>>> 8207420c391999537d5f8dbc19fe02f937f6ba2d
-=======
-            UIMgr.OpenPanel<MyMotaUIHomePanel>();
-        }
-
-        private void OnDestroy()
-        {
-            PlayerData.Instance.SavePlayerData();
-        }
-        private void OnApplicationQuit()
-        {
-            PlayerData.Instance.SavePlayerData();
->>>>>>> parent of b1f25529... 11.27
         }
     }
 

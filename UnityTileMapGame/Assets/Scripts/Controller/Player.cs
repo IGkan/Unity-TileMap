@@ -9,16 +9,15 @@ namespace Tower
     using UnityEngine.Tilemaps;
     using QF.Extensions;
 
-    public class Player : QMonoBehaviour, ISingleton
+    public class Player : QMonoBehaviour,ISingleton
     {
-        public PlayerData mPlayerData = PlayerData.Instance;
-
-        public override IManager Manager => UIManager.Instance;
+        public PlayerData mPlayerData;
         public static Player Instance
         {
             get { return MonoSingletonProperty<Player>.Instance; }
         }
-
+        public override IManager Manager => UIManager.Instance;
+ 
         public Tilemap wallTilemap;
 
         Vector3Int mTargetTilePos;
@@ -30,7 +29,6 @@ namespace Tower
         {
             InitPlayerTilePos();
         }
-
         public void InitPlayerTilePos()
         {
             mTargetTilePos = new Vector3Int(Mathf.FloorToInt(transform.position.x), Mathf.FloorToInt(transform.position.y), 0); // 初始化玩家所在tile坐标 向下取整
@@ -39,7 +37,7 @@ namespace Tower
         // 用于射线检测查看怪物属性
         void Update()
         {
-            if (!PlayerData.Instance.CanPeepMonster.Value) return;
+            if (!mPlayerData.CanPeepMonster.Value) return;
             if (Input.GetMouseButtonDown(0))
             {
                 RaycastHit2D hit = Physics2D.Raycast(Camera.main.ScreenToWorldPoint(Input.mousePosition), Vector2.zero, 100f);
@@ -121,7 +119,6 @@ namespace Tower
 
             //取出主角下一步将要移动到的所在的方格名稱
             bool hasTile = wallTilemap.HasTile(mTargetTilePos + mMoveDirectionCell);
-
             if (!hasTile)
             {
 
@@ -134,7 +131,7 @@ namespace Tower
                         return;
                     }
                     mColliderName = hit.collider.name + transform.position.x;
-                    Debug.Log(hit.collider.name);
+                    //Debug.Log(hit.collider.name);
                     Transform hitTransform = hit.collider.transform;
                     switch (hit.collider.tag)
                     {
@@ -163,14 +160,10 @@ namespace Tower
                                         mPlayerData.YellowKey.Value -= 1;
                                         hit.collider.gameObject.SetActive(false);
 <<<<<<< HEAD
-<<<<<<< HEAD
                                         mPlayerData.AddHideObjPos(hit.collider.gameObject.transform.localPosition);
 =======
                                         //PlayerData.Instance.AddHideObjPos(hit.collider.gameObject.transform.localPosition);
 >>>>>>> 8207420c391999537d5f8dbc19fe02f937f6ba2d
-=======
-                                        PlayerData.Instance.AddHideObjPos(hit.collider.gameObject.transform.localPosition);
->>>>>>> parent of b1f25529... 11.27
                                         PlayerMove(mMoveDirectionCell);
                                     }
                                     else
@@ -186,14 +179,10 @@ namespace Tower
                                         mPlayerData.RedKey.Value -= 1;
                                         hit.collider.gameObject.SetActive(false);
 <<<<<<< HEAD
-<<<<<<< HEAD
                                         mPlayerData.AddHideObjPos(hit.collider.gameObject.transform.localPosition);
 =======
                                         //PlayerData.Instance.AddHideObjPos(hit.collider.gameObject.transform.localPosition);
 >>>>>>> 8207420c391999537d5f8dbc19fe02f937f6ba2d
-=======
-                                        PlayerData.Instance.AddHideObjPos(hit.collider.gameObject.transform.localPosition);
->>>>>>> parent of b1f25529... 11.27
                                         PlayerMove(mMoveDirectionCell);
                                     }
                                     else
@@ -210,14 +199,10 @@ namespace Tower
                                         mPlayerData.PurpleKey.Value -= 1;
                                         hit.collider.gameObject.SetActive(false);
 <<<<<<< HEAD
-<<<<<<< HEAD
                                         mPlayerData.AddHideObjPos(hit.collider.gameObject.transform.localPosition);
 =======
                                         //PlayerData.Instance.AddHideObjPos(hit.collider.gameObject.transform.localPosition);
 >>>>>>> 8207420c391999537d5f8dbc19fe02f937f6ba2d
-=======
-                                        PlayerData.Instance.AddHideObjPos(hit.collider.gameObject.transform.localPosition);
->>>>>>> parent of b1f25529... 11.27
                                         PlayerMove(mMoveDirectionCell);
 
                                     }

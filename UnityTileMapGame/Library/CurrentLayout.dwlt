@@ -14,10 +14,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_PixelRect:
     serializedVersion: 2
+<<<<<<< HEAD
     x: 8
     y: 51
     width: 1904
     height: 981
+=======
+    x: 0
+    y: 43
+    width: 1920
+    height: 997
+>>>>>>> parent of 9e6f122f... 28.2
   m_ShowMode: 4
   m_Title: 
   m_RootView: {fileID: 6}
@@ -47,7 +54,11 @@ MonoBehaviour:
   m_MinSize: {x: 683, y: 348}
   m_MaxSize: {x: 12008, y: 8048}
   vertical: 0
+<<<<<<< HEAD
   controlID: 32
+=======
+  controlID: 12
+>>>>>>> parent of 9e6f122f... 28.2
 --- !u!114 &3
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -63,7 +74,11 @@ MonoBehaviour:
   m_Children: []
   m_Position:
     serializedVersion: 2
+<<<<<<< HEAD
     x: 1518
+=======
+    x: 1531
+>>>>>>> parent of 9e6f122f... 28.2
     y: 0
     width: 386
     height: 931
@@ -116,9 +131,15 @@ MonoBehaviour:
   m_Position:
     serializedVersion: 2
     x: 0
+<<<<<<< HEAD
     y: 563
     width: 1518
     height: 368
+=======
+    y: 573
+    width: 1531
+    height: 374
+>>>>>>> parent of 9e6f122f... 28.2
   m_MinSize: {x: 102, y: 124}
   m_MaxSize: {x: 4002, y: 4024}
   m_ActualView: {fileID: 18}
@@ -147,8 +168,13 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
+<<<<<<< HEAD
     width: 1904
     height: 981
+=======
+    width: 1920
+    height: 997
+>>>>>>> parent of 9e6f122f... 28.2
   m_MinSize: {x: 950, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
 --- !u!114 &7
@@ -213,12 +239,21 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
+<<<<<<< HEAD
     width: 1518
     height: 931
   m_MinSize: {x: 406, y: 348}
   m_MaxSize: {x: 8006, y: 8048}
   vertical: 1
   controlID: 45
+=======
+    width: 1531
+    height: 947
+  m_MinSize: {x: 406, y: 348}
+  m_MaxSize: {x: 8006, y: 8048}
+  vertical: 1
+  controlID: 13
+>>>>>>> parent of 9e6f122f... 28.2
 --- !u!114 &10
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -238,12 +273,21 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
+<<<<<<< HEAD
     width: 1518
     height: 563
   m_MinSize: {x: 406, y: 224}
   m_MaxSize: {x: 8006, y: 4024}
   vertical: 0
   controlID: 46
+=======
+    width: 1531
+    height: 573
+  m_MinSize: {x: 406, y: 224}
+  m_MaxSize: {x: 8006, y: 4024}
+  vertical: 0
+  controlID: 59
+>>>>>>> parent of 9e6f122f... 28.2
 --- !u!114 &11
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -259,7 +303,11 @@ MonoBehaviour:
   m_Children: []
   m_Position:
     serializedVersion: 2
+<<<<<<< HEAD
     x: 376
+=======
+    x: 379
+>>>>>>> parent of 9e6f122f... 28.2
     y: 0
     width: 1142
     height: 563
@@ -319,10 +367,17 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
+<<<<<<< HEAD
     x: 8
     y: 644
     width: 1516
     height: 348
+=======
+    x: 0
+    y: 646
+    width: 1529
+    height: 354
+>>>>>>> parent of 9e6f122f... 28.2
   m_PersistentViewDataDictionary: {fileID: 0}
   m_SearchFilter:
     m_NameFilter: 
@@ -340,16 +395,27 @@ MonoBehaviour:
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
+<<<<<<< HEAD
   - Assets/Scripts
+=======
+  - Assets/Art/Scripts/UI
+>>>>>>> parent of 9e6f122f... 28.2
   m_LastFoldersGridSize: -1
   m_LastProjectPath: E:\LSF\GithubDesktop\UnityTileMapGame\Unity-TileMap\UnityTileMapGame
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
+<<<<<<< HEAD
     scrollPos: {x: 0, y: 101}
     m_SelectedIDs: 98360000
     m_LastClickedID: 13976
     m_ExpandedIDs: 000000003c33000020350000a23500001e360000303600005e36000098360000b637000014380000283800004a380000643800007e380000903800002c390000c4390000843a0000ee3a0000fe3b00003a3c0000ae3c0000b03c0000c83c0000ce3c0000f03c0000463d0000263e0000ee3f0000be400000ce400000d040000048410000d0410000fa410000be420000ca420000ea420000764300007a4300007e430000aa430000484400004a4400004c4400004e44000050440000524400005444000056440000584400005a4400005c4400005e4400006044000062440000644400006644000068440000
+=======
+    scrollPos: {x: 0, y: 207}
+    m_SelectedIDs: 9c3a0000
+    m_LastClickedID: 15004
+    m_ExpandedIDs: 000000005233000036350000b83500003e360000503600007e360000c0360000e237000040380000543800007638000090380000aa380000bc38000058390000f0390000b03a00001a3b00002e3c00006a3c0000de3c0000e03c0000f83c0000fe3c0000203d0000763d0000563e00001e400000ee40000002410000044100007c410000044200002e420000f2420000fe4200001e430000ae430000b2430000b6430000e243000080440000824400008444000086440000884400008a4400008c4400008e44000090440000924400009444000096440000984400009a4400009c4400009e440000a0440000
+>>>>>>> parent of 9e6f122f... 28.2
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -377,7 +443,11 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
+<<<<<<< HEAD
     m_ExpandedIDs: 000000003c33000020350000a23500001e360000303600005e36000098360000b637000014380000283800004a380000643800007e380000903800002c390000c4390000843a0000ee3a0000fe3b00003a3c0000ae3c0000b03c0000c83c0000ce3c0000f03c0000463d0000263e0000ee3f0000be400000ce400000d040000048410000d0410000fa410000be420000ca420000ea420000764300007a4300007e430000aa430000484400004a4400004c4400004e44000050440000524400005444000056440000584400005a4400005c4400005e4400006044000062440000644400006644000068440000
+=======
+    m_ExpandedIDs: 000000005233000036350000b83500003e360000503600007e360000c0360000e237000040380000543800007638000090380000aa380000bc38000058390000f0390000b03a00001a3b00002e3c00006a3c0000de3c0000e03c0000f83c0000fe3c0000203d0000763d0000563e00001e400000ee40000002410000044100007c410000044200002e420000f2420000fe4200001e430000ae430000b2430000b6430000e243000080440000824400008444000086440000884400008a4400008c4400008e44000090440000924400009444000096440000984400009a4400009c4400009e440000a0440000
+>>>>>>> parent of 9e6f122f... 28.2
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -453,10 +523,17 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
+<<<<<<< HEAD
     x: 1526
     y: 81
     width: 384
     height: 911
+=======
+    x: 1531
+    y: 73
+    width: 387
+    height: 927
+>>>>>>> parent of 9e6f122f... 28.2
   m_PersistentViewDataDictionary: {fileID: 0}
   m_ObjectsLockedBeforeSerialization: []
   m_InstanceIDsLockedBeforeSerialization: 
@@ -488,10 +565,17 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
+<<<<<<< HEAD
     x: 8
     y: 81
     width: 374
     height: 543
+=======
+    x: 0
+    y: 73
+    width: 377
+    height: 553
+>>>>>>> parent of 9e6f122f... 28.2
   m_PersistentViewDataDictionary: {fileID: 0}
   m_SceneHierarchy:
     m_TreeViewState:
@@ -543,12 +627,21 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
+<<<<<<< HEAD
     x: 384
     y: 81
     width: 1138
     height: 543
   m_PersistentViewDataDictionary: {fileID: 0}
   m_WindowGUID: ca76088cb455505499c702281b896d03
+=======
+    x: 379
+    y: 73
+    width: 1148
+    height: 553
+  m_PersistentViewDataDictionary: {fileID: 0}
+  m_WindowGUID: 6d9d3a8addf782c4f92dd7bf653e669d
+>>>>>>> parent of 9e6f122f... 28.2
   m_SceneLighting: 1
   m_2DMode: 1
   m_isRotationLocked: 0
@@ -703,8 +796,15 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
+<<<<<<< HEAD
     x: 8
     y: 644
     width: 1516
     height: 348
+=======
+    x: -32000
+    y: -31397
+    width: 1529
+    height: 354
+>>>>>>> parent of 9e6f122f... 28.2
   m_PersistentViewDataDictionary: {fileID: 0}

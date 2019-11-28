@@ -31,41 +31,49 @@ namespace Tower
         public void PropExecute(string name)
         {
             gameObject.Hide();
+<<<<<<< HEAD
             Player.Instance.mPlayerData.AddHideObjPos(gameObject.transform.localPosition);
+=======
+<<<<<<< HEAD
+            Player.Instance.mPlayerData.AddHideObjPos(gameObject.transform.localPosition);
+=======
+            //PlayerData.Instance.AddHideObjPos(gameObject.transform.localPosition);
+>>>>>>> 8207420c391999537d5f8dbc19fe02f937f6ba2d
+>>>>>>> parent of 9e6f122f... 28.2
             switch (name)
             {
                 case "Life":
-                    PlayerData.Instance.Life.Value += this.Life;
+                    Player.Instance.mPlayerData.Life.Value += this.Life;
                     break;
                 case "Attack":
-                    PlayerData.Instance.Attack.Value += this.Attack;
+                    Player.Instance.mPlayerData.Attack.Value += this.Attack;
                     break;
                 case "Defend":
-                    PlayerData.Instance.Defend.Value += this.Defend;
+                    Player.Instance.mPlayerData.Defend.Value += this.Defend;
                     break;
                 case "Level":
-                    PlayerData.Instance.Level.Value += this.Level;
+                    Player.Instance.mPlayerData.Level.Value += this.Level;
                     break;
                 case "Experience":
-                    PlayerData.Instance.Experience.Value += this.Experience;
+                    Player.Instance.mPlayerData.Experience.Value += this.Experience;
                     break;
                 case "Gold":
-                    PlayerData.Instance.Gold.Value += this.Gold;
+                    Player.Instance.mPlayerData.Gold.Value += this.Gold;
                     break;
                 case "YellowKey":
-                    PlayerData.Instance.YellowKey.Value += this.YellowKey;
+                    Player.Instance.mPlayerData.YellowKey.Value += this.YellowKey;
                     break;
                 case "RedKey":
-                    PlayerData.Instance.RedKey.Value += this.RedKey;
+                    Player.Instance.mPlayerData.RedKey.Value += this.RedKey;
                     break;
                 case "PurpleKey":
-                    PlayerData.Instance.PurpleKey.Value += this.PurpleKey;
+                    Player.Instance.mPlayerData.PurpleKey.Value += this.PurpleKey;
                     break;
                 case "SelectLevel":
-                    PlayerData.Instance.CanSelectFloor.Value = true;
+                    Player.Instance.mPlayerData.CanSelectFloor.Value = true;
                     break;
                 case "PeepMonster":
-                    PlayerData.Instance.CanPeepMonster.Value = true;
+                    Player.Instance.mPlayerData.CanPeepMonster.Value = true;
                     break;
                 default:
                     break;

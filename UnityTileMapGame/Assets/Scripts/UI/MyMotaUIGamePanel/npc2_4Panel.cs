@@ -13,31 +13,31 @@ namespace Tower
 		{
             BtnAddAttack.onClick.AddListener(() =>
             {
-                //ChargeExtend(PlayerData.Instance.Gold.Value, PlayerData.Instance.GoldCharge.Value, 
-                //    PlayerData.Instance.Attack.Value, PlayerData.Instance.AddAttack.Value);
+                //ChargeExtend(Player.Instance.mPlayerData.Gold.Value, Player.Instance.mPlayerData.GoldCharge.Value, 
+                //    Player.Instance.mPlayerData.Attack.Value, Player.Instance.mPlayerData.AddAttack.Value);
                 // 玩家金币需要大于等于此次消费
-                if (PlayerData.Instance.Gold.Value >= PlayerData.Instance.GoldCharge.Value)
+                if (Player.Instance.mPlayerData.Gold.Value >= Player.Instance.mPlayerData.GoldCharge.Value)
                 {
-                    PlayerData.Instance.Gold.Value -= PlayerData.Instance.GoldCharge.Value;
-                    PlayerData.Instance.YellowKey.Value += PlayerData.Instance.AddYellowKey.Value;
+                    Player.Instance.mPlayerData.Gold.Value -= Player.Instance.mPlayerData.GoldCharge.Value;
+                    Player.Instance.mPlayerData.YellowKey.Value += Player.Instance.mPlayerData.AddYellowKey.Value;
                 }
             });
             BtnAddDefend.onClick.AddListener(() =>
             {
                 // 玩家金币需要大于等于此次消费
-                if (PlayerData.Instance.Gold.Value >= PlayerData.Instance.GoldCharge.Value)
+                if (Player.Instance.mPlayerData.Gold.Value >= Player.Instance.mPlayerData.GoldCharge.Value)
                 {
-                    PlayerData.Instance.Gold.Value -= PlayerData.Instance.GoldCharge.Value;
-                    PlayerData.Instance.RedKey.Value += PlayerData.Instance.AddRedKey.Value;
+                    Player.Instance.mPlayerData.Gold.Value -= Player.Instance.mPlayerData.GoldCharge.Value;
+                    Player.Instance.mPlayerData.RedKey.Value += Player.Instance.mPlayerData.AddRedKey.Value;
                 }
             });
             BtnAddLife.onClick.AddListener(() =>
             {
                 // 玩家金币需要大于等于此次消费
-                if (PlayerData.Instance.Gold.Value >= PlayerData.Instance.GoldCharge.Value)
+                if (Player.Instance.mPlayerData.Gold.Value >= Player.Instance.mPlayerData.GoldCharge.Value)
                 {
-                    PlayerData.Instance.Gold.Value -= PlayerData.Instance.GoldCharge.Value;
-                    PlayerData.Instance.PurpleKey.Value += PlayerData.Instance.AddPurpleKey.Value;
+                    Player.Instance.mPlayerData.Gold.Value -= Player.Instance.mPlayerData.GoldCharge.Value;
+                    Player.Instance.mPlayerData.PurpleKey.Value += Player.Instance.mPlayerData.AddPurpleKey.Value;
                 }
             });
             BtnAddPanelQuit.onClick.AddListener(() =>

@@ -38,12 +38,12 @@ namespace Tower
             BtnStart.onClick.AddListener(() =>
             {
                 CloseSelf();
-                //PlayerData.Instance.InitPlayerData();
+                //Player.Instance.mPlayerData.InitPlayerData();
                 UIMgr.OpenPanel<UIGamePanel>();
             });
             BtnReload.onClick.AddListener(()=>
             {
-              //PlayerData.Instance.LoadPlayerData();
+              //Player.Instance.mPlayerData.LoadPlayerData();
             });
             BtnGameInfo.onClick.AddListener(() =>
             {
@@ -51,7 +51,7 @@ namespace Tower
             });
             BtnQuit.onClick.AddListener(() =>
             {
-                //PlayerData.Instance.SavePlayerData();
+                //Player.Instance.mPlayerData.SavePlayerData();
                 Application.Quit();
             });
         }
