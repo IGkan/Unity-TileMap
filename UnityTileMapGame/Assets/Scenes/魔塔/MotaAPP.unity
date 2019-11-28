@@ -112,6 +112,49 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &936865287
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 936865289}
+  - component: {fileID: 936865288}
+  m_Layer: 0
+  m_Name: MainThreadDispatcher
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &936865288
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 936865287}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c3cd207057515c4438a31a6a7b548fe7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!4 &936865289
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 936865287}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2040587323
 GameObject:
   m_ObjectHideFlags: 0
@@ -122,6 +165,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2040587325}
   - component: {fileID: 2040587324}
+  - component: {fileID: 2040587326}
   m_Layer: 0
   m_Name: MotaApp
   m_TagString: Untagged
@@ -141,6 +185,59 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 626651c2d59b93b47a4f860e2adbd463, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mModel:
+    Name:
+      value: Mr Li
+    CurrntFloor:
+      value: 1
+    Level:
+      value: 1
+    Life:
+      value: 100
+    Attack:
+      value: 10
+    Defend:
+      value: 10
+    Experience:
+      value: 0
+    Gold:
+      value: 0
+    YellowKey:
+      value: 0
+    RedKey:
+      value: 0
+    PurpleKey:
+      value: 0
+    NewGame:
+      value: 1
+    SoundOn:
+      value: 1
+    MoveSpeed:
+      value: 0.2
+    MaxFloor:
+      value: 26
+    CanSelectFloor:
+      value: 0
+    CanPeepMonster:
+      value: 0
+    AddAttack:
+      value: 10
+    AddDefend:
+      value: 10
+    AddLife:
+      value: 100
+    AddYellowKey:
+      value: 1
+    AddRedKey:
+      value: 1
+    AddPurpleKey:
+      value: 1
+    AddLevel:
+      value: 100
+    GoldCharge:
+      value: 100
+    ExperienceCharge:
+      value: 100
 --- !u!4 &2040587325
 Transform:
   m_ObjectHideFlags: 0
@@ -155,3 +252,15 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2040587326
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2040587323}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b5183ba81902e6543af9eab20616acb2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

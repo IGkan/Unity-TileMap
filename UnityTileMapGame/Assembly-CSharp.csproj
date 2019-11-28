@@ -460,6 +460,7 @@
     <Compile Include="Assets\Scripts\Controller\PlayerAnimatorMsg.cs" />
     <Compile Include="Assets\Scripts\Controller\PlayerJoystickCtr.cs" />
     <Compile Include="Assets\Scripts\Controller\Stair.cs" />
+    <Compile Include="Assets\Scripts\Controller\TipMsg.cs" />
     <Compile Include="Assets\Scripts\Debug\DebugFloorChange.cs" />
     <Compile Include="Assets\Scripts\Model\PlayerData.cs" />
     <Compile Include="Assets\Scripts\Monster\Monster.cs" />
@@ -489,6 +490,8 @@
     <Compile Include="Assets\Scripts\UI\MyMotaUIGamePanel\TipPanel.Designer.cs" />
     <Compile Include="Assets\Scripts\UI\MyMotaUIHomePanel.cs" />
     <Compile Include="Assets\Scripts\UI\MyMotaUIHomePanel.Designer.cs" />
+    <Compile Include="Assets\Scripts\UI\MyMotaUITipPanel.cs" />
+    <Compile Include="Assets\Scripts\UI\MyMotaUITipPanel.Designer.cs" />
     <Compile Include="Assets\Scripts\UI\UIEndPanel.cs" />
     <Compile Include="Assets\Scripts\UI\UIEndPanel.Designer.cs" />
     <Compile Include="Assets\Scripts\UI\UIGamePanel.cs" />

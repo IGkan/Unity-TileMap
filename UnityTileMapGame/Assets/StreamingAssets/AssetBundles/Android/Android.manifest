@@ -1,62 +1,61 @@
 ManifestFileVersion: 0
-CRC: 1678907796
+CRC: 3293259782
 AssetBundleManifest:
   AssetBundleInfos:
     Info_0:
-      Name: bg_mp3
+      Name: mymotauigamepanel_prefab
       Dependencies: {}
     Info_1:
-      Name: mymotauigamepanel_prefab
-      Dependencies:
-        Dependency_0: sprites
-    Info_2:
       Name: mymotauihomepanel_prefab
       Dependencies: {}
-    Info_3:
+    Info_2:
       Name: uiendpanel_prefab
       Dependencies: {}
-    Info_4:
+    Info_3:
       Name: uigamepanel_prefab
       Dependencies: {}
-    Info_5:
+    Info_4:
       Name: uihomepanel_prefab
       Dependencies: {}
-    Info_6:
+    Info_5:
       Name: myeasytouchjoystick_prefab
       Dependencies: {}
-    Info_7:
+    Info_6:
       Name: gamesceneprefab_prefab
       Dependencies: {}
-    Info_8:
-      Name: boss_mp3
-      Dependencies: {}
-    Info_9:
-      Name: door_mp3
-      Dependencies: {}
-    Info_10:
-      Name: end_mp3
-      Dependencies: {}
-    Info_11:
+    Info_7:
       Name: feixing_mp3
       Dependencies: {}
-    Info_12:
-      Name: fight_mp3
-      Dependencies: {}
-    Info_13:
-      Name: prop_mp3
-      Dependencies: {}
-    Info_14:
-      Name: shangdian_mp3
-      Dependencies: {}
-    Info_15:
-      Name: start_mp3
-      Dependencies: {}
-    Info_16:
-      Name: talk_mp3
-      Dependencies: {}
-    Info_17:
+    Info_8:
       Name: mymotauiendpanel_prefab
       Dependencies: {}
+    Info_9:
+      Name: mymotauitippanel_prefab
+      Dependencies: {}
+    Info_10:
+      Name: bg_mp3
+      Dependencies: {}
+    Info_11:
+      Name: door_mp3
+      Dependencies: {}
+    Info_12:
+      Name: end_mp3
+      Dependencies: {}
+    Info_13:
+      Name: fight_mp3
+      Dependencies: {}
+    Info_14:
+      Name: prop_mp3
+      Dependencies: {}
+    Info_15:
+      Name: shangdian_mp3
+      Dependencies: {}
+    Info_16:
+      Name: start_mp3
+      Dependencies: {}
+    Info_17:
+      Name: talk_mp3
+      Dependencies: {}
     Info_18:
-      Name: sprites
+      Name: audio
       Dependencies: {}

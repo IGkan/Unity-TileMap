@@ -11,15 +11,15 @@
 namespace QAssetBundle
 {
     
+    public class Audio
+    {
+        public const string BundleName = "audio";
+        public const string BOSS = "boss";
+    }
     public class Bg_mp3
     {
         public const string BundleName = "bg_mp3";
         public const string BG = "bg";
-    }
-    public class Boss_mp3
-    {
-        public const string BundleName = "boss_mp3";
-        public const string BOSS = "boss";
     }
     public class Door_mp3
     {
@@ -70,6 +70,11 @@ namespace QAssetBundle
         public const string BundleName = "mymotauihomepanel_prefab";
         public const string MYMOTAUIHOMEPANEL = "mymotauihomepanel";
     }
+    public class Mymotauitippanel_prefab
+    {
+        public const string BundleName = "mymotauitippanel_prefab";
+        public const string MYMOTAUITIPPANEL = "mymotauitippanel";
+    }
     public class Prefab
     {
         public const string BundleName = "prefab";
@@ -83,18 +88,6 @@ namespace QAssetBundle
     {
         public const string BundleName = "shangdian_mp3";
         public const string SHANGDIAN = "shangdian";
-    }
-    public class Sprites
-    {
-        public const string BundleName = "sprites";
-        public const string MUSICOFF = "musicoff";
-        public const string MUSICON = "musicon";
-        public const string PEEPMONSTEROFF = "peepmonsteroff";
-        public const string PEEPMONSTERON = "peepmonsteron";
-        public const string SELECTLEVELOFF = "selectleveloff";
-        public const string SELECTLEVELON = "selectlevelon";
-        public const string SETTINGOFF = "settingoff";
-        public const string SETTINGON = "settingon";
     }
     public class Start_mp3
     {

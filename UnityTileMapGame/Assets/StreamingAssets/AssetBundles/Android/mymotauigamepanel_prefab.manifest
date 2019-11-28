@@ -1,9 +1,9 @@
 ManifestFileVersion: 0
-CRC: 2135218133
+CRC: 28405361
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: 74583a62cb87ae38e1ea4085b726bfa5
+    Hash: 68fb3d23d3a64c088e0509e735aa557f
   TypeTreeHash:
     serializedVersion: 2
     Hash: 8f4369c63c8f3f88b6a0a2559559f1c8
@@ -61,5 +61,4 @@ ClassTypes:
   Script: {instanceID: 0}
 Assets:
 - Assets/Art/UIPrefab/MyMotaUIGamePanel.prefab
-Dependencies:
-- E:/LSF/GithubDesktop/UnityTileMapGame/Unity-TileMap/UnityTileMapGame/AssetBundles/Android/sprites
+Dependencies: []

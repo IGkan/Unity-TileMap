@@ -45,7 +45,6 @@ namespace Tower
             if (playerData.Attack.Value > Defend)
             {
                 int ExpectedCount = GetExpectDamage();
-                Debug.Log(ExpectedCount);
                 if (playerData.Life.Value > ExpectedCount)
                 {
                     int count = Execute(monster);//回调且执行,直接作用 PlayerData, count 怪物预计对玩家造成的伤害

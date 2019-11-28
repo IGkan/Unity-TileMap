@@ -55,13 +55,13 @@ namespace Tower
                     if (mChildLife <= 0 && count < playerData.Life.Value) // 怪物死亡
                     {
                        gameObject.Hide();  //1 => 回调且执行,直接作用 PlayerData
-                       //playerData.AddHideObjPos(gameObject.transform.localPosition);
+                       playerData.AddHideObjPos(gameObject.transform.localPosition);
                        return count;
                     }
                 }
                 else
                 {
-                    Log.I("你破不了它防御");
+                    TipMsg.Instance.DipslayInfo("你破不了它防御");
                     return count;
                 }
                 if (child.mAttack - playerData.Defend.Value > 0) // 怪物能对玩家造成伤害
@@ -92,11 +92,6 @@ namespace Tower
                     if (mChildLife <= 0 && count < playerData.Life.Value) // 怪物死亡
                     {
                         mTip = "你可以战胜它";
-                        return count;
-                    }
-                    else
-                    {
-                        mTip = "你无法战胜它";
                         return count;
                     }
                 }

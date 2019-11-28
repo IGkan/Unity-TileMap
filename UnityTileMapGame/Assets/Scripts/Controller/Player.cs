@@ -159,11 +159,9 @@ namespace Tower
 
                                         mPlayerData.YellowKey.Value -= 1;
                                         hit.collider.gameObject.SetActive(false);
-<<<<<<< HEAD
+
                                         mPlayerData.AddHideObjPos(hit.collider.gameObject.transform.localPosition);
-=======
-                                        //PlayerData.Instance.AddHideObjPos(hit.collider.gameObject.transform.localPosition);
->>>>>>> 8207420c391999537d5f8dbc19fe02f937f6ba2d
+
                                         PlayerMove(mMoveDirectionCell);
                                     }
                                     else
@@ -178,11 +176,8 @@ namespace Tower
 
                                         mPlayerData.RedKey.Value -= 1;
                                         hit.collider.gameObject.SetActive(false);
-<<<<<<< HEAD
+
                                         mPlayerData.AddHideObjPos(hit.collider.gameObject.transform.localPosition);
-=======
-                                        //PlayerData.Instance.AddHideObjPos(hit.collider.gameObject.transform.localPosition);
->>>>>>> 8207420c391999537d5f8dbc19fe02f937f6ba2d
                                         PlayerMove(mMoveDirectionCell);
                                     }
                                     else
@@ -198,11 +193,8 @@ namespace Tower
 
                                         mPlayerData.PurpleKey.Value -= 1;
                                         hit.collider.gameObject.SetActive(false);
-<<<<<<< HEAD
+
                                         mPlayerData.AddHideObjPos(hit.collider.gameObject.transform.localPosition);
-=======
-                                        //PlayerData.Instance.AddHideObjPos(hit.collider.gameObject.transform.localPosition);
->>>>>>> 8207420c391999537d5f8dbc19fe02f937f6ba2d
                                         PlayerMove(mMoveDirectionCell);
 
                                     }
@@ -227,6 +219,7 @@ namespace Tower
                             else
                             {
                                 ChangeMovingState();
+                                TipMsg.Instance.DipslayInfo("你打不过它,请继续提升战力!");
                             }
                             break;
                         case "Prop":

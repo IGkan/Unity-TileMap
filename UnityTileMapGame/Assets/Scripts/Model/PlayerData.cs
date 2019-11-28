@@ -10,18 +10,6 @@ namespace Tower
     [System.Serializable]
     public class PlayerData
     {
-<<<<<<< HEAD
-=======
-        //private PlayerData() { }
-        //public static PlayerData Instance
-        //{
-        //    get
-        //    {
-        //        return SingletonProperty<PlayerData>.Instance;
-        //    }
-        //}
-
->>>>>>> parent of 9e6f122f... 28.2
         #region 属性
         // 玩家基本属性
         public StringReactiveProperty Name = new StringReactiveProperty("Mr Li");
@@ -48,22 +36,6 @@ namespace Tower
         //public BoolReactiveProperty IsGaming = new BoolReactiveProperty(); // 是否一直在游戏中
 
         // 商店购买使用的属性
-<<<<<<< HEAD
-        public IntReactiveProperty AddAttack = new IntReactiveProperty();
-        public IntReactiveProperty AddDefend = new IntReactiveProperty();
-        public IntReactiveProperty AddLife = new IntReactiveProperty();
-        public IntReactiveProperty AddYellowKey = new IntReactiveProperty();
-        public IntReactiveProperty AddRedKey = new IntReactiveProperty();
-        public IntReactiveProperty AddPurpleKey = new IntReactiveProperty();
-        public IntReactiveProperty AddLevel = new IntReactiveProperty();
-        public IntReactiveProperty GoldCharge = new IntReactiveProperty(); // 购买花费的金币 
-        public IntReactiveProperty ExperienceCharge = new IntReactiveProperty(); //购买花费的经验
-
-
-        #endregion
-
-
-=======
         public IntReactiveProperty AddAttack = new IntReactiveProperty(10);
         public IntReactiveProperty AddDefend = new IntReactiveProperty(10);
         public IntReactiveProperty AddLife = new IntReactiveProperty(100);
@@ -77,22 +49,15 @@ namespace Tower
 
         #endregion   
      
->>>>>>> parent of 9e6f122f... 28.2
         // 新游戏初始化数据
         public void InitPlayerData()
         {
             Name.Value = "Mr Li";
             CurrntFloor.Value = 1;
             Level.Value = 1;
-<<<<<<< HEAD
-            Attack.Value = 10 + Level.Value * 5;
-            Defend.Value = 10 + Level.Value * 5;
-            Life.Value = 100 + Level.Value * 50;
-=======
             Attack.Value = 10;
             Defend.Value = 10;
-            Life.Value = 150;
->>>>>>> parent of 9e6f122f... 28.2
+            Life.Value = 100;
             Experience.Value = 0;
             Gold.Value = 0;
             YellowKey.Value = 0;
@@ -133,44 +98,11 @@ namespace Tower
             TileDataCollection.Add(tileData);
         }
 
-        /// <summary>
-        /// 保存数据
-        /// </summary>
         public void SavePlayerData()
         {
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-
-            Debug.Log("数据保存成功！");
-
-=======
-            GameScenePrefab.Instance.SetHideSave();
->>>>>>> 8207420c391999537d5f8dbc19fe02f937f6ba2d
->>>>>>> parent of 9e6f122f... 28.2
             PlayerPrefs.SetString("PlayerTileData", this.ToJson());
-
+            Debug.Log("数据保存成功");
         }
-<<<<<<< HEAD
-
-
-        public PlayerData LoadPlayerData()
-        {
-            var jsonContent = PlayerPrefs.GetString("PlayerTileData", string.Empty);
-=======
-        //Transform[] mChildArr;
-        // void SetHideSave()
-        //{
-        //    mChildArr = GameObject.Find("GameScenePrefab(Clone)").GetComponentsInChildren<Transform>();
-        //    foreach (Transform item in mChildArr)
-        //    {
-        //        if (!item.gameObject.activeSelf)
-        //        {
-        //            Debug.Log(item.localPosition);
-        //            PlayerData.Instance.AddHideObjPos(item.localPosition);
-        //        }
-        //    }
-        //}
 
         /// <summary>
         /// 加载数据
@@ -178,8 +110,6 @@ namespace Tower
         public  PlayerData  LoadPlayerData()
         {
             var jsonContent = PlayerPrefs.GetString("PlayerTileData", string.Empty);
-<<<<<<< HEAD
->>>>>>> parent of 9e6f122f... 28.2
             if (jsonContent.IsNullOrEmpty())
             {
                 InitPlayerData();
@@ -187,101 +117,19 @@ namespace Tower
             }
             else
             {
-
-
                 PlayerData playerData = jsonContent.FromJson<PlayerData>();
-                return playerData;
-
-                #region
-                //Name.Value = playerData.Name.Value;
-                //CurrntFloor.Value = playerData.CurrntFloor.Value;
-                //Level.Value = playerData.Level.Value;
-                //Attack.Value = playerData.Attack.Value;
-                //Defend.Value = playerData.Defend.Value;
-                //Life.Value = playerData.Life.Value;
-                //Experience.Value = playerData.Experience.Value;
-                //Gold.Value = playerData.Gold.Value;
-                //YellowKey.Value = playerData.YellowKey.Value;
-                //RedKey.Value = playerData.RedKey.Value;
-                //PurpleKey.Value = playerData.PurpleKey.Value;
-
-                //NewGame.Value = playerData.NewGame.Value;
-                //SoundOn.Value = playerData.SoundOn.Value;
-                //MoveSpeed.Value = playerData.MoveSpeed.Value;
-                //MaxFloor.Value = playerData.MaxFloor.Value;
-                //CanSelectFloor.Value = playerData.CanSelectFloor.Value;
-                //CanPeepMonster.Value = playerData.CanPeepMonster.Value;
-
-                //AddAttack.Value = playerData.AddAttack.Value;
-                //AddDefend.Value = playerData.AddDefend.Value;
-                //AddLife.Value = playerData.AddLife.Value;
-                //AddYellowKey.Value = playerData.AddYellowKey.Value;
-                //AddRedKey.Value = playerData.AddRedKey.Value;
-                //AddYellowKey.Value = playerData.AddYellowKey.Value;
-                //AddLevel.Value = playerData.AddLevel.Value;
-                //GoldCharge.Value = playerData.GoldCharge.Value;
-                //ExperienceCharge.Value = playerData.ExperienceCharge.Value;
-
-                //TileDataCollection = playerData.TileDataCollection;
-                #endregion
+                return playerData;           
             }
 
         }
-
-<<<<<<< HEAD
-        public class TileData
+        public void LoadTileData()
         {
-            // 隐藏的物体的二维坐标
-            public Vector3ReactiveProperty TileHidePos = new Vector3ReactiveProperty();
-        }
-=======
-        public void LoadTileData() {
             var jsonContent = PlayerPrefs.GetString("PlayerTileData", string.Empty);
             if (!jsonContent.IsNullOrEmpty())
             {
-                    foreach (var item in jsonContent.FromJson<PlayerData>().TileDataCollection)
-=======
-            PlayerData playerData = jsonContent.FromJson<PlayerData>();
-
-            Name.Value = playerData.Name.Value;
-            CurrntFloor.Value = playerData.CurrntFloor.Value;
-            Level.Value = playerData.Level.Value;
-            Attack.Value = playerData.Attack.Value;
-            Defend.Value = playerData.Defend.Value;
-            Life.Value = playerData.Life.Value;
-            Experience.Value = playerData.Experience.Value;
-            Gold.Value = playerData.Gold.Value;
-            YellowKey.Value = playerData.YellowKey.Value;
-            RedKey.Value = playerData.RedKey.Value;
-            PurpleKey.Value = playerData.PurpleKey.Value;
-
-            NewGame.Value = playerData.NewGame.Value;
-            MaxFloor.Value = playerData.MaxFloor.Value;
-            CanSelectFloor.Value = playerData.CanSelectFloor.Value;
-            CanPeepMonster.Value = playerData.CanPeepMonster.Value;
-
-            AddAttack.Value = playerData.AddAttack.Value;
-            AddDefend.Value = playerData.AddDefend.Value;
-            AddLife.Value = playerData.AddLife.Value;
-            AddYellowKey.Value = playerData.AddYellowKey.Value;
-            AddRedKey.Value = playerData.AddRedKey.Value;
-            AddYellowKey.Value = playerData.AddYellowKey.Value;
-            GoldCharge.Value = playerData.GoldCharge.Value;
-            ExperienceCharge.Value = playerData.ExperienceCharge.Value;
-
-            Player.Instance.InitPlayerTilePos();
-            Stair.ComeUp(1);
-
-
-
-            if (!NewGame.Value)
-            {
-                foreach (var item in playerData.TileDataCollection)
+                foreach (var item in jsonContent.FromJson<PlayerData>().TileDataCollection)
                 {
-                    RaycastHit2D hit = Physics2D.Raycast(item.TileHidePos.Value, Vector2.zero);
-                    if (hit.collider != null)
->>>>>>> 8207420c391999537d5f8dbc19fe02f937f6ba2d
-                    {
+                   
                         RaycastHit2D hit = Physics2D.Raycast(item.TileHidePos.Value, Vector2.zero);
                         if (hit.collider != null)
                         {
@@ -290,12 +138,14 @@ namespace Tower
                         }
                     }
                 
-            }
+                }
         }
-        //public void OnSingletonInit()
-        //{
+        public class TileData
+        {
+            // 隐藏的物体的二维坐标
+            public Vector3ReactiveProperty TileHidePos = new Vector3ReactiveProperty();
+        }
 
-        //}
->>>>>>> parent of 9e6f122f... 28.2
+        
     }
 }

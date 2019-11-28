@@ -32,7 +32,7 @@ a2113831d3323f931007e1b3812dc814 Assembly-CSharp.dll:Cinemachine.CinemachineFoll
 e7a73f5f78ba6445195ec23b74a1ce2d Unity.TextMeshPro.dll:TMPro.TMP_ScrollbarEventHandler
 aa2dbfc16ca719518da9280ab23d05d8 Assembly-CSharp.dll:.ETCSetDirectActionTransform
 71bb6a6b6c8f052f948db64c7dd3ca4f UniRx.dll:UniRx.Triggers.ObservableVisibleTrigger
-7a66f51664d92921780c4810b1e6907b Assembly-CSharp.dll:Tower.MyMotaUIHomePanel
+abe41dbcdb777505f9a4a80df14fc7d7 Assembly-CSharp.dll:Tower.MyMotaUIHomePanel
 71bb6a6b6c8f052f948db64c7dd3ca4f Assembly-CSharp.dll:.TwoTouchMe
 cf9f5cf2c3145a37ac07f00e50e460f9 UnityEngine.UI.dll:UnityEngine.UI.AspectRatioFitter
 71bb6a6b6c8f052f948db64c7dd3ca4f UnityEngine.UI.dll:UnityEngine.EventSystems.BaseInput
@@ -109,7 +109,7 @@ abf1930d8126d0b2e00e9449129a0190 UnityEngine.UI.dll:UnityEngine.EventSystems.Tou
 71bb6a6b6c8f052f948db64c7dd3ca4f Assembly-CSharp.dll:.Ball
 d141450789e8befafdd2f2a4c28e4fef Assembly-CSharp.dll:Tower.TipPanel
 eca62473df0eb3bd609e491530dc4c02 Assembly-CSharp.dll:Unidux.Example.List.ListItemDispatcher
-71bb6a6b6c8f052f948db64c7dd3ca4f Assembly-CSharp.dll:Tower.MotaApp
+091340f7f386f671b3dd1963fa5d2357 Assembly-CSharp.dll:Tower.MotaApp
 71bb6a6b6c8f052f948db64c7dd3ca4f Assembly-CSharp.dll:.TwoDragMe
 0c3c2d3cfcc74c90adec27d22ae2bc60 Assembly-CSharp.dll:HedgehogTeam.EasyTouch.QuickSwipe
 71bb6a6b6c8f052f948db64c7dd3ca4f UniRx.dll:UniRx.Triggers.ObservablePointerClickTrigger
@@ -278,7 +278,7 @@ aff505990b3b2335b9af16f2524559b7 Assembly-CSharp.dll:Unidux.Example.List.Unidux
 71bb6a6b6c8f052f948db64c7dd3ca4f Assembly-CSharp.dll:.LoadExamples
 ea413867059a29f7672d63a412acd0e8 Assembly-CSharp.dll:Unidux.Example.Middlewares.MiddlewaresBehaviour
 e3ca9c4491580eb6551b0ae794d34210 Assembly-CSharp.dll:Cinemachine.CinemachineBlendListCamera
-71bb6a6b6c8f052f948db64c7dd3ca4f Assembly-CSharp.dll:.Test
+e131d364c30104395fb76e0204ea6ab3 Assembly-CSharp.dll:.Test
 71bb6a6b6c8f052f948db64c7dd3ca4f Assembly-CSharp.dll:.TwoTapMe
 510fefd6a544e16a3ffefa557ddcba39 Unity.TextMeshPro.dll:TMPro.PackageResourceImporterWindow
 69a34aab7dbcedb95fb02a1b91d10788 Assembly-CSharp.dll:Cinemachine.CinemachineMixingCamera
@@ -347,7 +347,7 @@ fdb2a643bae914337beea20a6806b775 Assembly-CSharp.dll:.BallRunPlayer
 aff505990b3b2335b9af16f2524559b7 Assembly-CSharp.dll:Unidux.Example.SimpleHttp.Unidux
 58118cdc561a7e0972d67d69033fc8fe Assembly-CSharp.dll:.ButtonInputUI
 d791aa6007fa3640be1164ea75bb087d Unity.TextMeshPro.dll:TMPro.TMP_StyleSheet
-ad65a6acba0f69221ae14316b1fc9720 Assembly-CSharp.dll:Tower.Player
+22cfa084db68d8336aa08257da4b1d81 Assembly-CSharp.dll:Tower.Player
 98643c3dbc51de049f9e72715f36fccf Assembly-CSharp.dll:QFramework.UITransitionPanel
 aff505990b3b2335b9af16f2524559b7 Assembly-CSharp.dll:Unidux.Example.Todo.Unidux
 71bb6a6b6c8f052f948db64c7dd3ca4f UniRx.dll:UniRx.Triggers.ObservableRectTransformTrigger
@@ -387,3 +387,5 @@ aff505990b3b2335b9af16f2524559b7 Assembly-CSharp.dll:Unidux.Example.SceneTransit
 adb7d43264610b02a01ba84cf9708231 Assembly-CSharp.dll:Tower.UIHomePanel
 71bb6a6b6c8f052f948db64c7dd3ca4f Assembly-CSharp.dll:QFramework.Timer
 ab18d1b3f23cac9211383afed56c276e Assembly-CSharp.dll:.MultiCameraUI
+0432d81f77586c08c8ffdf973c090303 Assembly-CSharp.dll:Tower.MyMotaUITipPanel
+71bb6a6b6c8f052f948db64c7dd3ca4f Assembly-CSharp.dll:Tower.TipMsg
