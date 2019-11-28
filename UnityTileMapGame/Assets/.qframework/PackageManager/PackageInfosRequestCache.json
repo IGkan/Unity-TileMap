@@ -5484,49 +5484,6 @@
       "Installed": false
     },
     {
-      "Name": "PostFxShader",
-      "readme": {
-        "items": [
-          {
-            "version": "v0.0.1",
-            "content": "添加基类 和 颜色反转",
-            "author": "liangxie",
-            "date": "2019 年 11 月 26 日 17:30",
-            "VersionNumber": 1
-          }
-        ]
-      },
-      "PackageVersions": [
-        {
-          "Version": "v0.0.1",
-          "Type": 6,
-          "AccessRight": 0,
-          "DownloadUrl": "http://file.liangxiegame.com/PostFxShaderv0_0_1_60e2965c_ced4_467a_b849_05266aac19cb.unitypackage",
-          "InstallPath": "Assets/QFramework/Pro/Shader/PostFxShader/",
-          "DocUrl": null,
-          "Readme": {
-            "version": "v0.0.1",
-            "content": "添加基类 和 颜色反转",
-            "author": "liangxie",
-            "date": "2019 年 11 月 26 日 17:30",
-            "VersionNumber": 1
-          },
-          "Id": "4dadd1c7-31a6-42e3-8c18-8b6aada4eb27",
-          "Name": "PostFxShader",
-          "VersionNumber": 1,
-          "FileName": "PostFxShader_v0.0.1.unitypackage"
-        }
-      ],
-      "Version": "v0.0.1",
-      "DownloadUrl": "http://file.liangxiegame.com/PostFxShaderv0_0_1_60e2965c_ced4_467a_b849_05266aac19cb.unitypackage",
-      "InstallPath": "Assets/QFramework/Pro/Shader/PostFxShader/",
-      "DocUrl": null,
-      "Type": 6,
-      "AccessRight": 0,
-      "VersionNumber": 1,
-      "Installed": false
-    },
-    {
       "Name": "Toon",
       "readme": {
         "items": [
