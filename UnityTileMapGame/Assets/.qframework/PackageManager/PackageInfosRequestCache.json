@@ -264,6 +264,27 @@
       "readme": {
         "items": [
           {
+            "version": "v0.1.15",
+            "content": "再次 修复 打开时会跳一下的问题。",
+            "author": "liangxie",
+            "date": "2019 年 11 月 29 日 15:43",
+            "VersionNumber": 115
+          },
+          {
+            "version": "v0.1.14",
+            "content": "修复 打开 PackageKit 显示的包重复的问题，感谢 水聿津 提供的 bug 发现。",
+            "author": "liangxie",
+            "date": "2019 年 11 月 29 日 15:26",
+            "VersionNumber": 114
+          },
+          {
+            "version": "v0.1.13",
+            "content": "修复每次打开 列表跳一下的问题",
+            "author": "liangxie",
+            "date": "2019 年 11 月 29 日 15:01",
+            "VersionNumber": 113
+          },
+          {
             "version": "v0.1.12",
             "content": "修复编译错误",
             "author": "liangxie",
@@ -518,6 +539,63 @@
         ]
       },
       "PackageVersions": [
+        {
+          "Version": "v0.1.15",
+          "Type": 0,
+          "AccessRight": 0,
+          "DownloadUrl": "http://file.liangxiegame.com/0.PackageKitv0_1_15_9efcbf81_d02f_4fbb_97d4_5ea4382a6c14.unitypackage",
+          "InstallPath": "Assets/QFramework/Framework/0.PackageKit/",
+          "DocUrl": null,
+          "Readme": {
+            "version": "v0.1.15",
+            "content": "再次 修复 打开时会跳一下的问题。",
+            "author": "liangxie",
+            "date": "2019 年 11 月 29 日 15:43",
+            "VersionNumber": 115
+          },
+          "Id": "be5cb2c8-4aa7-460d-bc9b-7206f11c3dc1",
+          "Name": "0.PackageKit",
+          "VersionNumber": 115,
+          "FileName": "0.PackageKit_v0.1.15.unitypackage"
+        },
+        {
+          "Version": "v0.1.14",
+          "Type": 0,
+          "AccessRight": 0,
+          "DownloadUrl": "http://file.liangxiegame.com/0.PackageKitv0_1_14_b1a55bce_d27d_4374_81e0_2e28fc82b911.unitypackage",
+          "InstallPath": "Assets/QFramework/Framework/0.PackageKit/",
+          "DocUrl": null,
+          "Readme": {
+            "version": "v0.1.14",
+            "content": "修复 打开 PackageKit 显示的包重复的问题，感谢 水聿津 提供的 bug 发现。",
+            "author": "liangxie",
+            "date": "2019 年 11 月 29 日 15:26",
+            "VersionNumber": 114
+          },
+          "Id": "d04c2ff4-50e8-43f1-bf40-f3b66adacdde",
+          "Name": "0.PackageKit",
+          "VersionNumber": 114,
+          "FileName": "0.PackageKit_v0.1.14.unitypackage"
+        },
+        {
+          "Version": "v0.1.13",
+          "Type": 0,
+          "AccessRight": 0,
+          "DownloadUrl": "http://file.liangxiegame.com/0.PackageKitv0_1_13_404b21cd_d80f_4f29_b2a1_86d7e3b6dc6c.unitypackage",
+          "InstallPath": "Assets/QFramework/Framework/0.PackageKit/",
+          "DocUrl": null,
+          "Readme": {
+            "version": "v0.1.13",
+            "content": "修复每次打开 列表跳一下的问题",
+            "author": "liangxie",
+            "date": "2019 年 11 月 29 日 15:01",
+            "VersionNumber": 113
+          },
+          "Id": "d24a62ec-d50f-4a3d-86e5-c94c450b17f1",
+          "Name": "0.PackageKit",
+          "VersionNumber": 113,
+          "FileName": "0.PackageKit_v0.1.13.unitypackage"
+        },
         {
           "Version": "v0.1.12",
           "Type": 0,
@@ -1222,13 +1300,13 @@
           "FileName": "0.PackageKit_v0.0.15.unitypackage"
         }
       ],
-      "Version": "v0.1.12",
-      "DownloadUrl": "http://file.liangxiegame.com/0.PackageKitv0_1_12_a6d00f38_8d1d_4cc1_b640_c65d45e0cbce.unitypackage",
+      "Version": "v0.1.15",
+      "DownloadUrl": "http://file.liangxiegame.com/0.PackageKitv0_1_15_9efcbf81_d02f_4fbb_97d4_5ea4382a6c14.unitypackage",
       "InstallPath": "Assets/QFramework/Framework/0.PackageKit/",
       "DocUrl": null,
       "Type": 0,
       "AccessRight": 0,
-      "VersionNumber": 112,
+      "VersionNumber": 115,
       "Installed": true
     },
     {
@@ -2026,6 +2104,41 @@
       "readme": {
         "items": [
           {
+            "version": "v0.0.8",
+            "content": "add doodle effect",
+            "author": "liangxie",
+            "date": "2019 年 12 月 02 日 15:19",
+            "VersionNumber": 8
+          },
+          {
+            "version": "v0.0.7",
+            "content": "添加 Rect 效果",
+            "author": "liangxie",
+            "date": "2019 年 11 月 30 日 13:24",
+            "VersionNumber": 7
+          },
+          {
+            "version": "v0.0.6",
+            "content": "添加 PowLine",
+            "author": "liangxie",
+            "date": "2019 年 11 月 30 日 11:21",
+            "VersionNumber": 6
+          },
+          {
+            "version": "v0.0.5",
+            "content": "添加 GradientRightHalf 效果",
+            "author": "liangxie",
+            "date": "2019 年 11 月 29 日 14:45",
+            "VersionNumber": 5
+          },
+          {
+            "version": "v0.0.4",
+            "content": "补充一些效果",
+            "author": "liangxie",
+            "date": "2019 年 11 月 29 日 10:06",
+            "VersionNumber": 4
+          },
+          {
             "version": "v0.0.3",
             "content": "add gaussian blur",
             "author": "liangxie",
@@ -2049,6 +2162,101 @@
         ]
       },
       "PackageVersions": [
+        {
+          "Version": "v0.0.8",
+          "Type": 6,
+          "AccessRight": 0,
+          "DownloadUrl": "http://file.liangxiegame.com/PostFxShaderv0_0_8_1e9712b7_76b1_4eee_9883_47cef32d24db.unitypackage",
+          "InstallPath": "Assets/QFramework/Pro/Shader/PostFxShader/",
+          "DocUrl": null,
+          "Readme": {
+            "version": "v0.0.8",
+            "content": "add doodle effect",
+            "author": "liangxie",
+            "date": "2019 年 12 月 02 日 15:19",
+            "VersionNumber": 8
+          },
+          "Id": "a30e038e-2dcd-4bed-a126-1947fdee1fd9",
+          "Name": "PostFxShader",
+          "VersionNumber": 8,
+          "FileName": "PostFxShader_v0.0.8.unitypackage"
+        },
+        {
+          "Version": "v0.0.7",
+          "Type": 6,
+          "AccessRight": 0,
+          "DownloadUrl": "http://file.liangxiegame.com/PostFxShaderv0_0_7_20aebefc_513b_48ee_b1d3_cc7701fe136d.unitypackage",
+          "InstallPath": "Assets/QFramework/Pro/Shader/PostFxShader/",
+          "DocUrl": null,
+          "Readme": {
+            "version": "v0.0.7",
+            "content": "添加 Rect 效果",
+            "author": "liangxie",
+            "date": "2019 年 11 月 30 日 13:24",
+            "VersionNumber": 7
+          },
+          "Id": "b7a0f4d4-bc64-4583-b77f-2849942128fe",
+          "Name": "PostFxShader",
+          "VersionNumber": 7,
+          "FileName": "PostFxShader_v0.0.7.unitypackage"
+        },
+        {
+          "Version": "v0.0.6",
+          "Type": 6,
+          "AccessRight": 0,
+          "DownloadUrl": "http://file.liangxiegame.com/PostFxShaderv0_0_6_ddb5c769_61ba_42be_ba49_7c21c3edf36b.unitypackage",
+          "InstallPath": "Assets/QFramework/Pro/Shader/PostFxShader/",
+          "DocUrl": null,
+          "Readme": {
+            "version": "v0.0.6",
+            "content": "添加 PowLine",
+            "author": "liangxie",
+            "date": "2019 年 11 月 30 日 11:21",
+            "VersionNumber": 6
+          },
+          "Id": "3a2da422-0ed6-43d3-b30c-29021600471f",
+          "Name": "PostFxShader",
+          "VersionNumber": 6,
+          "FileName": "PostFxShader_v0.0.6.unitypackage"
+        },
+        {
+          "Version": "v0.0.5",
+          "Type": 6,
+          "AccessRight": 0,
+          "DownloadUrl": "http://file.liangxiegame.com/PostFxShaderv0_0_5_f0d9c4c2_4604_4555_b87f_966045d1d709.unitypackage",
+          "InstallPath": "Assets/QFramework/Pro/Shader/PostFxShader/",
+          "DocUrl": null,
+          "Readme": {
+            "version": "v0.0.5",
+            "content": "添加 GradientRightHalf 效果",
+            "author": "liangxie",
+            "date": "2019 年 11 月 29 日 14:45",
+            "VersionNumber": 5
+          },
+          "Id": "6d6ffded-cbca-4f5b-9e41-c8829ef1d593",
+          "Name": "PostFxShader",
+          "VersionNumber": 5,
+          "FileName": "PostFxShader_v0.0.5.unitypackage"
+        },
+        {
+          "Version": "v0.0.4",
+          "Type": 6,
+          "AccessRight": 0,
+          "DownloadUrl": "http://file.liangxiegame.com/PostFxShaderv0_0_4_21ee3633_c1f4_47f3_9631_6e8f40f27386.unitypackage",
+          "InstallPath": "Assets/QFramework/Pro/Shader/PostFxShader/",
+          "DocUrl": null,
+          "Readme": {
+            "version": "v0.0.4",
+            "content": "补充一些效果",
+            "author": "liangxie",
+            "date": "2019 年 11 月 29 日 10:06",
+            "VersionNumber": 4
+          },
+          "Id": "5899e7e9-754d-4458-999d-654dcd9a2199",
+          "Name": "PostFxShader",
+          "VersionNumber": 4,
+          "FileName": "PostFxShader_v0.0.4.unitypackage"
+        },
         {
           "Version": "v0.0.3",
           "Type": 6,
@@ -2107,13 +2315,13 @@
           "FileName": "PostFxShader_v0.0.1.unitypackage"
         }
       ],
-      "Version": "v0.0.3",
-      "DownloadUrl": "http://file.liangxiegame.com/PostFxShaderv0_0_3_cd0a5f41_1870_4b60_9176_48ab7d2119b5.unitypackage",
+      "Version": "v0.0.8",
+      "DownloadUrl": "http://file.liangxiegame.com/PostFxShaderv0_0_8_1e9712b7_76b1_4eee_9883_47cef32d24db.unitypackage",
       "InstallPath": "Assets/QFramework/Pro/Shader/PostFxShader/",
       "DocUrl": null,
       "Type": 6,
       "AccessRight": 0,
-      "VersionNumber": 3,
+      "VersionNumber": 8,
       "Installed": false
     },
     {

@@ -1,6 +1,6 @@
 Android
 PlayerPath?
-E:/LSF/UnityApks/Mota.apk
+F:/UnityApk/Mota.apk
 SceneListBegin?
 Assets/Scenes/魔塔/MotaAPP.unity
 SceneListEnd?
@@ -166,6 +166,7 @@ d251bf88db6c95a6b1aa0b69298da9ef UnityEngine.SpatialTracking.dll:UnityEngine.Spa
 71bb6a6b6c8f052f948db64c7dd3ca4f UniRx.dll:UniRx.Triggers.ObservableEndDragTrigger
 71bb6a6b6c8f052f948db64c7dd3ca4f UniRx.dll:UniRx.Triggers.ObservableLateUpdateTrigger
 71bb6a6b6c8f052f948db64c7dd3ca4f Assembly-CSharp.dll:Unidux.Example.SceneTransition.SceneWatcher
+0432d81f77586c08c8ffdf973c090303 Assembly-CSharp.dll:Tower.MyMotaUITipPanel
 ab36ced446fbfea4462afaf79c72454e Assembly-CSharp.dll:Cinemachine.NoiseSettings
 71bb6a6b6c8f052f948db64c7dd3ca4f Assembly-CSharp.dll:Tower.App
 303ad70ce203ad874efe2965d0fbcff9 Unity.Analytics.Tracker.dll:UnityEngine.Analytics.AnalyticsEventTracker
@@ -244,6 +245,7 @@ c0176761ddd2c0e85cab0f5fae95c053 Assembly-CSharp.dll:Unidux.Example.Todo.TodoFil
 4fd8bf02e3089425d3502e26c44ba31a Unity.TextMeshPro.dll:TMPro.TextContainer
 71bb6a6b6c8f052f948db64c7dd3ca4f UniRx.dll:UniRx.Triggers.ObservableTriggerTrigger
 60f35d2fdc56426c29870f12e44c41cd Assembly-CSharp.dll:Tower.UIGamePanel
+71bb6a6b6c8f052f948db64c7dd3ca4f Assembly-CSharp.dll:Tower.TipMsg
 56df1fa7cea034df9863fe5a24200a32 Assembly-CSharp.dll:Cinemachine.CinemachineTargetGroup
 25d6a61a60f20a3fbc57140f20663630 Unity.2D.Tilemap.Extras.dll:UnityEngine.HexagonalRuleTile
 16ebcf52073172673c26b31fa4ea1397 Assembly-CSharp.dll:.PlayerPlatformerController
@@ -387,5 +389,3 @@ aff505990b3b2335b9af16f2524559b7 Assembly-CSharp.dll:Unidux.Example.SceneTransit
 adb7d43264610b02a01ba84cf9708231 Assembly-CSharp.dll:Tower.UIHomePanel
 71bb6a6b6c8f052f948db64c7dd3ca4f Assembly-CSharp.dll:QFramework.Timer
 ab18d1b3f23cac9211383afed56c276e Assembly-CSharp.dll:.MultiCameraUI
-0432d81f77586c08c8ffdf973c090303 Assembly-CSharp.dll:Tower.MyMotaUITipPanel
-71bb6a6b6c8f052f948db64c7dd3ca4f Assembly-CSharp.dll:Tower.TipMsg

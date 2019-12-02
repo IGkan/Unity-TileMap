@@ -143,7 +143,7 @@ MonoBehaviour:
   Level: 10
   Life: 5000
   Attack: 1000
-  Defend: 700
+  Defend: 200
   Experience: 1000
   Gold: 1000
   monster: {fileID: 0}

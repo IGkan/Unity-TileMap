@@ -141,9 +141,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Name: enemy11_4
   Level: 4
-  Life: 300
-  Attack: 150
-  Defend: 20
+  Life: 1000
+  Attack: 300
+  Defend: 100
   Experience: 40
-  Gold: 50
+  Gold: 200
   monster: {fileID: 0}
